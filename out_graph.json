@@ -221,43 +221,43 @@
    "nodes" : [
       {
          "id" : "1189",
-         "labels" : [ "URL" ],
+         "label" : ":URL",
          "properties" : {
             "url" : "http://www.google.com/"
          }
       },
       {
          "id" : "1181",
-         "labels" : [ "URL" ],
+         "label" : ":URL",
          "properties" : {
             "url" : "google.com"
          }
       },
       {
          "id" : "1182",
-         "labels" : [ "a" ],
+         "label" : ":a",
          "properties" : {
             "HREF" : [ "http://www.google.com/" ]
          }
       },
       {
          "id" : "1183",
-         "labels" : [ "h1" ],
+         "label" : ":h1",
          "properties" : {}
       },
       {
          "id" : "1184",
-         "labels" : [ "body" ],
+         "label" : ":body",
          "properties" : {}
       },
       {
          "id" : "1185",
-         "labels" : [ "title" ],
+         "label" : ":title",
          "properties" : {}
       },
       {
          "id" : "1186",
-         "labels" : [ "meta" ],
+         "label" : ":meta",
          "properties" : {
             "content" : [ "text/html;charset=utf-8" ],
             "http-equiv" : [ "content-type" ]
@@ -265,24 +265,24 @@
       },
       {
          "id" : "1187",
-         "labels" : [ "head" ],
+         "label" : ":head",
          "properties" : {}
       },
       {
          "id" : "1188",
-         "labels" : [ "html" ],
+         "label" : ":html",
          "properties" : {}
       },
       {
          "id" : "1190",
-         "labels" : [ "p" ],
+         "label" : ":p",
          "properties" : {
             "style" : [ "color:#767676;font-size:8pt" ]
          }
       },
       {
          "id" : "1191",
-         "labels" : [ "a" ],
+         "label" : ":a",
          "properties" : {
             "aria-haspopup" : [ "true", "true" ],
             "aria-owns" : [ "gbd", "gbd5" ],
@@ -402,7 +402,7 @@
       },
       {
          "id" : "1192",
-         "labels" : [ "html" ],
+         "label" : ":html",
          "properties" : {
             "itemscope" : [ "null" ],
             "itemtype" : [ "http://schema.org/WebPage" ],
@@ -411,12 +411,12 @@
       },
       {
          "id" : "1193",
-         "labels" : [ "head" ],
+         "label" : ":head",
          "properties" : {}
       },
       {
          "id" : "1194",
-         "labels" : [ "br" ],
+         "label" : ":br",
          "properties" : {
             "clear" : [ "all" ],
             "id" : [ "lgpd" ],
@@ -425,7 +425,7 @@
       },
       {
          "id" : "1195",
-         "labels" : [ "meta" ],
+         "label" : ":meta",
          "properties" : {
             "content" : [
                "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.",
@@ -438,14 +438,14 @@
       },
       {
          "id" : "1196",
-         "labels" : [ "h2" ],
+         "label" : ":h2",
          "properties" : {
             "class" : [ "gbxx" ]
          }
       },
       {
          "id" : "1197",
-         "labels" : [ "table" ],
+         "label" : ":table",
          "properties" : {
             "border" : [ "0" ],
             "cellpadding" : [ "0" ],
@@ -454,33 +454,33 @@
       },
       {
          "id" : "1198",
-         "labels" : [ "script" ],
+         "label" : ":script",
          "properties" : {
             "type" : [ "text/javascript", "text/javascript" ]
          }
       },
       {
          "id" : "1199",
-         "labels" : [ "textarea" ],
+         "label" : ":textarea",
          "properties" : {
             "name" : [ "',e,'" ]
          }
       },
       {
          "id" : "1200",
-         "labels" : [ "style" ],
+         "label" : ":style",
          "properties" : {}
       },
       {
          "id" : "1201",
-         "labels" : [ "body" ],
+         "label" : ":body",
          "properties" : {
             "bgcolor" : [ "#fff" ]
          }
       },
       {
          "id" : "1202",
-         "labels" : [ "input" ],
+         "label" : ":input",
          "properties" : {
             "autocomplete" : [ "off" ],
             "class" : [ "lst", "lsb", "lsb" ],
@@ -505,7 +505,7 @@
       },
       {
          "id" : "1203",
-         "labels" : [ "ol" ],
+         "label" : ":ol",
          "properties" : {
             "class" : [ "gbtc", "gbmcc gbsbic", "gbtc", "gbmcc" ],
             "id" : [ "gbzc", "gbmm", "gbom" ]
@@ -513,7 +513,7 @@
       },
       {
          "id" : "1204",
-         "labels" : [ "li" ],
+         "label" : ":li",
          "properties" : {
             "class" : [
                "gbt",
@@ -548,12 +548,12 @@
       },
       {
          "id" : "1205",
-         "labels" : [ "title" ],
+         "label" : ":title",
          "properties" : {}
       },
       {
          "id" : "1206",
-         "labels" : [ "div" ],
+         "label" : ":div",
          "properties" : {
             "aria-owner" : [ "gbztm", "gbg5" ],
             "class" : [
@@ -603,7 +603,7 @@
       },
       {
          "id" : "1207",
-         "labels" : [ "img" ],
+         "label" : ":img",
          "properties" : {
             "alt" : [ "Google" ],
             "height" : [ "95" ],
@@ -616,7 +616,7 @@
       },
       {
          "id" : "1208",
-         "labels" : [ "span" ],
+         "label" : ":span",
          "properties" : {
             "class" : [
                "gbtcb",
@@ -665,19 +665,19 @@
       },
       {
          "id" : "1209",
-         "labels" : [ "tr" ],
+         "label" : ":tr",
          "properties" : {
             "valign" : [ "top" ]
          }
       },
       {
          "id" : "1210",
-         "labels" : [ "center" ],
+         "label" : ":center",
          "properties" : {}
       },
       {
          "id" : "1211",
-         "labels" : [ "td" ],
+         "label" : ":td",
          "properties" : {
             "align" : [ "center", "left" ],
             "class" : [ "padi", "pads", "padt", "fl sblc" ],
@@ -689,7 +689,7 @@
       },
       {
          "id" : "1212",
-         "labels" : [ "form" ],
+         "label" : ":form",
          "properties" : {
             "action" : [ "',d,'", "/search" ],
             "method" : [ "POST" ],
