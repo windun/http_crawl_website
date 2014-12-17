@@ -2,9 +2,11 @@
 //header("Content-type: text/plain");
 
 	$INSTANCE = 1;
-	$stdout = fopen('php://stdout', 'w');
+	$OPT=0;
+	//$stdout = fopen('php://stdout', 'w');
 	if(isset($_POST['crawl_url'][0]))
 	{
+		$OPT = 1;
 		$crawl_url = $_POST['crawl_url'][0];
 		$crawl_depth = $_POST['crawl_url'][1];
 		//exec("./crawl $crawl_url 0"." > out".$INSTANCE.".txt &");
@@ -13,6 +15,7 @@
 	}
 	else if(isset($_POST['query']))
 	{
+		$OPT = 2;
 		$query = $_POST['query'];
 		//exec("./crawl -c \"$query\" \"graph\""." > out".$INSTANCE.".txt &");
 		$cmd = "./crawl -c \"$query\" \"graph\" > out".$INSTANCE.".txt &";
@@ -24,20 +27,51 @@
 <head>
 <style type="text/css">
 	#container {
+		position: absolute;
+		left: 300px;
+		top: 0px;
 		background-color: #212121;
-		max-width: 100%;
-		height: 80%;
+		min-width: 700px;
+		height: 100%;
 		margin: auto;
 	}
 	BODY, TD, P {
 		font-family: arial,helvetica,sans-serif;
-		font-size: 14px;
+		font-size: 10px;
 		color: #ffffff;
 	}
 </style>	
 </head>
 <body style="background-color: #171717">
+<table width="300px">
+	<tr>
+		<td width="100%" height="100%">
+			<form name="crawl_form" method="POST" action="webcrawler.php">
+				<input size="15" type="text" value="" name="crawl_url[]"/>
+				<input size="4" type="text" value="" name="crawl_url[]"/>
+				<input size="10" type="Submit" value="url ->" name="crawl_submit"/>
+			</form>
+			<form name="query_form"thod="POST" action="webcrawler.php">
+				<input type="text" value="" name="query"/>
+				<input type="Submit" value="query ->" name="query_submit"/>
+			</form>
+			<select>
+				<option value="1">1</option>
+			</select>
+			<?php echo "[".$OPT."] ".$cmd; ?>
+			<div id="content" style="background-color: #212121; width: 280px; height: 400px; overflow: scroll;">
+				<?php 
+					include_once('console.php'); 
+				?>
+			</div>
+			<form name="refresh" method="POST" id="refresh_form">
+				<input id="refresh_submit" type="Submit" value="Refresh">
+			</form>
+		</td>	
+	</tr>
+</table>
 <div id="container"></div>
+</body>
 <script src="jquery-2.1.1.min.js"></script>
 <script src="sigma.min.js"></script>
 <script src="sigma.parsers.json.min.js"></script>
@@ -61,7 +95,7 @@
 				{
 					alert('Form successfully submitted!');
 					$("#content")[0].reset();
-					$("#myForm")[0].reset();
+					//$("#myForm")[0].reset();
 					$(".ui-loader").hide();
 				}
 			});
@@ -129,40 +163,10 @@
 		}
 	);
 </script>
-<table>
-	<tr>
-		<td width="30%">
-			<form name="refresh" method="POST" id="refresh_form">
-				<input id="refresh_submit" type="Submit" value="Refresh">
-			</form>
-			<form name="crawl_form" method="POST" action="webcrawler.php">
-				<input width="60%" type="text" value="" name="crawl_url[]"/>
-				<input width="60%" type="text" value="" name="crawl_url[]"/>
-				<input width="20%" type="Submit" value="url ->" name="crawl_submit"/>
-			</form>
-			<form name="query_form" method="POST" action="webcrawler.php">
-				<input type="text" value="" name="query"/>
-				<input type="Submit" value="query ->" name="query_submit"/>
-			</form>
-			<select>
-				<option value="1">1</option>
-			</select>
-		</td>
-		<td width="70%">
-			<div id="content" style="width: 600px; height: 150px; overflow: scroll;">
-				<?php include_once('console.php'); ?>
-			</div>
-			<div id="loading">Loading</div>
-		</td>
-	
-	</tr>
-</table>
-</body>
 <script>
-	window.setInterval(function()
-	{
+
 		var objDiv = document.getElementById("content");
 		objDiv.scrollTop = objDiv.scrollHeight;
-	}, 200);
+
 </script>
 </html>

@@ -1,0 +1,1688 @@
+0,0  base
+1,0  !doctype
+     html = 
+     content (1) = "
+..."
+2,1  html
+     class = google
+     lang = en
+     content (2) = "
+
+..."
+3,2  script
+     content (100) = "
+(function(H){H.className=H.className.replace(/\bgoogle\b/,'google-js')})(document.documentElement)
+..."
+4,2  meta
+     charset = utf-8
+     content (1) = "
+..."
+5,4  meta
+     content = initial-scale=1, minimum-scale=1, width=device-width
+     name = viewport
+     content (1) = "
+..."
+6,5  title
+     content (49) = "Privacy Policy – Privacy &amp; Terms – Google..."
+7,5  script
+     src = //www.google.com/js/google.js
+     content (1) = "
+..."
+8,5  script
+     content (58) = "
+new gweb.analytics.AutoTrack({profile:"UA-28138501-1"});
+..."
+9,5  link
+     href = //fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en
+     rel = stylesheet
+     content (1) = "
+..."
+10,9  link
+     href = /policies/css/default.css
+     rel = stylesheet
+     content (1) = "
+..."
+11,10  div
+     class = maia-header
+     id = maia-header
+     role = banner
+     content (1) = "
+..."
+12,11  div
+     class = maia-aux
+     content (1) = "
+..."
+13,12  h1
+14,13  a
+     href = /
+15,14  img
+     alt = Google
+     src = //www.google.com/images/logos/google_logo_41.png
+16,12  h2
+17,16  a
+     href = ../../policies/
+     content (19) = "Privacy &amp; Terms..."
+18,12  a
+     class = maia-teleport
+     href = #content
+     content (15) = "Skip to content..."
+19,10  div
+     class = maia-nav
+     id = maia-nav-x
+     role = navigation
+     content (1) = "
+..."
+20,19  div
+     class = maia-aux
+     content (1) = "
+..."
+21,20  ul
+     content (1) = "
+..."
+22,21  li
+     data-g-label = Overview
+23,22  a
+     href = ../../policies/
+     content (8) = "Overview..."
+24,22  li
+     class = active
+     data-g-label = Privacy Policy
+25,24  a
+     href = ../../policies/privacy/
+     content (14) = "Privacy Policy..."
+26,24  li
+     data-g-label = Terms of Service
+27,26  a
+     href = ../../policies/terms/
+     content (16) = "Terms of Service..."
+28,26  li
+     data-g-label = Privacy in our technology
+29,28  a
+     href = ../../policies/technologies/
+     content (27) = "Technologies and Principles..."
+30,28  li
+     data-g-label = FAQ
+31,30  a
+     href = ../../policies/faq/
+     content (3) = "FAQ..."
+32,10  div
+     id = maia-main
+     role = main
+     content (1) = "
+..."
+33,32  div
+     class = maia-nav
+     id = maia-nav-y
+     role = navigation
+     content (1) = "
+..."
+34,33  ul
+     content (1) = "
+..."
+35,34  li
+     content (15) = "Privacy Policy
+..."
+36,35  li
+37,36  a
+     href = ../../policies/privacy/frameworks/
+     content (26) = "Self Regulatory Frameworks..."
+38,36  li
+39,38  a
+     href = ../../policies/privacy/key-terms/
+     content (9) = "Key terms..."
+40,38  li
+41,40  a
+     href = ../../policies/privacy/partners/
+     content (8) = "Partners..."
+42,40  li
+43,42  a
+     href = ../../policies/privacy/archive/
+     content (7) = "Updates..."
+44,32  div
+     class = maia-article
+     role = article
+     content (1) = "
+..."
+45,44  div
+     class = maia-teleport
+     id = content
+46,44  h1
+     content (14) = "Privacy Policy..."
+47,44  div
+     class = maia-cols toc
+     content (1) = "
+..."
+48,47  div
+     class = maia-col-5
+     content (1) = "
+..."
+49,48  h3
+     class = toc-heading
+50,49  a
+     class = gweb-smoothscroll-control
+     href = #infocollect
+     content (22) = "Information we collect..."
+51,48  h3
+     class = toc-heading
+52,51  a
+     class = gweb-smoothscroll-control
+     href = #infouse
+     content (33) = "How we use information we collect..."
+53,48  h3
+     class = toc-heading
+54,53  a
+     class = gweb-smoothscroll-control
+     href = #infochoices
+     content (23) = "Transparency and choice..."
+55,48  h3
+     class = toc-heading
+56,55  a
+     class = gweb-smoothscroll-control
+     href = #infosharing
+     content (21) = "Information you share..."
+57,48  h3
+     class = toc-heading
+58,57  a
+     class = gweb-smoothscroll-control
+     href = #access
+     content (48) = "Accessing and updating your personal information..."
+59,48  h3
+     class = toc-heading
+60,59  a
+     class = gweb-smoothscroll-control
+     href = #nosharing
+     content (20) = "Information we share..."
+61,47  div
+     class = maia-col-5
+     content (1) = "
+..."
+62,61  h3
+     class = toc-heading
+63,62  a
+     class = gweb-smoothscroll-control
+     href = #infosecurity
+     content (20) = "Information security..."
+64,61  h3
+     class = toc-heading
+65,64  a
+     class = gweb-smoothscroll-control
+     href = #application
+     content (32) = "When this Privacy Policy applies..."
+66,61  h3
+     class = toc-heading
+67,66  a
+     class = gweb-smoothscroll-control
+     href = #enforcement
+     content (54) = "Compliance and cooperation with regulatory authorities..."
+68,61  h3
+     class = toc-heading
+69,68  a
+     class = gweb-smoothscroll-control
+     href = #policychanges
+     content (7) = "Changes..."
+70,61  h3
+     class = toc-heading
+71,70  a
+     class = gweb-smoothscroll-control
+     href = #products
+     content (26) = "Specific product practices..."
+72,61  h3
+     class = toc-heading
+73,72  a
+     class = gweb-smoothscroll-control
+     href = #related
+     content (51) = "Other useful privacy and security related materials..."
+74,44  div
+     class = intro
+     content (1) = "
+..."
+75,74  div
+     class = switch-on
+     id = highlights-switch
+     content (13) = "Hide examples..."
+76,74  div
+     class = switch-off
+     id = switch-off
+     content (13) = "Show examples..."
+77,74  div
+     id = switch-on
+     content (13) = "Hide examples..."
+78,74  p
+     content (32) = "Last modified: March 31, 2014 ()..."
+79,78  a
+     href = ../../policies/privacy/archive/
+     content (22) = "view archived versions..."
+80,44  p
+81,80  a
+     class = policy-pdf
+     href = //www.google.com/intl/en/policies/privacy/google_privacy_policy_en.pdf
+     content (20) = "Download PDF version..."
+82,80  p
+     content (439) = "There are many different ways you can use our services – to search for and share information, to communicate with other people or to create new content. When you share information with us, for example by creating a , we can make those services even better – to show you and ads, to help you or to make . As you use our services, we want you to be clear how we’re using information and the ways in which you can protect your privacy.
+..."
+83,82  a
+     href = ../../policies/privacy/key-terms/#toc-terms-account
+     content (14) = "Google Account..."
+84,82  a
+     class = highlight highlight-unselected
+     href = ../../policies/privacy/example/more-relevant-search-results.html
+     id = more-relevant-search-results
+     content (28) = "more relevant search results..."
+85,82  a
+     class = highlight
+     href = ../../policies/privacy/example/connect-with-people.html
+     id = connect-with-people
+     content (19) = "connect with people..."
+86,82  a
+     class = highlight
+     href = ../../policies/privacy/example/sharing-with-others.html
+     id = sharing-with-others
+     content (38) = "sharing with others quicker and easier..."
+87,82  p
+     content (29) = "Our Privacy Policy explains:
+..."
+88,87  ul
+     content (1) = "
+..."
+89,88  li
+     content (51) = "What information we collect and why we collect it.
+..."
+90,89  li
+     content (29) = "How we use that information.
+..."
+91,90  li
+     content (69) = "The choices we offer, including how to access and update information...."
+92,87  p
+     content (344) = "We’ve tried to keep it as simple as possible, but if you’re not familiar with terms like cookies, IP addresses, pixel tags and browsers, then read about these first. Your privacy matters to Google so whether you are new to Google or a long-time user, please do take the time to get to know our practices – and if you have any questions .
+..."
+93,92  a
+     href = ../../policies/privacy/key-terms/
+     content (9) = "key terms..."
+94,92  a
+     href = http://support.google.com/policies/troubleshooter/2990837?hl=en&amp;rd=2
+     content (17) = "consult this page..."
+95,92  h2
+     id = infocollect
+     content (22) = "Information we collect..."
+96,92  p
+     content (174) = "We collect information to provide better services to all of our users – from figuring out basic stuff like which language you speak, to more complex things like which or .
+..."
+97,96  a
+     class = highlight
+     href = ../../policies/privacy/example/ads-youll-find-most-useful.html
+     id = ads-youll-find-most-useful
+     content (29) = "ads you’ll find most useful..."
+98,96  a
+     class = highlight
+     href = ../../policies/privacy/example/the-people-who-matter-most.html
+     id = the-people-who-matter-most
+     content (40) = "the people who matter most to you online..."
+99,96  p
+     content (36) = "We collect information in two ways:
+..."
+100,99  ul
+     content (1) = "
+..."
+101,100  li
+     content (1) = "
+..."
+102,101  p
+     content (324) = "For example, many of our services require you to sign up for a Google Account. When you do, we’ll ask for , like your name, email address, telephone number or . If you want to take full advantage of the sharing features we offer, we might also ask you to create a publicly visible , which may include your name and photo.
+..."
+103,102  strong
+     content (24) = "Information you give us...."
+104,102  a
+     href = ../../policies/privacy/key-terms/#toc-terms-personal-info
+     content (20) = "personal information..."
+105,102  a
+     class = highlight
+     href = ../../policies/privacy/example/credit-card.html
+     id = credit-card
+     content (11) = "credit card..."
+106,102  a
+     href = http://support.google.com/accounts/bin/answer.py?hl=en&amp;answer=112783
+     content (14) = "Google Profile..."
+107,102  li
+     content (1) = "
+..."
+108,107  p
+     content (173) = "We may about the services that you use and how you use them, like when you visit a website that uses our advertising services or you and content. This information includes:
+..."
+109,108  strong
+     content (49) = "Information we get from your use of our services...."
+110,108  a
+     class = highlight
+     href = ../../policies/privacy/example/collect-information.html
+     id = collect-information
+     content (19) = "collect information..."
+111,108  a
+     class = highlight
+     href = ../../policies/privacy/example/view-and-interact-with-our-ads.html
+     id = view-and-interact-with-our-ads
+     content (30) = "view and interact with our ads..."
+112,108  ul
+     content (1) = "
+..."
+113,112  li
+     content (1) = "
+..."
+114,113  p
+115,114  strong
+116,115  a
+     href = ../../policies/privacy/key-terms/#toc-terms-device
+     content (18) = "Device information..."
+117,114  p
+     content (184) = "We may collect (such as your hardware model, operating system version, , and mobile network information including phone number). Google may associate your or with your Google Account.
+..."
+118,117  a
+     class = highlight
+     href = ../../policies/privacy/example/device-specific-information.html
+     id = device-specific-information
+     content (27) = "device-specific information..."
+119,117  a
+     href = ../../policies/privacy/key-terms/#toc-terms-unique-device-id
+     content (25) = "unique device identifiers..."
+120,117  a
+     class = highlight
+     href = ../../policies/privacy/example/device-identifiers.html
+     id = device-identifiers
+     content (18) = "device identifiers..."
+121,117  a
+     class = highlight
+     href = ../../policies/privacy/example/phone-number.html
+     id = phone-number
+     content (12) = "phone number..."
+122,117  li
+     content (1) = "
+..."
+123,122  p
+124,123  strong
+     content (15) = "Log information..."
+125,123  p
+     content (144) = "When you use our services or view content provided by Google, we may automatically collect and store certain information in . This may include:
+..."
+126,125  a
+     href = ../../policies/privacy/key-terms/#toc-terms-server-logs
+     content (11) = "server logs..."
+127,125  ul
+     content (1) = "
+..."
+128,127  li
+     content (66) = "details of how you used our service, such as your search queries.
+..."
+129,128  li
+     content (179) = "telephony log information like your phone number, calling-party number, forwarding numbers, time and date of calls, duration of calls, SMS routing information and types of calls.
+..."
+130,129  li
+     content (2) = ".
+..."
+131,130  a
+     href = ../../policies/privacy/key-terms/#toc-terms-ip
+     content (25) = "Internet protocol address..."
+132,130  li
+     content (162) = "device event information such as crashes, system activity, hardware settings, browser type, browser language, the date and time of your request and referral URL.
+..."
+133,132  li
+     content (71) = "cookies that may uniquely identify your browser or your Google Account...."
+134,125  li
+     content (1) = "
+..."
+135,134  p
+136,135  strong
+     content (20) = "Location information..."
+137,135  p
+     content (282) = "When you use a location-enabled Google service, we , like GPS signals sent by a mobile device. We may also use various technologies to determine location, such as sensor data from your device that may, for example, provide information on nearby Wi-Fi access points and cell towers.
+..."
+138,137  a
+     class = highlight
+     href = ../../policies/privacy/example/may-collect-and-process-information.html
+     id = may-collect-and-process-information
+     content (62) = "may collect and process information about your actual location..."
+139,137  li
+     content (1) = "
+..."
+140,139  p
+141,140  strong
+     content (26) = "Unique application numbers..."
+142,140  p
+     content (330) = "Certain services include a unique application number. This number and information about your installation (for example, the operating system type and application version number) may be sent to Google when you install or uninstall that service or when that service periodically contacts our servers, such as for automatic updates.
+..."
+143,142  li
+     content (1) = "
+..."
+144,143  p
+145,144  strong
+     content (13) = "Local storage..."
+146,144  p
+     content (148) = "We may collect and store information (including personal information) locally on your device using mechanisms such as (including HTML&nbsp;5) and .
+..."
+147,146  a
+     href = ../../policies/privacy/key-terms/#toc-terms-browser-web-storage
+     content (19) = "browser web storage..."
+148,146  a
+     href = ../../policies/privacy/key-terms/#toc-terms-application-data-cache
+     content (23) = "application data caches..."
+149,146  li
+     content (1) = "
+..."
+150,149  p
+151,150  strong
+     content (33) = "Cookies and anonymous identifiers..."
+152,150  p
+     content (333) = "We and our partners use various technologies to collect and store information when you visit a Google service, and this may include sending one or more or to your device. We also use cookies and anonymous identifiers when you interact with services we offer to our partners, such as or Google features that may appear on other sites...."
+153,152  a
+     href = ../../policies/privacy/key-terms/#toc-terms-cookie
+     content (7) = "cookies..."
+154,152  a
+     href = ../../policies/privacy/key-terms/#toc-terms-identifier
+     content (21) = "anonymous identifiers..."
+155,152  a
+     class = highlight
+     href = ../../policies/privacy/example/advertising-services.html
+     id = advertising-services
+     content (20) = "advertising services..."
+156,99  h2
+     id = infouse
+     content (33) = "How we use information we collect..."
+157,99  p
+     content (238) = "We use the information we collect from all of our services to provide, maintain, protect and improve them, to , and to . We also use this information to offer you tailored content – like giving you more relevant search results and ads.
+..."
+158,157  a
+     class = highlight
+     href = ../../policies/privacy/example/develop-new-ones.html
+     id = develop-new-ones
+     content (16) = "develop new ones..."
+159,157  a
+     class = highlight
+     href = ../../policies/privacy/example/protect-google-and-our-users.html
+     id = protect-google-and-our-users
+     content (28) = "protect Google and our users..."
+160,157  p
+     content (442) = "We may use the name you provide for your Google Profile across all of the services we offer that require a Google Account. In addition, we may replace past names associated with your Google Account so that you are represented consistently across all our services. If other users already have your email, or other information that identifies you, we may show them your publicly visible Google Profile information, such as your name and photo.
+..."
+161,160  p
+     content (243) = "When you contact Google, we may keep a record of your communication to help solve any issues you might be facing. We may use your email address to inform you about our services, such as letting you know about upcoming changes or improvements.
+..."
+162,161  p
+     content (401) = "We use information collected from cookies and other technologies, like , to and the overall quality of our services. For example, by saving your language preferences, we’ll be able to have our services appear in the language you prefer. When showing you tailored ads, we will not associate a cookie or anonymous identifier with , such as those based on race, religion, sexual orientation or health.
+..."
+163,162  a
+     href = ../../policies/privacy/key-terms/#toc-terms-pixel
+     content (10) = "pixel tags..."
+164,162  a
+     class = highlight
+     href = ../../policies/privacy/example/improve-your-user-experience.html
+     id = improve-your-user-experience
+     content (28) = "improve your user experience..."
+165,162  a
+     href = ../../policies/privacy/key-terms/#toc-terms-sensitive-categories
+     content (20) = "sensitive categories..."
+166,162  p
+     content (153) = "We may – for example . We will not combine DoubleClick cookie information with personally identifiable information unless we have your opt-in consent.
+..."
+167,166  a
+     class = highlight
+     href = ../../policies/privacy/example/combine-personal-information.html
+     id = combine-personal-information
+     content (122) = "combine personal information from one service with information, including personal information, from other Google services..."
+168,166  a
+     class = highlight
+     href = ../../policies/privacy/example/to-make-it-easier-to-share.html
+     id = to-make-it-easier-to-share
+     content (54) = "to make it easier to share things with people you know..."
+169,166  p
+     content (126) = "We will ask for your consent before using information for a purpose other than those that are set out in this Privacy Policy.
+..."
+170,169  p
+     content (186) = "Google processes personal information on our servers in many countries around the world. We may process your personal information on a server located outside the country where you live.
+..."
+171,170  h2
+     id = infochoices
+     content (23) = "Transparency and choice..."
+172,170  p
+     content (183) = "People have different privacy concerns. Our goal is to be clear about what information we collect, so that you can make meaningful choices about how it is used. For example, you can:
+..."
+173,172  ul
+     content (1) = "
+..."
+174,173  li
+     content (84) = "certain types of information tied to your Google Account by using Google Dashboard.
+..."
+175,174  a
+     href = https://www.google.com/dashboard/?hl=en
+     content (18) = "Review and control..."
+176,174  li
+     content (205) = "your preferences about the ads shown to you on Google and across the web, such as which categories might interest you, using Ads Settings. You can also opt out of certain Google advertising services here.
+..."
+177,176  a
+     href = https://www.google.com/settings/ads/preferences?hl=en
+     content (13) = "View and edit..."
+178,176  li
+     content (77) = "to see and adjust how your Google Profile appears to particular individuals.
+..."
+179,178  a
+     href = http://support.google.com/accounts/bin/answer.py?hl=en&amp;answer=112783
+     content (14) = "Use our editor..."
+180,178  li
+     content (32) = "who you share information with.
+..."
+181,180  a
+     href = http://support.google.com/plus/bin/static.py?hl=en&amp;page=guide.cs&amp;guide=1257347
+     content (7) = "Control..."
+182,180  li
+     content (28) = "out of many of our services...."
+183,182  a
+     href = http://www.dataliberation.org/
+     content (16) = "Take information..."
+184,172  p
+     content (303) = "You may also set your browser to block all cookies, including cookies associated with our services, or to indicate when a cookie is being set by us. However, it’s important to remember that many of our services if your cookies are disabled. For example, we may not remember your language preferences.
+..."
+185,184  a
+     class = highlight
+     href = ../../policies/privacy/example/may-not-function-properly.html
+     id = may-not-function-properly
+     content (25) = "may not function properly..."
+186,184  h2
+     id = infosharing
+     content (21) = "Information you share..."
+187,184  p
+     content (225) = "Many of our services let you share information with others. Remember that when you share information publicly, it may be indexable by search engines, including Google. Our services provide you with different options on and .
+..."
+188,187  a
+     class = highlight
+     href = ../../policies/privacy/example/sharing.html
+     id = sharing
+     content (7) = "sharing..."
+189,187  a
+     class = highlight
+     href = ../../policies/privacy/example/removing-your-content.html
+     id = removing-your-content
+     content (21) = "removing your content..."
+190,187  h2
+     id = access
+     content (48) = "Accessing and updating your personal information..."
+191,187  p
+     content (356) = "Whenever you use our services, we aim to provide you with . If that information is wrong, we strive to give you ways to update it quickly or to delete it – unless we have to keep that information for legitimate business or legal purposes. When updating your personal information, we may ask you to verify your identity before we can act on your request.
+..."
+192,191  a
+     class = highlight
+     href = ../../policies/privacy/example/access-to-your-personal-information.html
+     id = access-to-your-personal-information
+     content (35) = "access to your personal information..."
+193,191  p
+     content (324) = "We may reject requests that are unreasonably repetitive, require disproportionate technical effort (for example, developing a new system or fundamentally changing an existing practice), risk the privacy of others, or would be extremely impractical (for instance, requests concerning information residing on backup systems).
+..."
+194,193  p
+     content (440) = "Where we can provide information access and correction, we will do so for free, except where it would require a disproportionate effort. We aim to maintain our services in a manner that protects information from accidental or malicious destruction. Because of this, after you delete information from our services, we may not immediately delete residual copies from our active servers and may not remove information from our backup systems.
+..."
+195,194  h2
+     id = nosharing
+     content (20) = "Information we share..."
+196,194  p
+     content (152) = "We do not share personal information with companies, organizations and individuals outside of Google unless one of the following circumstances applies:
+..."
+197,196  ul
+     content (1) = "
+..."
+198,197  li
+     content (1) = "
+..."
+199,198  p
+200,199  strong
+     content (17) = "With your consent..."
+201,199  p
+     content (185) = "We will share personal information with companies, organizations or individuals outside of Google when we have your consent to do so. We require opt-in consent for the sharing of any .
+..."
+202,201  a
+     href = ../../policies/privacy/key-terms/#toc-terms-sensitive-info
+     content (30) = "sensitive personal information..."
+203,201  li
+     content (1) = "
+..."
+204,203  p
+205,204  strong
+     content (26) = "With domain administrators..."
+206,204  p
+     content (308) = "If your Google Account is managed for you by a (for example, for Google Apps users) then your domain administrator and resellers who provide user support to your organization will have access to your Google Account information (including your email and other data). Your domain administrator may be able to:
+..."
+207,206  a
+     href = http://support.google.com/a/bin/answer.py?hl=en&amp;answer=178897
+     content (20) = "domain administrator..."
+208,206  ul
+     content (1) = "
+..."
+209,208  li
+     content (92) = "view statistics regarding your account, like statistics regarding applications you install.
+..."
+210,209  li
+     content (30) = "change your account password.
+..."
+211,210  li
+     content (42) = "suspend or terminate your account access.
+..."
+212,211  li
+     content (61) = "access or retain information stored as part of your account.
+..."
+213,212  li
+     content (83) = "receive your account information in order to satisfy applicable law, regulation, .
+..."
+214,213  a
+     class = highlight
+     href = ../../policies/privacy/example/legal-process.html
+     id = legal-process
+     content (49) = "legal process or enforceable governmental request..."
+215,213  li
+     content (72) = "restrict your ability to delete or edit information or privacy settings...."
+216,206  p
+     content (83) = "Please refer to your domain administrator’s privacy policy for more information.
+..."
+217,216  li
+     content (1) = "
+..."
+218,217  p
+219,218  strong
+     content (23) = "For external processing..."
+220,218  p
+     content (233) = "We provide personal information to our or other trusted businesses or persons to process it for us, based on our instructions and in compliance with our Privacy Policy and any other appropriate confidentiality and security measures.
+..."
+221,220  a
+     href = ../../policies/privacy/key-terms/#toc-terms-affiliates
+     content (10) = "affiliates..."
+222,220  li
+     content (1) = "
+..."
+223,222  p
+224,223  strong
+     content (17) = "For legal reasons..."
+225,223  p
+     content (221) = "We will share personal information with companies, organizations or individuals outside of Google if we have a good-faith belief that access, use, preservation or disclosure of the information is reasonably necessary to:
+..."
+226,225  ul
+     content (1) = "
+..."
+227,226  li
+     content (88) = "meet any applicable law, regulation, legal process or enforceable governmental request.
+..."
+228,227  li
+     content (86) = "enforce applicable Terms of Service, including investigation of potential violations.
+..."
+229,228  li
+     content (75) = "detect, prevent, or otherwise address fraud, security or technical issues.
+..."
+230,229  li
+     content (122) = "protect against harm to the rights, property or safety of Google, our users or the public as required or permitted by law...."
+231,196  p
+     content (172) = ", publicly and with our partners – like publishers, advertisers or connected sites. For example, we may share information publicly about the general use of our services.
+..."
+232,231  a
+     class = highlight
+     href = ../../policies/privacy/example/we-may-share-aggregated.html
+     id = we-may-share-aggregated
+     content (23) = "We may share aggregated..."
+233,231  a
+     href = ../../policies/privacy/key-terms/#toc-terms-info
+     content (39) = "non-personally identifiable information..."
+234,231  a
+     class = highlight
+     href = ../../policies/privacy/example/to-show-trends.html
+     id = to-show-trends
+     content (14) = "to show trends..."
+235,231  p
+     content (261) = "If Google is involved in a merger, acquisition or asset sale, we will continue to ensure the confidentiality of any personal information and give affected users notice before personal information is transferred or becomes subject to a different privacy policy.
+..."
+236,235  h2
+     id = infosecurity
+     content (20) = "Information security..."
+237,235  p
+     content (166) = "We work hard to protect Google and our users from unauthorized access to or unauthorized alteration, disclosure or destruction of information we hold. In particular:
+..."
+238,237  ul
+     content (1) = "
+..."
+239,238  li
+     content (34) = "We encrypt many of our services .
+..."
+240,239  a
+     href = http://support.google.com/websearch/bin/answer.py?answer=173733&amp;en
+     content (9) = "using SSL..."
+241,239  li
+     content (74) = "We offer you when you access your Google Account, and a in Google Chrome.
+..."
+242,241  a
+     href = //www.google.com/intl/en/landing/2step/
+     content (21) = "two step verification..."
+243,241  a
+     href = http://www.google.com/chrome/intl/en/more/security.html
+     content (21) = "Safe Browsing feature..."
+244,241  li
+     content (159) = "We review our information collection, storage and processing practices, including physical security measures, to guard against unauthorized access to systems.
+..."
+245,244  li
+     content (298) = "We restrict access to personal information to Google employees, contractors and agents who need to know that information in order to process it for us, and who are subject to strict contractual confidentiality obligations and may be disciplined or terminated if they fail to meet these obligations...."
+246,237  h2
+     id = application
+     content (32) = "When this Privacy Policy applies..."
+247,237  p
+     content (274) = "Our Privacy Policy applies to all of the services offered by Google Inc. and its affiliates, including services offered on other sites (such as our advertising services), but excludes services that have separate privacy policies that do not incorporate this Privacy Policy.
+..."
+248,247  p
+     content (463) = "Our Privacy Policy does not apply to services offered by other companies or individuals, including products or sites that may be displayed to you in search results, sites that may include Google services, or other sites linked from our services. Our Privacy Policy does not cover the information practices of other companies and organizations who advertise our services, and who may use cookies, pixel tags and other technologies to serve and offer relevant ads.
+..."
+249,248  h2
+     id = enforcement
+     content (54) = "Compliance and cooperation with regulatory authorities..."
+250,248  p
+     content (407) = "We regularly review our compliance with our Privacy Policy. We also adhere to several . When we receive formal written complaints, we will contact the person who made the complaint to follow up. We work with the appropriate regulatory authorities, including local data protection authorities, to resolve any complaints regarding the transfer of personal data that we cannot resolve with our users directly.
+..."
+251,250  a
+     href = ../../policies/privacy/frameworks/
+     content (26) = "self regulatory frameworks..."
+252,250  h2
+     id = policychanges
+     content (7) = "Changes..."
+253,250  p
+     content (435) = "Our Privacy Policy may change from time to time. We will not reduce your rights under this Privacy Policy without your explicit consent. We will post any privacy policy changes on this page and, if the changes are significant, we will provide a more prominent notice (including, for certain services, email notification of privacy policy changes). We will also keep prior versions of this Privacy Policy in an archive for your review.
+..."
+254,253  h2
+     id = products
+     content (26) = "Specific product practices..."
+255,253  p
+     content (128) = "The following notices explain specific privacy practices with respect to certain Google products and services that you may use:
+..."
+256,255  ul
+     content (1) = "
+..."
+257,256  li
+258,257  a
+     href = http://www.google.com/chrome/intl/en/privacy.html
+     content (20) = "Chrome and Chrome OS..."
+259,257  li
+260,259  a
+     href = http://books.google.com/intl/en/googlebooks/privacy.html
+     content (5) = "Books..."
+261,259  li
+262,261  a
+     href = http://wallet.google.com/files/privacy.html?hl=en
+     content (6) = "Wallet..."
+263,261  li
+264,263  a
+     href = https://fiber.google.com/legal/privacy.html
+     content (5) = "Fiber..."
+265,255  h2
+     id = related
+     content (51) = "Other useful privacy and security related materials..."
+266,255  p
+     content (99) = "Further useful privacy and security related materials can be found through Google’s , including:
+..."
+267,266  a
+     href = ../../policies/
+     content (29) = "policies and principles pages..."
+268,266  ul
+     content (1) = "
+..."
+269,268  li
+     content (80) = "Information about our , which includes, among other things, more information on
+..."
+270,269  a
+     href = ../../policies/technologies/
+     content (27) = "technologies and principles..."
+271,269  ul
+     content (1) = "
+..."
+272,271  li
+     content (2) = ".
+..."
+273,272  a
+     href = ../../policies/technologies/cookies/
+     content (23) = "how Google uses cookies..."
+274,272  li
+     content (26) = "technologies we use for .
+..."
+275,274  a
+     href = ../../policies/technologies/ads/
+     content (11) = "advertising..."
+276,274  li
+     content (8) = "how we ...."
+277,276  a
+     href = ../../policies/technologies/pattern-recognition/
+     content (29) = "recognize patterns like faces..."
+278,269  li
+     content (129) = "A that explains what data is shared with Google when you visit websites that use our advertising, analytics and social products.
+..."
+279,278  a
+     href = ../../policies/privacy/partners/
+     content (4) = "page..."
+280,278  li
+     content (78) = "Google’s , which provides information on how to stay safe and secure online...."
+281,280  a
+     href = //www.google.com/intl/en/safetycenter/
+     content (13) = "safety center..."
+282,266  div
+     class = footnotes
+283,266  div
+     class = hidden example-summary
+     id = summary-access-to-your-personal-information
+     content (121) = "
+For example, with Google Dashboard you can quickly and easily see some of the data associated with your Google Account.
+..."
+284,283  h4
+     class = example
+     content (7) = "Example..."
+285,283  h2
+     class = example-title
+     content (37) = ""access to your personal information"..."
+286,283  div
+     class = learnmore
+287,286  a
+     href = example/access-to-your-personal-information.html
+     content (11) = "Learn more...."
+288,266  div
+     class = hidden example-summary
+     id = summary-ads-youll-find-most-useful
+     content (134) = "
+For example, if you frequently visit websites and blogs about gardening, you may see ads related to gardening as you browse the web.
+..."
+289,288  h4
+     class = example
+     content (7) = "Example..."
+290,288  h2
+     class = example-title
+     content (31) = ""ads you’ll find most useful"..."
+291,288  div
+     class = learnmore
+292,291  a
+     href = example/ads-youll-find-most-useful.html
+     content (11) = "Learn more...."
+293,266  div
+     class = hidden example-summary
+     id = summary-advertising-services
+     content (165) = "
+For example, if you frequently visit websites and blogs about gardening that show our ads, you may start to see ads related to this interest as you browse the web.
+..."
+294,293  h4
+     class = example
+     content (7) = "Example..."
+295,293  h2
+     class = example-title
+     content (22) = ""advertising services"..."
+296,293  div
+     class = learnmore
+297,296  a
+     href = example/advertising-services.html
+     content (11) = "Learn more...."
+298,266  div
+     class = hidden example-summary
+     id = summary-collect-information
+     content (179) = "
+This includes information like your usage data and preferences, Gmail messages, G+ profile, photos, videos, browsing history, map searches, docs, or other Google-hosted content.
+..."
+299,298  h4
+     class = example
+     content (7) = "Example..."
+300,298  h2
+     class = example-title
+     content (21) = ""collect information"..."
+301,298  div
+     class = learnmore
+302,301  a
+     href = example/collect-information.html
+     content (11) = "Learn more...."
+303,266  div
+     class = hidden example-summary
+     id = summary-combine-personal-information
+     content (291) = "
+For example, when you’re signed in to your Google Account and search on Google, you can see search results from the public web, along with pages, photos, and Google+ posts from your friends and people who know you or follow you on Google+ may see your posts and profile in their results.
+..."
+304,303  h4
+     class = example
+     content (7) = "Example..."
+305,303  h2
+     class = example-title
+     content (124) = ""combine personal information from one service with information, including personal information, from other Google services"..."
+306,303  div
+     class = learnmore
+307,306  a
+     href = example/combine-personal-information.html
+     content (11) = "Learn more...."
+308,266  div
+     class = hidden example-summary
+     id = summary-connect-with-people
+     content (264) = "
+For example, you could get suggestions of people you might know or want to connect with on Google+, based on the connections you have with people on other Google products, like Gmail and people who have a connection with you may see your profile as a suggestion.
+..."
+309,308  h4
+     class = example
+     content (7) = "Example..."
+310,308  h2
+     class = example-title
+     content (21) = ""connect with people"..."
+311,308  div
+     class = learnmore
+312,311  a
+     href = example/connect-with-people.html
+     content (11) = "Learn more...."
+313,266  div
+     class = hidden example-summary
+     id = summary-credit-card
+     content (311) = "
+Whilst we currently don’t ask for a credit card during sign up, verifying your age through a small credit card transaction is one way to confirm that you meet our age requirements in case your account was disabled after you have entered a birthday indicating you are not old enough to have a Google Account.
+..."
+314,313  h4
+     class = example
+     content (7) = "Example..."
+315,313  h2
+     class = example-title
+     content (13) = ""credit card"..."
+316,313  div
+     class = learnmore
+317,316  a
+     href = example/credit-card.html
+     content (11) = "Learn more...."
+318,266  div
+     class = hidden example-summary
+     id = summary-develop-new-ones
+     content (140) = "
+For example, Google’s spell checking software was developed by analyzing previous searches where users had corrected their own spelling.
+..."
+319,318  h4
+     class = example
+     content (7) = "Example..."
+320,318  h2
+     class = example-title
+     content (18) = ""develop new ones"..."
+321,318  div
+     class = learnmore
+322,321  a
+     href = example/develop-new-ones.html
+     content (11) = "Learn more...."
+323,266  div
+     class = hidden example-summary
+     id = summary-device-identifiers
+     content (206) = "
+Device identifiers let Google know which unique device you are using to access our services, which can be used to customise our service to your device or analyse any device issues related to our services.
+..."
+324,323  h4
+     class = example
+     content (7) = "Example..."
+325,323  h2
+     class = example-title
+     content (20) = ""device identifiers"..."
+326,323  div
+     class = learnmore
+327,326  a
+     href = example/device-identifiers.html
+     content (11) = "Learn more...."
+328,266  div
+     class = hidden example-summary
+     id = summary-device-specific-information
+     content (179) = "
+For example, when you visit Google Play from your desktop, Google can use this information to help you decide on which devices you'd like your purchases to be available for use.
+..."
+329,328  h4
+     class = example
+     content (7) = "Example..."
+330,328  h2
+     class = example-title
+     content (29) = ""device-specific information"..."
+331,328  div
+     class = learnmore
+332,331  a
+     href = example/device-specific-information.html
+     content (11) = "Learn more...."
+333,266  div
+     class = hidden example-summary
+     id = summary-improve-your-user-experience
+     content (80) = "
+For example, cookies allow us to analyse how users interact with our services.
+..."
+334,333  h4
+     class = example
+     content (7) = "Example..."
+335,333  h2
+     class = example-title
+     content (30) = ""improve your user experience"..."
+336,333  div
+     class = learnmore
+337,336  a
+     href = example/improve-your-user-experience.html
+     content (11) = "Learn more...."
+338,266  div
+     class = hidden example-summary
+     id = summary-legal-process
+     content (157) = "
+Like other technology and communications companies, Google regularly receives requests from governments and courts around the world to hand over user data.
+..."
+339,338  h4
+     class = example
+     content (7) = "Example..."
+340,338  h2
+     class = example-title
+     content (51) = ""legal process or enforceable governmental request"..."
+341,338  div
+     class = learnmore
+342,341  a
+     href = example/legal-process.html
+     content (11) = "Learn more...."
+343,266  div
+     class = hidden example-summary
+     id = summary-may-collect-and-process-information
+     content (77) = "
+For example, Google Maps can center the maps view on your current location.
+..."
+344,343  h4
+     class = example
+     content (7) = "Example..."
+345,343  h2
+     class = example-title
+     content (64) = ""may collect and process information about your actual location"..."
+346,343  div
+     class = learnmore
+347,346  a
+     href = example/may-collect-and-process-information.html
+     content (11) = "Learn more...."
+348,266  div
+     class = hidden example-summary
+     id = summary-may-not-function-properly
+     content (121) = "
+For example, we use a cookie called ‘lbcs’ which makes it possible for you to open many Google Docs in one browser.
+..."
+349,348  h4
+     class = example
+     content (7) = "Example..."
+350,348  h2
+     class = example-title
+     content (27) = ""may not function properly"..."
+351,348  div
+     class = learnmore
+352,351  a
+     href = example/may-not-function-properly.html
+     content (11) = "Learn more...."
+353,266  div
+     class = hidden example-summary
+     id = summary-phone-number
+     content (164) = "
+For example, if you add a phone number as a recovery option, if you forget your password Google can send you a text message with a code to enable you to reset it.
+..."
+354,353  h4
+     class = example
+     content (7) = "Example..."
+355,353  h2
+     class = example-title
+     content (14) = ""phone number"..."
+356,353  div
+     class = learnmore
+357,356  a
+     href = example/phone-number.html
+     content (11) = "Learn more...."
+358,266  div
+     class = hidden example-summary
+     id = summary-protect-google-and-our-users
+     content (272) = "
+For example, if you're concerned about unauthorized access to your email, "Last account activity" in Gmail shows you information about recent activity in your email, such as the IP addresses that accessed your mail, the associated location, as well as the time and date.
+..."
+359,358  h4
+     class = example
+     content (7) = "Example..."
+360,358  h2
+     class = example-title
+     content (30) = ""protect Google and our users"..."
+361,358  div
+     class = learnmore
+362,361  a
+     href = example/protect-google-and-our-users.html
+     content (11) = "Learn more...."
+363,266  div
+     class = hidden example-summary
+     id = summary-sharing
+     content (69) = "
+For example, with Google+, you have many different sharing options.
+..."
+364,363  h4
+     class = example
+     content (7) = "Example..."
+365,363  h2
+     class = example-title
+     content (9) = ""sharing"..."
+366,363  div
+     class = learnmore
+367,366  a
+     href = example/sharing.html
+     content (11) = "Learn more...."
+368,266  div
+     class = hidden example-summary
+     id = summary-sharing-with-others
+     content (130) = "
+For example, if someone is already a contact, Google will autocomplete their name if you want to add them to a message in Gmail.
+..."
+369,368  h4
+     class = example
+     content (7) = "Example..."
+370,368  h2
+     class = example-title
+     content (40) = ""sharing with others quicker and easier"..."
+371,368  div
+     class = learnmore
+372,371  a
+     href = example/sharing-with-others.html
+     content (11) = "Learn more...."
+373,266  div
+     class = hidden example-summary
+     id = summary-the-people-who-matter-most
+     content (152) = "
+For example, when you type an address in the To, Cc, or Bcc field of a message you're composing, Gmail will suggest addresses from your Contacts list.
+..."
+374,373  h4
+     class = example
+     content (7) = "Example..."
+375,373  h2
+     class = example-title
+     content (42) = ""the people who matter most to you online"..."
+376,373  div
+     class = learnmore
+377,376  a
+     href = example/the-people-who-matter-most.html
+     content (11) = "Learn more...."
+378,266  div
+     class = hidden example-summary
+     id = summary-to-make-it-easier-to-share
+     content (237) = "
+For example, if you have communicated with someone via Gmail and want to add them to a Google Doc or an event in Google Calendar, Google makes it easy to do so by autocompleting their email address when you start to type in their name.
+..."
+379,378  h4
+     class = example
+     content (7) = "Example..."
+380,378  h2
+     class = example-title
+     content (56) = ""to make it easier to share things with people you know"..."
+381,378  div
+     class = learnmore
+382,381  a
+     href = example/to-make-it-easier-to-share.html
+     content (11) = "Learn more...."
+383,266  div
+     class = hidden example-summary
+     id = summary-view-and-interact-with-our-ads
+     content (227) = "
+For example, we regularly report to advertisers on whether we served their ad to a page and whether that ad was likely to be seen by users (as opposed to, for example, being on part of the page to which users did not scroll).
+..."
+384,383  h4
+     class = example
+     content (7) = "Example..."
+385,383  h2
+     class = example-title
+     content (32) = ""view and interact with our ads"..."
+386,383  div
+     class = learnmore
+387,386  a
+     href = example/view-and-interact-with-our-ads.html
+     content (11) = "Learn more...."
+388,266  div
+     class = hidden example-summary
+     id = summary-we-may-share-aggregated
+     content (129) = "
+When lots of people start searching for something, it can provide very useful information about particular trends at that time.
+..."
+389,388  h4
+     class = example
+     content (7) = "Example..."
+390,388  h2
+     class = example-title
+     content (75) = ""We may share aggregated, non-personally identifiable information publicly"..."
+391,388  div
+     class = learnmore
+392,391  a
+     href = example/we-may-share-aggregated.html
+     content (11) = "Learn more...."
+393,266  div
+     class = hidden example-summary
+     id = summary-more-relevant-search-results
+     content (1) = "
+..."
+394,393  h4
+     class = example
+     content (7) = "Example..."
+395,393  h2
+     class = example-title
+     content (30) = ""more relevant search results"..."
+396,393  p
+     content (134) = "For example, we can make search more relevant and interesting for you by including photos, posts, and more from you and your friends.
+..."
+397,396  p
+398,397  a
+     href = ../../policies/privacy/example/more-relevant-search-results.html
+     content (10) = "Learn more..."
+399,266  div
+     class = hidden example-summary
+     id = summary-removing-your-content
+     content (1) = "
+..."
+400,399  h4
+     class = example
+     content (7) = "Example..."
+401,399  h2
+     class = example-title
+     content (23) = ""removing your content"..."
+402,399  p
+     content (45) = "For example, you can delete your , , , , or ...."
+403,402  a
+     href = //support.google.com/websearch/answer/465?hl=en
+     content (11) = "Web History..."
+404,402  a
+     href = //support.google.com/blogger/answer/41387?hl=en
+     content (9) = "your blog..."
+405,402  a
+     href = //support.google.com/sites/answer/90598?hl=en
+     content (21) = "a Google Site you own..."
+406,402  a
+     href = //support.google.com/youtube/answer/55759?hl=en
+     content (20) = "your YouTube Channel..."
+407,402  a
+     href = //support.google.com/plus/answer/1044503?hl=en
+     content (20) = "your Google+ profile..."
+408,402  a
+     href = //support.google.com/accounts/answer/32046?hl=en
+     content (26) = "your entire Google account..."
+409,266  div
+     class = hidden example-summary
+     id = summary-to-show-trends
+     content (1) = "
+..."
+410,409  h4
+     class = example
+     content (7) = "Example..."
+411,409  h2
+     class = example-title
+     content (16) = ""to show trends"..."
+412,409  p
+     content (34) = "You can see some of these at and ...."
+413,412  a
+     href = //www.google.com/trends/
+     content (13) = "Google Trends..."
+414,412  a
+     href = //www.youtube.com/trendsmap
+     content (14) = "YouTube Trends..."
+415,10  div
+     id = maia-signature
+416,10  div
+     class = maia-footer
+     id = maia-footer
+     content (1) = "
+..."
+417,416  div
+     id = maia-footer-local
+     content (1) = "
+..."
+418,417  div
+     class = maia-aux
+     content (1) = "
+..."
+419,418  div
+     class = policy-footer-sitemap
+     content (1) = "
+..."
+420,419  div
+     class = maia-cols
+     content (1) = "
+..."
+421,420  div
+     class = maia-col-3
+     content (1) = "
+..."
+422,421  h3
+     content (20) = "Google Safety Center..."
+423,421  ul
+     content (1) = "
+..."
+424,423  li
+     content (1) = "
+..."
+425,424  p
+     content (62) = "Keeping the web safe for everyone is a shared responsibility. ..."
+426,425  a
+     href = ../../safetycenter/families/start/
+     content (65) = "Learn what you can do to protect yourself and your family online...."
+427,420  div
+     class = maia-col-3
+     content (1) = "
+..."
+428,427  h3
+     content (18) = "Our legal policies..."
+429,427  ul
+     content (1) = "
+..."
+430,429  li
+     content (15) = "Privacy Policy
+..."
+431,430  li
+432,431  a
+     href = ../../policies/terms/
+     content (16) = "Terms of Service..."
+433,431  li
+434,433  a
+     href = ../../policies/faq/
+     content (3) = "FAQ..."
+435,420  div
+     class = maia-col-6
+     content (1) = "
+..."
+436,435  h3
+     content (16) = "More information..."
+437,435  ul
+     content (1) = "
+..."
+438,437  li
+439,438  a
+     href = ../../policies/technologies/
+     content (27) = "Technologies and Principles..."
+440,438  li
+441,440  a
+     href = ../../policies/technologies/ads/
+     content (11) = "Advertising..."
+442,440  li
+443,442  a
+     href = ../../policies/technologies/cookies/
+     content (23) = "How Google uses cookies..."
+444,442  li
+445,444  a
+     href = ../../policies/technologies/pattern-recognition/
+     content (35) = "How Google uses pattern recognition..."
+446,444  li
+447,446  a
+     href = ../../policies/technologies/location-data/
+     content (37) = "Types of location data used by Google..."
+448,446  li
+449,448  a
+     href = ../../policies/technologies/wallet/
+     content (42) = "How Google Wallet uses credit card numbers..."
+450,448  li
+451,450  a
+     href = ../../policies/technologies/voice/
+     content (22) = "How Google Voice works..."
+452,450  li
+453,452  a
+     href = ../../policies/privacy/partners/
+     content (61) = "How Google uses data when you use our partners' sites or apps..."
+454,416  div
+     id = maia-footer-global
+     content (1) = "
+..."
+455,454  div
+     class = maia-aux
+     content (1) = "
+..."
+456,455  div
+     class = maia-locales
+457,456  label
+458,457  span
+     content (16) = "Change language:..."
+459,457  select
+     onchange = var href=this[this.selectedIndex].value;if(href!=''){window.location.href=href};
+     content (1) = "
+..."
+460,459  option
+     value = /intl/af/policies/privacy/
+     content (10) = "Afrikaans
+..."
+461,460  option
+     value = /intl/id/policies/privacy/
+     content (17) = "Bahasa Indonesia
+..."
+462,461  option
+     value = /intl/ms/policies/privacy/
+     content (14) = "Bahasa Melayu
+..."
+463,462  option
+     value = /intl/ca/policies/privacy/
+     content (8) = "Català
+..."
+464,463  option
+     value = /intl/cs/policies/privacy/
+     content (10) = "Čeština
+..."
+465,464  option
+     value = /intl/da/policies/privacy/
+     content (6) = "Dansk
+..."
+466,465  option
+     value = /intl/de/policies/privacy/
+     content (8) = "Deutsch
+..."
+467,466  option
+     value = /intl/et/policies/privacy/
+     content (6) = "Eesti
+..."
+468,467  option
+     selected = 
+     value = /intl/en/policies/privacy/
+     content (8) = "English
+..."
+469,468  option
+     value = /intl/en-GB/policies/privacy/
+     content (25) = "English (United Kingdom)
+..."
+470,469  option
+     value = /intl/es/policies/privacy/
+     content (9) = "Español
+..."
+471,470  option
+     value = /intl/es-419/policies/privacy/
+     content (26) = "Español (Latinoamérica)
+..."
+472,471  option
+     value = /intl/eu/policies/privacy/
+     content (8) = "Euskara
+..."
+473,472  option
+     value = /intl/fil/policies/privacy/
+     content (9) = "Filipino
+..."
+474,473  option
+     value = /intl/fr/policies/privacy/
+     content (10) = "Français
+..."
+475,474  option
+     value = /intl/fr-CA/policies/privacy/
+     content (19) = "Français (Canada)
+..."
+476,475  option
+     value = /intl/gl/policies/privacy/
+     content (7) = "Galego
+..."
+477,476  option
+     value = /intl/hr/policies/privacy/
+     content (9) = "Hrvatski
+..."
+478,477  option
+     value = /intl/zu/policies/privacy/
+     content (8) = "Isizulu
+..."
+479,478  option
+     value = /intl/is/policies/privacy/
+     content (10) = "Íslenska
+..."
+480,479  option
+     value = /intl/it/policies/privacy/
+     content (9) = "Italiano
+..."
+481,480  option
+     value = /intl/sw/policies/privacy/
+     content (10) = "Kiswahili
+..."
+482,481  option
+     value = /intl/lv/policies/privacy/
+     content (10) = "Latviešu
+..."
+483,482  option
+     value = /intl/lt/policies/privacy/
+     content (10) = "Lietuvių
+..."
+484,483  option
+     value = /intl/hu/policies/privacy/
+     content (7) = "Magyar
+..."
+485,484  option
+     value = /intl/nl/policies/privacy/
+     content (11) = "Nederlands
+..."
+486,485  option
+     value = /intl/no/policies/privacy/
+     content (6) = "Norsk
+..."
+487,486  option
+     value = /intl/pl/policies/privacy/
+     content (7) = "Polski
+..."
+488,487  option
+     value = /intl/pt-BR/policies/privacy/
+     content (20) = "Português (Brasil)
+..."
+489,488  option
+     value = /intl/pt-PT/policies/privacy/
+     content (22) = "Português (Portugal)
+..."
+490,489  option
+     value = /intl/ro/policies/privacy/
+     content (9) = "Română
+..."
+491,490  option
+     value = /intl/sk/policies/privacy/
+     content (12) = "Slovenčina
+..."
+492,491  option
+     value = /intl/sl/policies/privacy/
+     content (14) = "Slovenščina
+..."
+493,492  option
+     value = /intl/fi/policies/privacy/
+     content (6) = "Suomi
+..."
+494,493  option
+     value = /intl/sv/policies/privacy/
+     content (8) = "Svenska
+..."
+495,494  option
+     value = /intl/vi/policies/privacy/
+     content (15) = "Tiếng Việt
+..."
+496,495  option
+     value = /intl/tr/policies/privacy/
+     content (9) = "Türkçe
+..."
+497,496  option
+     value = /intl/el/policies/privacy/
+     content (17) = "Ελληνικά
+..."
+498,497  option
+     value = /intl/bg/policies/privacy/
+     content (19) = "Български
+..."
+499,498  option
+     value = /intl/ru/policies/privacy/
+     content (15) = "Русский
+..."
+500,499  option
+     value = /intl/sr/policies/privacy/
+     content (13) = "Српски
+..."
+501,500  option
+     value = /intl/uk/policies/privacy/
+     content (21) = "Українська
+..."
+502,501  option
+     value = /intl/iw/policies/privacy/
+     content (17) = "‫עברית‬
+..."
+503,502  option
+     value = /intl/ur/policies/privacy/
+     content (15) = "‫اردو‬
+..."
+504,503  option
+     value = /intl/ar/policies/privacy/
+     content (21) = "‫العربية‬
+..."
+505,504  option
+     value = /intl/fa/policies/privacy/
+     content (17) = "‫فارسی‬
+..."
+506,505  option
+     value = /intl/am/policies/privacy/
+     content (13) = "አማርኛ
+..."
+507,506  option
+     value = /intl/mr/policies/privacy/
+     content (16) = "मराठी
+..."
+508,507  option
+     value = /intl/hi/policies/privacy/
+     content (19) = "हिन्दी
+..."
+509,508  option
+     value = /intl/bn/policies/privacy/
+     content (16) = "বাংলা
+..."
+510,509  option
+     value = /intl/gu/policies/privacy/
+     content (22) = "ગુજરાતી
+..."
+511,510  option
+     value = /intl/ta/policies/privacy/
+     content (16) = "தமிழ்
+..."
+512,511  option
+     value = /intl/te/policies/privacy/
+     content (19) = "తెలుగు
+..."
+513,512  option
+     value = /intl/kn/policies/privacy/
+     content (16) = "ಕನ್ನಡ
+..."
+514,513  option
+     value = /intl/ml/policies/privacy/
+     content (19) = "മലയാളം
+..."
+515,514  option
+     value = /intl/th/policies/privacy/
+     content (10) = "ไทย
+..."
+516,515  option
+     value = /intl/ko/policies/privacy/
+     content (10) = "한국어
+..."
+517,516  option
+     value = /intl/zh-HK/policies/privacy/
+     content (16) = "中文 (香港)
+..."
+518,517  option
+     value = /intl/zh-CN/policies/privacy/
+     content (25) = "中文（简体中文）
+..."
+519,518  option
+     value = /intl/zh-TW/policies/privacy/
+     content (25) = "中文（繁體中文）
+..."
+520,519  option
+     value = /intl/ja/policies/privacy/
+     content (9) = "日本語..."
+521,455  ul
+     content (1) = "
+..."
+522,521  li
+523,522  a
+     href = /
+     content (6) = "Google..."
+524,522  li
+525,524  a
+     href = /intl/en/about/
+     content (12) = "About Google..."
+526,524  li
+527,526  a
+     href = /intl/en/policies/
+     content (19) = "Privacy &amp; Terms..."
+528,10  script
+     src = /policies/js/policies.min.js
+     content (1) = "
+..."
+529,10  script
+     src = //www.google.com/js/maia.js
+     content (1) = "
+..."
