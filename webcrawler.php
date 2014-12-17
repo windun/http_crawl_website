@@ -38,16 +38,66 @@
 </head>
 <body style="background-color: #171717">
 <div id="container"></div>
+<script src="jquery-2.1.1.min.js"></script>
 <script src="sigma.min.js"></script>
 <script src="sigma.parsers.json.min.js"></script>
 <script src="sigma.layout.forceAtlas2.min.js"></script>
 <script>
-	function scrollElementToEnd (element) {
-		if (typeof element.scrollTop != 'undefined' &&
-		typeof element.scrollHeight != 'undefined') {
-			element.scrollTop = element.scrollHeight;
-		}
-	}
+
+	$(document).ready(function()
+	{
+		$('#refresh_submit').on('vclick', function()
+		{
+			event.preventDefault();
+
+			$(".ui-loader").show(); 
+			$.ajax(
+			{
+				type: 'POST',
+				url: 'url',
+				data: 'data',
+				dataType: "json",
+				success: function(data) 
+				{
+					alert('Form successfully submitted!');
+					$("#content")[0].reset();
+					$("#myForm")[0].reset();
+					$(".ui-loader").hide();
+				}
+			});
+		});
+	});
+/*
+		$(document).ready(function()
+		{
+			$.ajaxSetup(
+			{
+				cache: false,
+				beforeSend: function()
+				{
+					$('#content').hide();
+					$('#loading').show();
+				},
+				complete: function()
+				{
+					$('#loading').hide();
+					$('#content').show();
+				},
+				success: function()
+				{
+					$('#loading').hide();
+					$('#content').show();
+				}
+			});
+			var $container = $("#content");
+			$container.load("console.php");
+			//var refreshId = setInterval(function()
+			//{
+				$container.load('console.php');
+			//}, 9000);
+		});
+	})(jQuery);*/
+
    // Create new Sigma instance in graph-container div (use your div name here) 
   	sigma.parsers.json(
 		'out_graph.json', 
@@ -82,6 +132,9 @@
 <table>
 	<tr>
 		<td width="30%">
+			<form name="refresh" method="POST" id="refresh_form">
+				<input id="refresh_submit" type="Submit" value="Refresh">
+			</form>
 			<form name="crawl_form" method="POST" action="webcrawler.php">
 				<input width="60%" type="text" value="" name="crawl_url[]"/>
 				<input width="60%" type="text" value="" name="crawl_url[]"/>
@@ -96,34 +149,20 @@
 			</select>
 		</td>
 		<td width="70%">
-			<textarea name="textareaName" rows="10" cols="80">
-				<?php
-	
-					ob_implicit_flush(true);
-
-					set_time_limit(0);
-
-					$file_name = "out".$INSTANCE.".txt";
-					$file = file($file_name);
-					echo "Running: ".$cmd."\r\n";
-					echo "Output[".count($file)."]:\n\n";
-
-					// Print out the file
-					for($i = 0/*count($file)-6*/; $i < count($file); $i++)
-					{
-						ob_start();
-						echo $file[$i] . "\n";
-						ob_end_flush();
-						ob_flush();
-						usleep(100000);
-					}
-
-				?>
-			</textarea>
+			<div id="content" style="width: 600px; height: 150px; overflow: scroll;">
+				<?php include_once('console.php'); ?>
+			</div>
+			<div id="loading">Loading</div>
 		</td>
 	
 	</tr>
 </table>
-
 </body>
+<script>
+	window.setInterval(function()
+	{
+		var objDiv = document.getElementById("content");
+		objDiv.scrollTop = objDiv.scrollHeight;
+	}, 200);
+</script>
 </html>
