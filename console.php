@@ -37,4 +37,5 @@ if (is_resource($process)) {
     }
 }
 echo "</pre>";
+proc_close($process);
 ?>

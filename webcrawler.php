@@ -4,7 +4,7 @@
 	$INSTANCE = 1;
 	$OPT=0;
 	//$stdout = fopen('php://stdout', 'w');
-	if(isset($_POST['crawl_url'][0]))
+	if(!empty($_POST['crawl_url'][0]))
 	{
 		$OPT = 1;
 		$crawl_url = $_POST['crawl_url'][0];
@@ -13,7 +13,7 @@
 		$cmd = "./crawl $crawl_url $crawl_depth > out".$INSTANCE.".txt &";
 		exec($cmd);
 	}
-	else if(isset($_POST['query']))
+	else if(!empty($_POST['query']))
 	{
 		$OPT = 2;
 		$query = $_POST['query'];
@@ -46,12 +46,12 @@
 <table width="300px">
 	<tr>
 		<td width="100%" height="100%">
-			<form name="crawl_form" method="POST" action="webcrawler.php">
+			<form name="crawl_form" method="post" action="webcrawler.php">
 				<input size="15" type="text" value="" name="crawl_url[]"/>
 				<input size="4" type="text" value="" name="crawl_url[]"/>
 				<input size="10" type="Submit" value="url ->" name="crawl_submit"/>
 			</form>
-			<form name="query_form"thod="POST" action="webcrawler.php">
+			<form name="query_form" method="post" action="webcrawler.php">
 				<input type="text" value="" name="query"/>
 				<input type="Submit" value="query ->" name="query_submit"/>
 			</form>
