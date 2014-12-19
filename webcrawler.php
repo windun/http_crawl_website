@@ -13,7 +13,7 @@ header('Expires: 0'); // Proxies.
 		$crawl_url = $_POST['crawl_url'][0];
 		$crawl_depth = $_POST['crawl_url'][1];
 		$cmd = "./crawl $crawl_url $crawl_depth > out".$INSTANCE.".txt 2>&1 &";
-		exec("rm out_graph*.json; $cmd");
+		exec("rm out*.txt out_graph.json; $cmd");
 	}
 	else if(!empty($_POST['query']))
 	{
@@ -21,7 +21,7 @@ header('Expires: 0'); // Proxies.
 		$query = $_POST['query'][0];
 		$query_format = $_POST['query'][1];
 		$cmd = "./crawl -q \"$query\" \"$query_format\" > out".$INSTANCE.".txt 2>&1 &";
-		exec("rm out_graph*.json; $cmd");
+		exec("rm out*.txt out_graph.json; $cmd");
 	}
 	else if(!empty($_POST['s_values']))
 	{
@@ -30,7 +30,7 @@ header('Expires: 0'); // Proxies.
 		$IDLABELPROPERTIES = $_POST['s_values'][1];
 		$PROPERTY = $_POST['s_values'][2];
 		$VALUE = $_POST['s_values'][3];
-		$cmd = "rm out_graph*.json; ./crawl -pq $EDGENODE $IDLABELPROPERTIES '$PROPERTY' '$VALUE' > out".$INSTANCE.".txt 2>&1 &";
+		$cmd = "rm out*.txt out_graph.json; ./crawl -pq $EDGENODE $IDLABELPROPERTIES '$PROPERTY' '$VALUE' > out".$INSTANCE.".txt 2>&1 &";
 		exec($cmd);
 	}
 ?>
@@ -56,6 +56,8 @@ header('Expires: 0'); // Proxies.
 <body style="background-color: #e9e9e9">
 <table width="300px" id="side_panel">
 	<tr>
+		<div id="instance_value"><?php echo $INSTANCE; ?></div>
+		<div id="instance_value_recv"></div>
 		<td width="100%">
 			<div id="raw_queries" style="padding: 2px; box-shadow: 0px 2px 5px #888888;">
 				<form name="crawl_form" method="post" action="webcrawler.php">
@@ -147,7 +149,15 @@ header('Expires: 0'); // Proxies.
 	*/
   	function loadGraph () 
 	{
-		$('#container').empty();
+		//http://stackoverflow.com/questions/22543083/remove-all-the-instance-from-sigma-js
+		var g = document.querySelector('#container');
+		var p = g.parentNode;
+		p.removeChild(g);
+		var c = document.createElement('div');
+		c.setAttribute('id', 'container');
+		p.appendChild(c);
+
+		//$('#container').empty();
 		sigma.parsers.json(
 			'out_graph.json', 	// must adjust permissions on this file,
 			{			// or it will not load
@@ -229,35 +239,37 @@ header('Expires: 0'); // Proxies.
 	$('#g_detail_graph').click(function () 
 	{
 		g_detail_mode = "graph";
+		refreshGraphInfo();
 		$('#g_detail_graph').css("border", "1px solid green");
 		$('#g_detail_row').css("border", "1px solid white");
 	});
 	$('#g_detail_row').click(function () 
 	{
 		g_detail_mode = "row";
+		refreshGraphInfo();
 		$('#g_detail_graph').css("border", "1px solid white");
 		$('#g_detail_row').css("border", "1px solid red");
 	});
 
-	setInterval(refreshInfo, 50);
+	setInterval(refreshInfo, 100);
 	function refreshInfo ()
 	{
 		if(!hover_over){refreshConsole();}
-		if(!hover_over_g_detail){refreshGraphInfo();}
+		//if(!hover_over_g_detail){refreshGraphInfo();}
 	}
 	function refreshConsole ()
 	{
-		$('#content').load('console.php');
+		var instance_value = $('#instance_value').text();
+		$('#content').load('console.php', {INSTANCE:instance_value});
 		var objDiv = document.getElementById("content");
 		objDiv.scrollTop = objDiv.scrollHeight;
 	}
-
 
 	function refreshGraphInfo ()
 	{
 		if(g_detail_mode == "graph")
 		{
-			$('#g_detail').load('out_graph.php');
+			$('#g_detail').load('out_graph.php?');
 			$('#g_detail').css("border", "1px solid green");
 		}
 		else if (g_detail_mode == "row")
@@ -265,8 +277,8 @@ header('Expires: 0'); // Proxies.
 			$('#g_detail').load('out_row.php');
 			$('#g_detail').css("border", "1px solid red");
 		}
-		var objDiv = document.getElementById("g_detail");
-		objDiv.scrollTop = objDiv.scrollHeight;
+		//var objDiv = document.getElementById("g_detail");
+		//objDiv.scrollTop = objDiv.scrollHeight;
 	}
 	
 	// http://stackoverflow.com/questions/16991341/js-json-parse-file-path

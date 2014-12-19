@@ -1,5 +1,5 @@
 <?php
-$INSTANCE = 1;
+$INSTANCE = $_POST['INSTANCE'];
 $cmd = "cat out".$INSTANCE.".txt";
 
 $descriptorspec = array(
