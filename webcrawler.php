@@ -1,4 +1,5 @@
 <?php
+header("Cache-Control: no-cache, must-revalidate");
 //header("Content-type: text/plain");
 
 	$INSTANCE = 1;
@@ -9,19 +10,22 @@
 		$OPT = 1;
 		$crawl_url = $_POST['crawl_url'][0];
 		$crawl_depth = $_POST['crawl_url'][1];
-		//exec("./crawl $crawl_url 0"." > out".$INSTANCE.".txt &");
-		$cmd = "./crawl $crawl_url $crawl_depth > out".$INSTANCE.".txt &";
+		$cmd = "./crawl $crawl_url $crawl_depth > out".$INSTANCE.".txt 2>&1 &";
 		exec($cmd);
 	}
 	else if(!empty($_POST['query']))
 	{
 		$OPT = 2;
 		$query = $_POST['query'];
-		//exec("./crawl -c \"$query\" \"graph\""." > out".$INSTANCE.".txt &");
-		$cmd = "./crawl -c \"$query\" \"graph\" > out".$INSTANCE.".txt &";
+		$cmd = "./crawl -c \"$query\" \"graph\" > out".$INSTANCE.".txt 2>&1 &";
 		exec($cmd);
 	}
-
+	else if(!empty($_POST['delete_request']))
+	{
+		$OPT = 3;
+		$cmd = "./crawl -c \"MATCH ()-[r]->(), (n) DELETE r,n\" \"graph\" > out".$INSTANCE.".txt 2>&1 &";
+		exec($cmd);
+	}
 ?>
 <html>
 <head>
@@ -30,7 +34,7 @@
 		position: absolute;
 		left: 300px;
 		top: 0px;
-		background-color: #212121;
+		background-color: #ffffff;
 		min-width: 700px;
 		height: 100%;
 		margin: auto;
@@ -38,36 +42,43 @@
 	BODY, TD, P {
 		font-family: arial,helvetica,sans-serif;
 		font-size: 10px;
-		color: #ffffff;
+		color: #333333;
 	}
 </style>	
 </head>
-<body style="background-color: #171717">
-<table width="300px">
+<body style="background-color: #e9e9e9">
+<table width="300px" id="side_panel">
 	<tr>
-		<td width="100%" height="100%">
+		<td width="100%">
 			<form name="crawl_form" method="post" action="webcrawler.php">
-				<input size="15" type="text" value="" name="crawl_url[]"/>
+				<input size="17" type="text" value="" name="crawl_url[]"/>
 				<input size="4" type="text" value="" name="crawl_url[]"/>
-				<input size="10" type="Submit" value="url ->" name="crawl_submit"/>
+				<input size="10" type="Submit" value="crawl" name="crawl_submit"/>
 			</form>
 			<form name="query_form" method="post" action="webcrawler.php">
-				<input type="text" value="" name="query"/>
-				<input type="Submit" value="query ->" name="query_submit"/>
+				<input size="20" type="text" value="" name="query"/>
+				<input size="10" type="Submit" value="run query" name="query_submit"/>
 			</form>
 			<select>
 				<option value="1">1</option>
 			</select>
 			<?php echo "[".$OPT."] ".$cmd; ?>
-			<div id="content" style="background-color: #212121; width: 280px; height: 400px; overflow: scroll;">
+			<div id="content" style="background-color: #ffffff; width: 280px; overflow: scroll;">
 				<?php 
 					include_once('console.php'); 
 				?>
 			</div>
 			<form name="refresh" method="POST" id="refresh_form">
-				<input id="refresh_submit" type="Submit" value="Refresh">
+				<input id="refresh_submit" type="Submit" value="Refresh output.">
 			</form>
 		</td>	
+	</tr>
+	<tr>
+		<td>
+			<form name="delete" method="post" action="webcrawler.php">
+				<button name="delete_request" style="background-color: #ff6666"><font color="white"> DELETE </font></button>
+			</form>
+		</td>
 	</tr>
 </table>
 <div id="container"></div>
@@ -78,12 +89,12 @@
 <script src="sigma.layout.forceAtlas2.min.js"></script>
 <script>
 
+	/*
 	$(document).ready(function()
 	{
-		$('#refresh_submit').on('vclick', function()
-		{
-			event.preventDefault();
+		
 
+			event.preventDefault();
 			$(".ui-loader").show(); 
 			$.ajax(
 			{
@@ -100,39 +111,12 @@
 				}
 			});
 		});
-	});
-/*
-		$(document).ready(function()
-		{
-			$.ajaxSetup(
-			{
-				cache: false,
-				beforeSend: function()
-				{
-					$('#content').hide();
-					$('#loading').show();
-				},
-				complete: function()
-				{
-					$('#loading').hide();
-					$('#content').show();
-				},
-				success: function()
-				{
-					$('#loading').hide();
-					$('#content').show();
-				}
-			});
-			var $container = $("#content");
-			$container.load("console.php");
-			//var refreshId = setInterval(function()
-			//{
-				$container.load('console.php');
-			//}, 9000);
-		});
-	})(jQuery);*/
+	});*/
 
-   // Create new Sigma instance in graph-container div (use your div name here) 
+  	/*
+		This section is for drawing the graph. It uses the Sigma.js 
+		library.
+	*/
   	sigma.parsers.json(
 		'out_graph.json', 
 		{
@@ -140,7 +124,7 @@
 			settings: 
 			{
 				defaultNodeColor: '#3febeb',
-				defaultLabelColor: '#ffffff'
+				defaultLabelColor: '#333333'
 			}
 		},
 		function(s)
@@ -158,15 +142,56 @@
 			}
 			
 			s.refresh();
-
 			s.startForceAtlas2();
 		}
 	);
-</script>
-<script>
+	
 
-		var objDiv = document.getElementById("content");
-		objDiv.scrollTop = objDiv.scrollHeight;
+	/*
+		Set the size of the console. It doesn't like to behave
+		so we have to set it this way.
+	*/
+	var graph_canvas = document.getElementById('container');
+	var graph_height = graph_canvas.offsetHeight;	// get actual height using .offsetHeight
+							// .height is undefined
+	var contentDiv = document.getElementById('content');
+	contentDiv.style.height = graph_height - 200;
+	//contentDiv.scrollTop = contentDiv.scrollHeight;
 
+	
+	/*
+		Auto scrolling - This will make sure the console moves
+		as it is updated. However, we must make sure that it does
+		not move when we are moused over.
+	*/
+	var hover_over = false;
+	$('#content').mouseover(function () 
+	{
+		hover_over = true;
+		$('#content').css("border", "1px solid green");
+	});
+	$('#content').mouseout(function () 
+	{
+		hover_over = false;
+		$('#content').css("border", "0px solid white");
+	});
+	setInterval(refreshConsole, 50);
+	function refreshConsole ()
+	{
+		if(!hover_over)
+		{
+			$('#content').load('console.php');
+			//setTimeout("", 200);
+			var objDiv = document.getElementById("content");
+			objDiv.scrollTop = objDiv.scrollHeight;
+		}
+		else
+		{
+
+		}
+		//document.write(hover_over);
+	}
+	//document.write(hover_over);
+	
 </script>
 </html>
