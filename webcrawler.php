@@ -63,55 +63,29 @@ header("Cache-Control: no-cache, must-revalidate");
 				<option value="1">1</option>
 			</select>
 			<?php echo "[".$OPT."] ".$cmd; ?>
-			<div id="content" style="background-color: #ffffff; width: 280px; overflow: scroll;">
+			<div id="content" style="border: 1px solid white; background-color: #ffffff; width: 280px; overflow: scroll;">
 				<?php 
 					include_once('console.php'); 
 				?>
 			</div>
-			<form name="refresh" method="POST" id="refresh_form">
-				<input id="refresh_submit" type="Submit" value="Refresh output.">
-			</form>
 		</td>	
 	</tr>
 	<tr>
 		<td>
+			<br>
 			<form name="delete" method="post" action="webcrawler.php">
 				<button name="delete_request" style="background-color: #ff6666"><font color="white"> DELETE </font></button>
 			</form>
 		</td>
 	</tr>
 </table>
-<div id="container"></div>
+<div id="container" style="box-shadow: 0px 10px 5px #888888;"></div>
 </body>
 <script src="jquery-2.1.1.min.js"></script>
 <script src="sigma.min.js"></script>
 <script src="sigma.parsers.json.min.js"></script>
 <script src="sigma.layout.forceAtlas2.min.js"></script>
 <script>
-
-	/*
-	$(document).ready(function()
-	{
-		
-
-			event.preventDefault();
-			$(".ui-loader").show(); 
-			$.ajax(
-			{
-				type: 'POST',
-				url: 'url',
-				data: 'data',
-				dataType: "json",
-				success: function(data) 
-				{
-					alert('Form successfully submitted!');
-					$("#content")[0].reset();
-					//$("#myForm")[0].reset();
-					$(".ui-loader").hide();
-				}
-			});
-		});
-	});*/
 
   	/*
 		This section is for drawing the graph. It uses the Sigma.js 
@@ -173,7 +147,7 @@ header("Cache-Control: no-cache, must-revalidate");
 	$('#content').mouseout(function () 
 	{
 		hover_over = false;
-		$('#content').css("border", "0px solid white");
+		$('#content').css("border", "1px solid white");
 	});
 	setInterval(refreshConsole, 50);
 	function refreshConsole ()
