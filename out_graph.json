@@ -1,8 +1,514 @@
 {
+   "columns" : [ "a" ],
    "edges" : [],
    "nodes" : [
       {
-         "id" : "3011",
+         "id" : "2179",
+         "label" : ":URL",
+         "labels" : [ "URL" ],
+         "properties" : {
+            "url" : "google.com"
+         }
+      },
+      {
+         "id" : "2180",
+         "label" : ":a",
+         "labels" : [ "a" ],
+         "properties" : {
+            "HREF" : [ "http://www.google.com/" ],
+            "contents" : [ "here", "here.\r\n" ]
+         }
+      },
+      {
+         "id" : "2181",
+         "label" : ":h1",
+         "labels" : [ "h1" ],
+         "properties" : {
+            "contents" : [ "301 Moved", "301 MovedThe document has moved\n" ]
+         }
+      },
+      {
+         "id" : "2182",
+         "label" : ":body",
+         "labels" : [ "body" ],
+         "properties" : {
+            "contents" : [ "\n" ]
+         }
+      },
+      {
+         "id" : "2183",
+         "label" : ":title",
+         "labels" : [ "title" ],
+         "properties" : {
+            "contents" : [ "301 Moved" ]
+         }
+      },
+      {
+         "id" : "2184",
+         "label" : ":meta",
+         "labels" : [ "meta" ],
+         "properties" : {
+            "content" : [ "text/html;charset=utf-8" ],
+            "contents" : [ "\n" ],
+            "http-equiv" : [ "content-type" ]
+         }
+      },
+      {
+         "id" : "2185",
+         "label" : ":head",
+         "labels" : [ "head" ],
+         "properties" : {
+            "contents" : [ "null" ]
+         }
+      },
+      {
+         "id" : "2186",
+         "label" : ":html",
+         "labels" : [ "html" ],
+         "properties" : {
+            "contents" : [ "null" ]
+         }
+      },
+      {
+         "id" : "2187",
+         "label" : ":URL",
+         "labels" : [ "URL" ],
+         "properties" : {
+            "url" : "http://www.google.com/"
+         }
+      },
+      {
+         "id" : "2188",
+         "label" : ":p",
+         "labels" : [ "p" ],
+         "properties" : {
+            "contents" : [ "&copy; 2014 - ", "&copy; 2014 - - " ],
+            "style" : [ "color:#767676;font-size:8pt" ]
+         }
+      },
+      {
+         "id" : "2189",
+         "label" : ":font",
+         "labels" : [ "font" ],
+         "properties" : {
+            "contents" : [ "null" ],
+            "id" : [ "hpplink" ],
+            "size" : [ "-1" ],
+            "style" : [ "behavior:url(#default#userdata);display:none" ]
+         }
+      },
+      {
+         "id" : "2190",
+         "label" : ":input",
+         "labels" : [ "input" ],
+         "properties" : {
+            "autocomplete" : [ "off" ],
+            "class" : [ "lst", "lsb", "lsb" ],
+            "contents" : [ "null", "null", "null", "null", "null", "null", "null" ],
+            "id" : [ "gbv" ],
+            "maxlength" : [ "2048" ],
+            "name" : [ "ie", "hl", "source", "q", "btnG", "btnI", "gbv" ],
+            "onclick" : [ "if(this.form.q.value)this.checked=1; else top.location='/doodles/'" ],
+            "size" : [ "57" ],
+            "style" : [ "color:#000;margin:0;padding:5px 8px 0 6px;vertical-align:top" ],
+            "title" : [ "Google Search" ],
+            "type" : [ "hidden", "hidden", "hidden", "submit", "submit", "hidden" ],
+            "value" : [
+               "ISO-8859-1",
+               "en",
+               "hp",
+               "null",
+               "Google Search",
+               "I'm Feeling Lucky",
+               "1"
+            ]
+         }
+      },
+      {
+         "id" : "2191",
+         "label" : ":br",
+         "labels" : [ "br" ],
+         "properties" : {
+            "clear" : [ "all" ],
+            "contents" : [ "null", "null", "null", "null", "null", "null", "null", "null" ],
+            "id" : [ "lgpd" ],
+            "style" : [ "line-height:0" ]
+         }
+      },
+      {
+         "id" : "2192",
+         "label" : ":div",
+         "labels" : [ "div" ],
+         "properties" : {
+            "aria-owner" : [ "gbztm", "gbg5" ],
+            "class" : [
+               "gbm",
+               "gbmc gbsb gbsbis",
+               "gbmt gbmh",
+               "gbsbt",
+               "gbsbb",
+               "gbm",
+               "gbmc",
+               "gbmt gbmh",
+               "pmoabs",
+               "xbtn",
+               "kd-button-submit",
+               "ds"
+            ],
+            "contents" : [
+               "   ",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               " ",
+               "&times;",
+               " ",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null"
+            ],
+            "data-jiis" : [ "bp" ],
+            "id" : [
+               "mngb",
+               "gb",
+               "gbw",
+               "gbz",
+               "gbd",
+               "gbmmb",
+               "gbg",
+               "gbd5",
+               "gbx3",
+               "gbx4",
+               "pmocntr2",
+               "pmolnk",
+               "lga",
+               "gac_scont",
+               "prm",
+               "fll",
+               "xjsd",
+               "xjsi"
+            ],
+            "onclick" : [ "google.promos&&google.promos.toast&& google.promos.toast.cpc()" ],
+            "style" : [
+               "behavior:url(#default#userdata);display:none",
+               "float:right",
+               "height:32px;margin:4px 0",
+               "font-size:83%;min-height:3.5em",
+               "font-size:10pt",
+               "margin:19px auto;text-align:center"
+            ]
+         }
+      },
+      {
+         "id" : "2193",
+         "label" : ":span",
+         "labels" : [ "span" ],
+         "properties" : {
+            "class" : [
+               "gbtcb",
+               "gbtb2",
+               "gbts",
+               "gbtb2",
+               "gbts",
+               "gbtb2",
+               "gbts",
+               "gbtb2",
+               "gbts",
+               "gbtb2",
+               "gbts",
+               "gbtb2",
+               "gbts",
+               "gbtb2",
+               "gbts",
+               "gbtb2",
+               "gbts",
+               "gbtb2",
+               "gbts gbtsa",
+               "gbma",
+               "gbtcb",
+               "gbtb2",
+               "gbts",
+               "gbts",
+               "gbtb2",
+               "gbts",
+               "ds",
+               "lsbb",
+               "ds",
+               "lsbb"
+            ],
+            "contents" : [
+               "null",
+               "null",
+               "Search",
+               "null",
+               "Images",
+               "null",
+               "Maps",
+               "null",
+               "Play",
+               "null",
+               "YouTube",
+               "null",
+               "News",
+               "null",
+               "Gmail",
+               "null",
+               "Drive",
+               "null",
+               "null",
+               "More",
+               "null",
+               "null",
+               "null",
+               "null",
+               "Sign in",
+               "null",
+               "null",
+               "null",
+               "null",
+               " ",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null"
+            ],
+            "id" : [
+               "gbztms",
+               "gbztms1",
+               "gbgs4",
+               "gbi4s1",
+               "gbgs5",
+               "gbi5",
+               "prt",
+               "footer"
+            ],
+            "style" : [ "display:block", "color:red" ]
+         }
+      },
+      {
+         "id" : "2194",
+         "label" : ":tr",
+         "labels" : [ "tr" ],
+         "properties" : {
+            "contents" : [ " ", " ", " ", "null" ],
+            "valign" : [ "top" ]
+         }
+      },
+      {
+         "id" : "2195",
+         "label" : ":body",
+         "labels" : [ "body" ],
+         "properties" : {
+            "bgcolor" : [ "#fff" ],
+            "contents" : [ "null" ]
+         }
+      },
+      {
+         "id" : "2196",
+         "label" : ":li",
+         "labels" : [ "li" ],
+         "properties" : {
+            "class" : [
+               "gbt",
+               "gbt",
+               "gbt",
+               "gbt",
+               "gbt",
+               "gbt",
+               "gbt",
+               "gbt",
+               "gbt",
+               "gbmtc",
+               "gbmtc",
+               "gbmtc",
+               "gbmtc",
+               "gbmtc",
+               "gbmtc",
+               "gbmtc",
+               "gbmtc",
+               "gbmtc",
+               "gbmtc",
+               "gbmtc",
+               "gbmtc",
+               "gbmtc",
+               "gbt",
+               "gbt gbtb",
+               "gbt",
+               "gbkc gbmtc",
+               "gbmtc",
+               "gbkp gbmtc"
+            ],
+            "contents" : [
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null"
+            ]
+         }
+      },
+      {
+         "id" : "2197",
+         "label" : ":ol",
+         "labels" : [ "ol" ],
+         "properties" : {
+            "class" : [ "gbtc", "gbmcc gbsbic", "gbtc", "gbmcc" ],
+            "contents" : [ "null", "null", "null", "null" ],
+            "id" : [ "gbzc", "gbmm", "gbom" ]
+         }
+      },
+      {
+         "id" : "2198",
+         "label" : ":style",
+         "labels" : [ "style" ],
+         "properties" : {
+            "contents" : [
+               "#gb{font:13px/27px Arial,sans-serif;height:30px}#gbz,#gbg{position:absolute;white-space:nowrap;top:0;height:30px;z-index:1000}#gbz{left:0;padding-left:4px}#gbg{right:0;padding-right:5px}#gbs{background:transparent;position:absolute;top:-999px;visibility:hidden;z-index:998;right:0}.gbto #gbs{background:#fff}#gbx3,#gbx4{background-color:#2d2d2d;background-image:none;_background-image:none;background-position:0 -138px;background-repeat:repeat-x;border-bottom:1px solid #000;font-size:24px;height:29px;_height:30px;opacity:1;filter:alpha(opacity=100);position:absolute;top:0;width:100%;z-index:990}#gbx3{left:0}#gbx4{right:0}#gbb{position:relative}#gbbw{left:0;position:absolute;top:30px;width:100%}.gbtcb{position:absolute;visibility:hidden}#gbz .gbtcb{right:0}#gbg .gbtcb{left:0}.gbxx{display:none !important}.gbxo{opacity:0 !important;filter:alpha(opacity=0) !important}.gbm{position:absolute;z-index:999;top:-999px;visibility:hidden;text-align:left;border:1px solid #bebebe;background:#fff;-moz-box-shadow:-1px 1px 1px rgba(0,0,0,.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,.2);box-shadow:0 2px 4px rgba(0,0,0,.2)}.gbrtl .gbm{-moz-box-shadow:1px 1px 1px rgba(0,0,0,.2)}.gbto .gbm,.gbto #gbs{top:29px;visibility:visible}#gbz .gbm{left:0}#gbg .gbm{right:0}.gbxms{background-color:#ccc;display:block;position:absolute;z-index:1;top:-1px;left:-2px;right:-2px;bottom:-2px;opacity:.4;-moz-border-radius:3px;filter:progid:DXImageTransform.Microsoft.Blur(pixelradius=5);*opacity:1;*top:-2px;*left:-5px;*right:5px;*bottom:4px;-ms-filter:\"progid:DXImageTransform.Microsoft.Blur(pixelradius=5)\";opacity:1\\0/;top:-4px\\0/;left:-6px\\0/;right:5px\\0/;bottom:4px\\0/}.gbma{position:relative;top:-1px;border-style:solid dashed dashed;border-color:transparent;border-top-color:#c0c0c0;display:-moz-inline-box;display:inline-block;font-size:0;height:0;line-height:0;width:0;border-width:3px 3px 0;padding-top:1px;left:4px}#gbztms1,#gbi4m1,#gbi4s,#gbi4t{zoom:1}.gbtc,.gbmc,.gbmcc{display:block;list-style:none;margin:0;padding:0}.gbmc{background:#fff;padding:10px 0;position:relative;z-index:2;zoom:1}.gbt{position:relative;display:-moz-inline-box;display:inline-block;line-height:27px;padding:0;vertical-align:top}.gbt{*display:inline}.gbto{box-shadow:0 2px 4px rgba(0,0,0,.2);-moz-box-shadow:0 2px 4px rgba(0,0,0,.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,.2)}.gbzt,.gbgt{cursor:pointer;display:block;text-decoration:none !important}span#gbg6,span#gbg4{cursor:default}.gbts{border-left:1px solid transparent;border-right:1px solid transparent;display:block;*display:inline-block;padding:0 5px;position:relative;z-index:1000}.gbts{*display:inline}.gbzt .gbts{display:inline;zoom:1}.gbto .gbts{background:#fff;border-color:#bebebe;color:#36c;padding-bottom:1px;padding-top:2px}.gbz0l .gbts{color:#fff;font-weight:bold}.gbtsa{padding-right:9px}#gbz .gbzt,#gbz .gbgt,#gbg .gbgt{color:#ccc!important}.gbtb2{display:block;border-top:2px solid transparent}.gbto .gbzt .gbtb2,.gbto .gbgt .gbtb2{border-top-width:0}.gbtb .gbts{background:url(//ssl.gstatic.com/gb/images/b_8d5afc09.png);_background:url(//ssl.gstatic.com/gb/images/b8_3615d64d.png);background-position:-27px -22px;border:0;font-size:0;padding:29px 0 0;*padding:27px 0 0;width:1px}.gbzt:hover,.gbzt:focus,.gbgt-hvr,.gbgt:focus{background-color:#4c4c4c;background-image:none;_background-image:none;background-position:0 -102px;background-repeat:repeat-x;outline:none;text-decoration:none !important}.gbpdjs .gbto .gbm{min-width:99%}.gbz0l .gbtb2{border-top-color:#dd4b39!important}#gbi4s,#gbi4s1{font-weight:bold}#gbg6.gbgt-hvr,#gbg6.gbgt:focus{background-color:transparent;background-image:none}.gbg4a{font-size:0;line-height:0}.gbg4a .gbts{padding:27px 5px 0;*padding:25px 5px 0}.gbto .gbg4a .gbts{padding:29px 5px 1px;*padding:27px 5px 1px}#gbi4i,#gbi4id{left:5px;border:0;height:24px;position:absolute;top:1px;width:24px}.gbto #gbi4i,.gbto #gbi4id{top:3px}.gbi4p{display:block;width:24px}#gbi4id{background-position:-44px -101px}#gbmpid{background-position:0 0}#gbmpi,#gbmpid{border:none;display:inline-block;height:48px;width:48px}#gbmpiw{display:inline-block;line-height:9px;padding-left:20px;margin-top:10px;position:relative}#gbmpi,#gbmpid,#gbmpiw{*display:inline}#gbg5{font-size:0}#gbgs5{padding:5px !important}.gbto #gbgs5{padding:7px 5px 6px !important}#gbi5{background:url(//ssl.gstatic.com/gb/images/b_8d5afc09.png);_background:url(//ssl.gstatic.com/gb/images/b8_3615d64d.png);background-position:0 0;display:block;font-size:0;height:17px;width:16px}.gbto #gbi5{background-position:-6px -22px}.gbn .gbmt,.gbn .gbmt:visited,.gbnd .gbmt,.gbnd .gbmt:visited{color:#dd8e27 !important}.gbf .gbmt,.gbf .gbmt:visited{color:#900 !important}.gbmt,.gbml1,.gbmlb,.gbmt:visited,.gbml1:visited,.gbmlb:visited{color:#36c !important;text-decoration:none !important}.gbmt,.gbmt:visited{display:block}.gbml1,.gbmlb,.gbml1:visited,.gbmlb:visited{display:inline-block;margin:0 10px}.gbml1,.gbmlb,.gbml1:visited,.gbmlb:visited{*display:inline}.gbml1,.gbml1:visited{padding:0 10px}.gbml1-hvr,.gbml1:focus{outline:none;text-decoration:underline !important}#gbpm .gbml1{display:inline;margin:0;padding:0;white-space:nowrap}.gbmlb,.gbmlb:visited{line-height:27px}.gbmlb-hvr,.gbmlb:focus{outline:none;text-decoration:underline !important}.gbmlbw{color:#ccc;margin:0 10px}.gbmt{padding:0 20px}.gbmt:hover,.gbmt:focus{background:#eee;cursor:pointer;outline:0 solid black;text-decoration:none !important}.gbm0l,.gbm0l:visited{color:#000 !important;font-weight:bold}.gbmh{border-top:1px solid #bebebe;font-size:0;margin:10px 0}#gbd4 .gbmc{background:#f5f5f5;padding-top:0}#gbd4 .gbsbic::-webkit-scrollbar-track:vertical{background-color:#f5f5f5;margin-top:2px}#gbmpdv{background:#fff;border-bottom:1px solid #bebebe;-moz-box-shadow:0 2px 4px rgba(0,0,0,.12);-o-box-shadow:0 2px 4px rgba(0,0,0,.12);-webkit-box-shadow:0 2px 4px rgba(0,0,0,.12);box-shadow:0 2px 4px rgba(0,0,0,.12);position:relative;z-index:1}#gbd4 .gbmh{margin:0}.gbmtc{padding:0;margin:0;line-height:27px}.GBMCC:last-child:after,#GBMPAL:last-child:after{content:'\\0A\\0A';white-space:pre;position:absolute}#gbmps{*zoom:1}#gbd4 .gbpc,#gbmpas .gbmt{line-height:17px}#gbd4 .gbpgs .gbmtc{line-height:27px}#gbd4 .gbmtc{border-bottom:1px solid #bebebe}#gbd4 .gbpc{display:inline-block;margin:16px 0 10px;padding-right:50px;vertical-align:top}#gbd4 .gbpc{*display:inline}.gbpc .gbps,.gbpc .gbps2{display:block;margin:0 20px}#gbmplp.gbps{margin:0 10px}.gbpc .gbps{color:#000;font-weight:bold}.gbpc .gbpd{margin-bottom:5px}.gbpd .gbmt,.gbpd .gbps{color:#666 !important}.gbpd .gbmt{opacity:.4;filter:alpha(opacity=40)}.gbps2{color:#666;display:block}.gbp0{display:none}.gbp0 .gbps2{font-weight:bold}#gbd4 .gbmcc{margin-top:5px}.gbpmc{background:#fef9db}.gbpmc .gbpmtc{padding:10px 20px}#gbpm{border:0;*border-collapse:collapse;border-spacing:0;margin:0;white-space:normal}#gbpm .gbpmtc{border-top:none;color:#000 !important;font:11px Arial,sans-serif}#gbpms{*white-space:nowrap}.gbpms2{font-weight:bold;white-space:nowrap}#gbmpal{*border-collapse:collapse;border-spacing:0;border:0;margin:0;white-space:nowrap;width:100%}.gbmpala,.gbmpalb{font:13px Arial,sans-serif;line-height:27px;padding:10px 20px 0;white-space:nowrap}.gbmpala{padding-left:0;text-align:left}.gbmpalb{padding-right:0;text-align:right}#gbmpasb .gbps{color:#000}#gbmpal .gbqfbb{margin:0 20px}.gbp0 .gbps{*display:inline}a.gbiba{margin:8px 20px 10px}.gbmpiaw{display:inline-block;padding-right:10px;margin-bottom:6px;margin-top:10px}.gbxv{visibility:hidden}.gbmpiaa{display:block;margin-top:10px}.gbmpia{border:none;display:block;height:48px;width:48px}.gbmpnw{display:inline-block;height:auto;margin:10px 0;vertical-align:top}.gbqfb,.gbqfba,.gbqfbb{-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;cursor:default !important;display:inline-block;font-weight:bold;height:29px;line-height:29px;min-width:54px;*min-width:70px;padding:0 8px;text-align:center;text-decoration:none !important;-moz-user-select:none;-webkit-user-select:none}.gbqfb:focus,.gbqfba:focus,.gbqfbb:focus{border:1px solid #4d90fe;-moz-box-shadow:inset 0 0 0 1px rgba(255, 255, 255, 0.5);-webkit-box-shadow:inset 0 0 0 1px rgba(255, 255, 255, 0.5);box-shadow:inset 0 0 0 1px rgba(255, 255, 255, 0.5);outline:none}.gbqfb-hvr:focus,.gbqfba-hvr:focus,.gbqfbb-hvr:focus{-webkit-box-shadow:inset 0 0 0 1px #fff,0 1px 1px rgba(0,0,0,.1);-moz-box-shadow:inset 0 0 0 1px #fff,0 1px 1px rgba(0,0,0,.1);box-shadow:inset 0 0 0 1px #fff,0 1px 1px rgba(0,0,0,.1)}.gbqfb-no-focus:focus{border:1px solid #3079ed;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none}.gbqfb-hvr,.gbqfba-hvr,.gbqfbb-hvr{-webkit-box-shadow:0 1px 1px rgba(0,0,0,.1);-moz-box-shadow:0 1px 1px rgba(0,0,0,.1);box-shadow:0 1px 1px rgba(0,0,0,.1)}.gbqfb::-moz-focus-inner,.gbqfba::-moz-focus-inner,.gbqfbb::-moz-focus-inner{border:0}.gbqfba,.gbqfbb{border:1px solid #dcdcdc;border-color:rgba(0,0,0,.1);color:#444 !important;font-size:11px}.gbqfb{background-color:#4d90fe;background-image:-webkit-gradient(linear,left top,left bottom,from(#4d90fe),to(#4787ed));background-image:-webkit-linear-gradient(top,#4d90fe,#4787ed);background-image:-moz-linear-gradient(top,#4d90fe,#4787ed);background-image:-ms-linear-gradient(top,#4d90fe,#4787ed);background-image:-o-linear-gradient(top,#4d90fe,#4787ed);background-image:linear-gradient(top,#4d90fe,#4787ed);filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#4d90fe',EndColorStr='#4787ed');border:1px solid #3079ed;color:#fff!important;margin:0 0}.gbqfb-hvr{border-color:#2f5bb7}.gbqfb-hvr:focus{border-color:#2f5bb7}.gbqfb-hvr,.gbqfb-hvr:focus{background-color:#357ae8;background-image:-webkit-gradient(linear,left top,left bottom,from(#4d90fe),to(#357ae8));background-image:-webkit-linear-gradient(top,#4d90fe,#357ae8);background-image:-moz-linear-gradient(top,#4d90fe,#357ae8);background-image:-ms-linear-gradient(top,#4d90fe,#357ae8);background-image:-o-linear-gradient(top,#4d90fe,#357ae8);background-image:linear-gradient(top,#4d90fe,#357ae8)}.gbqfb:active{background-color:inherit;-webkit-box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.3);-moz-box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.3);box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.3)}.gbqfba{background-color:#f5f5f5;background-image:-webkit-gradient(linear,left top,left bottom,from(#f5f5f5),to(#f1f1f1));background-image:-webkit-linear-gradient(top,#f5f5f5,#f1f1f1);background-image:-moz-linear-gradient(top,#f5f5f5,#f1f1f1);background-image:-ms-linear-gradient(top,#f5f5f5,#f1f1f1);background-image:-o-linear-gradient(top,#f5f5f5,#f1f1f1);background-image:linear-gradient(top,#f5f5f5,#f1f1f1);filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#f5f5f5',EndColorStr='#f1f1f1')}.gbqfba-hvr,.gbqfba-hvr:active{background-color:#f8f8f8;background-image:-webkit-gradient(linear,left top,left bottom,from(#f8f8f8),to(#f1f1f1));background-image:-webkit-linear-gradient(top,#f8f8f8,#f1f1f1);background-image:-moz-linear-gradient(top,#f8f8f8,#f1f1f1);background-image:-ms-linear-gradient(top,#f8f8f8,#f1f1f1);background-image:-o-linear-gradient(top,#f8f8f8,#f1f1f1);background-image:linear-gradient(top,#f8f8f8,#f1f1f1);filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#f8f8f8',EndColorStr='#f1f1f1')}.gbqfbb{background-color:#fff;background-image:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#fbfbfb));background-image:-webkit-linear-gradient(top,#fff,#fbfbfb);background-image:-moz-linear-gradient(top,#fff,#fbfbfb);background-image:-ms-linear-gradient(top,#fff,#fbfbfb);background-image:-o-linear-gradient(top,#fff,#fbfbfb);background-image:linear-gradient(top,#fff,#fbfbfb);filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff',EndColorStr='#fbfbfb')}.gbqfbb-hvr,.gbqfbb-hvr:active{background-color:#fff;background-image:-webkit-gradient(linear,left top,left bottom,from(#fff),to(#f8f8f8));background-image:-webkit-linear-gradient(top,#fff,#f8f8f8);background-image:-moz-linear-gradient(top,#fff,#f8f8f8);background-image:-ms-linear-gradient(top,#fff,#f8f8f8);background-image:-o-linear-gradient(top,#fff,#f8f8f8);background-image:linear-gradient(top,#fff,#f8f8f8);filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff',EndColorStr='#f8f8f8')}.gbqfba-hvr,.gbqfba-hvr:active,.gbqfbb-hvr,.gbqfbb-hvr:active{border-color:#c6c6c6;-webkit-box-shadow:0 1px 1px rgba(0,0,0,.1);-moz-box-shadow:0 1px 1px rgba(0,0,0,.1);box-shadow:0 1px 1px rgba(0,0,0,.1);color:#222 !important}.gbqfba:active,.gbqfbb:active{-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,.1);box-shadow:inset 0 1px 2px rgba(0,0,0,.1)}#gbmpas{max-height:220px}#gbmm{max-height:530px}.gbsb{-webkit-box-sizing:border-box;display:block;position:relative;*zoom:1}.gbsbic{overflow:auto}.gbsbis .gbsbt,.gbsbis .gbsbb{-webkit-mask-box-image:-webkit-gradient(linear,left top,right top,color-stop(0,rgba(0,0,0,.1)),color-stop(.5,rgba(0,0,0,.8)),color-stop(1,rgba(0,0,0,.1)));left:0;margin-right:0;opacity:0;position:absolute;width:100%}.gbsb .gbsbt:after,.gbsb .gbsbb:after{content:\"\";display:block;height:0;left:0;position:absolute;width:100%}.gbsbis .gbsbt{background:-webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.2)),to(rgba(0,0,0,0)));background-image:-webkit-linear-gradient(top,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:-moz-linear-gradient(top,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:-ms-linear-gradient(top,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:-o-linear-gradient(top,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:linear-gradient(top,rgba(0,0,0,.2),rgba(0,0,0,0));height:6px;top:0}.gbsb .gbsbt:after{border-top:1px solid #ebebeb;border-color:rgba(0,0,0,.3);top:0}.gbsb .gbsbb{-webkit-mask-box-image:-webkit-gradient(linear,left top,right top,color-stop(0,rgba(0,0,0,.1)),color-stop(.5,rgba(0,0,0,.8)),color-stop(1,rgba(0,0,0,.1)));background:-webkit-gradient(linear,left bottom,left top,from(rgba(0,0,0,.2)),to(rgba(0,0,0,0)));background-image:-webkit-linear-gradient(bottom,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:-moz-linear-gradient(bottom,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:-ms-linear-gradient(bottom,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:-o-linear-gradient(bottom,rgba(0,0,0,.2),rgba(0,0,0,0));background-image:linear-gradient(bottom,rgba(0,0,0,.2),rgba(0,0,0,0));bottom:0;height:4px}.gbsb .gbsbb:after{border-bottom:1px solid #ebebeb;border-color:rgba(0,0,0,.3);bottom:0}",
+               "body,td,a,p,.h{font-family:arial,sans-serif}body{margin:0;overflow-y:scroll}#gog{padding:3px 8px 0}td{line-height:.8em}.gac_m td{line-height:17px}form{margin-bottom:20px}.h{color:#36c}.q{color:#00c}.ts td{padding:0}.ts{border-collapse:collapse}em{font-weight:bold;font-style:normal}.lst{height:25px;width:496px}.gsfi,.lst{font:18px arial,sans-serif}.gsfs{font:17px arial,sans-serif}.ds{display:inline-box;display:inline-block;margin:3px 0 4px;margin-left:4px}input{font-family:inherit}a.gb1,a.gb2,a.gb3,a.gb4{color:#11c !important}body{background:#fff;color:black}a{color:#11c;text-decoration:none}a:hover,a:active{text-decoration:underline}.fl a{color:#36c}a:visited{color:#551a8b}a.gb1,a.gb4{text-decoration:underline}a.gb3:hover{text-decoration:none}#ghead a.gb2:hover{color:#fff !important}.sblc{padding-top:5px}.sblc a{display:block;margin:2px 0;margin-left:13px;font-size:11px}.lsbb{background:#eee;border:solid 1px;border-color:#ccc #999 #999 #ccc;height:30px}.lsbb{display:block}.ftl,#fll a{display:inline-block;margin:0 12px}.lsb{background:url(/images/srpr/nav_logo80.png) 0 -258px repeat-x;border:none;color:#000;cursor:pointer;height:30px;margin:0;outline:0;font:15px arial,sans-serif;vertical-align:top}.lsb:active{background:#ccc}.lst:focus{outline:none}",
+               ".pmoabs{background-color:#fff;border:1px solid #E5E5E5;color:#666;font-size:13px;padding-bottom:20px;position:absolute;right:2px;top:3px;z-index:986}#pmolnk{border-radius:2px;-moz-border-radius:2px;-webkit-border-radius:2px}.kd-button-submit{border:1px solid #3079ed;background-color:#4d90fe;background-image:-webkit-gradient(linear,left top,left bottom,from(#4d90fe),to(#4787ed));background-image:-webkit-linear-gradient(top,#4d90fe,#4787ed);background-image:-moz-linear-gradient(top,#4d90fe,#4787ed);background-image:-ms-linear-gradient(top,#4d90fe,#4787ed);background-image:-o-linear-gradient(top,#4d90fe,#4787ed);background-image:linear-gradient(top,#4d90fe,#4787ed);filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#4d90fe',EndColorStr='#4787ed')}.kd-button-submit:hover{border:1px solid #2f5bb7;background-color:#357ae8;background-image:-webkit-gradient(linear,left top,left bottom,from(#4d90fe),to(#357ae8));background-image:-webkit-linear-gradient(top,#4d90fe,#357ae8);background-image:-moz-linear-gradient(top,#4d90fe,#357ae8);background-image:-ms-linear-gradient(top,#4d90fe,#357ae8);background-image:-o-linear-gradient(top,#4d90fe,#357ae8);background-image:linear-gradient(top,#4d90fe,#357ae8);filter:progid:DXImageTransform.Microsoft.gradient(startColorStr='#4d90fe',EndColorStr='#357ae8')}.kd-button-submit:active{-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0 1px 2px rgba(0,0,0,0.3);box-shadow:inset 0 1px 2px rgba(0,0,0,0.3)}#pmolnk a{color:#fff;display:inline-block;font-weight:bold;padding:5px 20px;text-decoration:none;white-space:nowrap}.xbtn{color:#999;cursor:pointer;font-size:23px;line-height:5px;padding-top:5px}.padi{padding:0 8px 0 10px}.padt{padding:5px 20px 0 0;color:#444}.pads{text-align:left;max-width:200px}"
+            ]
+         }
+      },
+      {
+         "id" : "2199",
+         "label" : ":meta",
+         "labels" : [ "meta" ],
+         "properties" : {
+            "content" : [
+               "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.",
+               "noodp",
+               "/images/google_favicon_128.png"
+            ],
+            "contents" : [ "null", "null", "null" ],
+            "itemprop" : [ "image" ],
+            "name" : [ "description", "robots" ]
+         }
+      },
+      {
+         "id" : "2200",
+         "label" : ":table",
+         "labels" : [ "table" ],
+         "properties" : {
+            "border" : [ "0" ],
+            "cellpadding" : [ "0" ],
+            "cellspacing" : [ "0" ],
+            "contents" : [ " ", "null" ]
+         }
+      },
+      {
+         "id" : "2201",
+         "label" : ":script",
+         "labels" : [ "script" ],
+         "properties" : {
+            "contents" : [
+               "(function(){window.google={kEI:'OZqUVPbsBpK0sATc4YDYDg',kEXPI:'18168,4010073,4011559,4016824,4020560,4021598,4025769,4026005,4026124,4026400,4027316,8300096,8300111,8500393,8500852,8500922,8500954,10200083,10200716,10200817,10200833,10200835',authuser:0,kSID:'OZqUVPbsBpK0sATc4YDYDg'};google.kHL='en';})();(function(){google.lc=[];google.li=0;google.getEI=function(a){for(var b;a&&(!a.getAttribute||!(b=a.getAttribute(\"eid\")));)a=a.parentNode;return b||google.kEI};google.https=function(){return\"https:\"==window.location.protocol};google.ml=function(){};google.time=function(){return(new Date).getTime()};google.log=function(a,b,d,e,k){var c=new Image,h=google.lc,f=google.li,g=\"\",l=google.ls||\"\";c.onerror=c.onload=c.onabort=function(){delete h[f]};h[f]=c;d||-1!=b.search(\"&ei=\")||(e=google.getEI(e),g=\"&ei=\"+e,e!=google.kEI&&(g+=\"&lei=\"+google.kEI));a=d||\"/\"+(k||\"gen_204\")+\"?atyp=i&ct=\"+a+\"&cad=\"+b+g+l+\"&zx=\"+google.time();/^http:/i.test(a)&&google.https()?(google.ml(Error(\"a\"),!1,{src:a,glmm:1}),delete h[f]):(c.src=a,google.li=f+1)};google.y={};google.x=function(a,b){google.y[a.id]=[a,b];return!1};google.load=function(a,b,d){google.x({id:a+m++},function(){google.load(a,b,d)})};var m=0;})();google.kCSI={};var _gjwl=location;function _gjuc(){var a=_gjwl.href.indexOf(\"#\");if(0",
+               "(function(){try{var e=this;var aa=function(a,b,c,d){d=d||{};d._sn=[\"cfg\",b,c].join(\".\");window.gbar.logger.ml(a,d)};var h=window.gbar=window.gbar||{},k=window.gbar.i=window.gbar.i||{},ba;function _tvn(a,b){var c=parseInt(a,10);return isNaN(c)?b:c}function _tvf(a,b){var c=parseFloat(a);return isNaN(c)?b:c}function _tvv(a){return!!a}function p(a,b,c){(c||h)[a]=b}h.bv={n:_tvn(\"2\",0),r:\"\",f:\".66.41.\",e:\"0\",m:_tvn(\"1\",1)};\nfunction ca(a,b,c){var d=\"on\"+b;if(a.addEventListener)a.addEventListener(b,c,!1);else if(a.attachEvent)a.attachEvent(d,c);else{var f=a[d];a[d]=function(){var a=f.apply(this,arguments),b=c.apply(this,arguments);return void 0==a?b:void 0==b?a:b&&a}}}var da=function(a){return function(){return h.bv.m==a}},ea=da(1),fa=da(2);p(\"sb\",ea);p(\"kn\",fa);k.a=_tvv;k.b=_tvf;k.c=_tvn;k.i=aa;var q=window.gbar.i.i;var u=function(){},v=function(){},ia=function(a){var b=new Image,c=ga;b.onerror=b.onload=b.onabort=function(){try{delete ha[c]}catch(a){}};ha[c]=b;b.src=a;ga=c+1},ha=[],ga=0;p(\"logger\",{il:v,ml:u,log:ia});var w=window.gbar.logger;var y={},ja={},A=[],ka=k.b(\"0.1\",.1),la=k.a(\"1\",!0),ma=function(a,b){A.push([a,b])},na=function(a,b){y[a]=b},oa=function(a){return a in y},B={},C=function(a,b){B[a]||(B[a]=[]);B[a].push(b)},D=function(a){C(\"m\",a)},pa=function(a,b){var c=document.createElement(\"script\");c.src=a;c.async=la;Math.random()",
+               "(function(){try{var e=this;var aa=function(a,b,c,d){d=d||{};d._sn=[\"cfg\",b,c].join(\".\");window.gbar.logger.ml(a,d)};var h=window.gbar=window.gbar||{},k=window.gbar.i=window.gbar.i||{},ba;function _tvn(a,b){var c=parseInt(a,10);return isNaN(c)?b:c}function _tvf(a,b){var c=parseFloat(a);return isNaN(c)?b:c}function _tvv(a){return!!a}function p(a,b,c){(c||h)[a]=b}h.bv={n:_tvn(\"2\",0),r:\"\",f:\".66.41.\",e:\"0\",m:_tvn(\"1\",1)};\nfunction ca(a,b,c){var d=\"on\"+b;if(a.addEventListener)a.addEventListener(b,c,!1);else if(a.attachEvent)a.attachEvent(d,c);else{var f=a[d];a[d]=function(){var a=f.apply(this,arguments),b=c.apply(this,arguments);return void 0==a?b:void 0==b?a:b&&a}}}var da=function(a){return function(){return h.bv.m==a}},ea=da(1),fa=da(2);p(\"sb\",ea);p(\"kn\",fa);k.a=_tvv;k.b=_tvf;k.c=_tvn;k.i=aa;var q=window.gbar.i.i;var u=function(){},v=function(){},ia=function(a){var b=new Image,c=ga;b.onerror=b.onload=b.onabort=function(){try{delete ha[c]}catch(a){}};ha[c]=b;b.src=a;ga=c+1},ha=[],ga=0;p(\"logger\",{il:v,ml:u,log:ia});var w=window.gbar.logger;var y={},ja={},A=[],ka=k.b(\"0.1\",.1),la=k.a(\"1\",!0),ma=function(a,b){A.push([a,b])},na=function(a,b){y[a]=b},oa=function(a){return a in y},B={},C=function(a,b){B[a]||(B[a]=[]);B[a].push(b)},D=function(a){C(\"m\",a)},pa=function(a,b){var c=document.createElement(\"script\");c.src=a;c.async=la;Math.random()Da){Da++;var c,d=a,f=b||{},g=encodeURIComponent,l=[\"//www.google.com/gen_204?atyp=i&zx=\",(new Date).getTime(),\"&jexpid=\",g(\"28834\"),\"&srcpg=\",g(\"prop=1\"),\"&jsr=\",Math.round(1/Ca),\"&ogev=\",g(\"OZqUVP-FCITgsASM4oK4BQ\"),\"&ogf=\",h.bv.f,\"&ogrp=\",g(\"\"),\"&ogv=\",g(\"1418781672.0\"),\"&oggv=\"+g(\"es_plusone_gc_20141211.0_p0\"),\"&ogd=\",g(\"com\"),\"&ogc=\",g(\"USA\"),\"&ogl=\",g(\"en\")];f._sn&&(f._sn=\n\"og.\"+f._sn);for(var m in f)l.push(\"&\"),l.push(g(m)),l.push(\"=\"),l.push(g(f[m]));l.push(\"&emsg=\");l.push(g(d.name+\":\"+d.message));var n=l.join(\"\");Ea(n)&&(n=n.substr(0,2E3));c=n;var r=window.gbar.logger._aem(a,c);ia(r)}}catch(z){}}var Ea=function(a){return 2E3",
+               "(function(){try{var e=this;var aa=function(a,b,c,d){d=d||{};d._sn=[\"cfg\",b,c].join(\".\");window.gbar.logger.ml(a,d)};var h=window.gbar=window.gbar||{},k=window.gbar.i=window.gbar.i||{},ba;function _tvn(a,b){var c=parseInt(a,10);return isNaN(c)?b:c}function _tvf(a,b){var c=parseFloat(a);return isNaN(c)?b:c}function _tvv(a){return!!a}function p(a,b,c){(c||h)[a]=b}h.bv={n:_tvn(\"2\",0),r:\"\",f:\".66.41.\",e:\"0\",m:_tvn(\"1\",1)};\nfunction ca(a,b,c){var d=\"on\"+b;if(a.addEventListener)a.addEventListener(b,c,!1);else if(a.attachEvent)a.attachEvent(d,c);else{var f=a[d];a[d]=function(){var a=f.apply(this,arguments),b=c.apply(this,arguments);return void 0==a?b:void 0==b?a:b&&a}}}var da=function(a){return function(){return h.bv.m==a}},ea=da(1),fa=da(2);p(\"sb\",ea);p(\"kn\",fa);k.a=_tvv;k.b=_tvf;k.c=_tvn;k.i=aa;var q=window.gbar.i.i;var u=function(){},v=function(){},ia=function(a){var b=new Image,c=ga;b.onerror=b.onload=b.onabort=function(){try{delete ha[c]}catch(a){}};ha[c]=b;b.src=a;ga=c+1},ha=[],ga=0;p(\"logger\",{il:v,ml:u,log:ia});var w=window.gbar.logger;var y={},ja={},A=[],ka=k.b(\"0.1\",.1),la=k.a(\"1\",!0),ma=function(a,b){A.push([a,b])},na=function(a,b){y[a]=b},oa=function(a){return a in y},B={},C=function(a,b){B[a]||(B[a]=[]);B[a].push(b)},D=function(a){C(\"m\",a)},pa=function(a,b){var c=document.createElement(\"script\");c.src=a;c.async=la;Math.random()Da){Da++;var c,d=a,f=b||{},g=encodeURIComponent,l=[\"//www.google.com/gen_204?atyp=i&zx=\",(new Date).getTime(),\"&jexpid=\",g(\"28834\"),\"&srcpg=\",g(\"prop=1\"),\"&jsr=\",Math.round(1/Ca),\"&ogev=\",g(\"OZqUVP-FCITgsASM4oK4BQ\"),\"&ogf=\",h.bv.f,\"&ogrp=\",g(\"\"),\"&ogv=\",g(\"1418781672.0\"),\"&oggv=\"+g(\"es_plusone_gc_20141211.0_p0\"),\"&ogd=\",g(\"com\"),\"&ogc=\",g(\"USA\"),\"&ogl=\",g(\"en\")];f._sn&&(f._sn=\n\"og.\"+f._sn);for(var m in f)l.push(\"&\"),l.push(g(m)),l.push(\"=\"),l.push(g(f[m]));l.push(\"&emsg=\");l.push(g(d.name+\":\"+d.message));var n=l.join(\"\");Ea(n)&&(n=n.substr(0,2E3));c=n;var r=window.gbar.logger._aem(a,c);ia(r)}}catch(z){}}var Ea=function(a){return 2E3c?Math.max(0,a.length+c):c;c",
+               "(function(){var src='/images/nav_logo176.png';var iesg=false;document.body.onload = function(){window.n && window.n();if (document.images){new Image().src=src;}\nif (!iesg){document.f&&document.f.q.focus();document.gbqf&&document.gbqf.q.focus();}\n}\n})();",
+               "window.gbar&&gbar.eli&&gbar.eli()",
+               "window.gbar&&gbar.elp&&gbar.elp()",
+               "(function(){var a={o:{}};a.o.Pa=50;a.o.Oa=10;a.o.ca=\"body\";a.o.La=!0;a.o.Ea=function(b,c){var d=a.o.Ja();a.o.Ka(d,b,c);a.o.Na(d);a.o.La&&a.o.Ma(d)};a.o.Na=function(b){(b=a.o.ba(b))&&0",
+               "(function(){var a={o:{}};a.o.Pa=50;a.o.Oa=10;a.o.ca=\"body\";a.o.La=!0;a.o.Ea=function(b,c){var d=a.o.Ja();a.o.Ka(d,b,c);a.o.Na(d);a.o.La&&a.o.Ma(d)};a.o.Na=function(b){(b=a.o.ba(b))&&0\");b.write(d.join(\"\"));b.close()};a.o.aa=function(b,c){c>a.o.Oa?google&&google.ml&&google.ml(Error(\"ogcdr\"),!1,{cause:\"timeout\"}):b.contentWindow?a.o.Qa(b):window.setTimeout(function(){a.o.aa(b,c+1)},a.o.Pa)};a.o.Qa=function(b){document.body.removeChild(b)};a.o.Ma=function(b){a.o.Ra(b,\"load\",function(){a.o.aa(b,0)})};a.o.Ra=function(b,c,d){b.addEventListener?b.addEventListener(c,d,!1):b.attachEvent&&b.attachEvent(\"on\"+c,d)};var m={Va:0,D:1,F:2,S:5};a.k={};a.k.T={Ha:\"i\",X:\"d\",Ia:\"l\"};a.k.A={R:\"0\",H:\"1\"};a.k.U={O:1,X:2,P:3};a.k.w={ta:\"a\",wa:\"g\",C:\"c\",za:\"u\",ya:\"t\",R:\"p\",xa:\"pid\",va:\"eid\",Aa:\"at\"};a.k.Ca=window.location.protocol+\"//www.google.com/_/og/promos/\";a.k.Ba=\"g\";a.k.Da=\"z\";a.k.Q=function(b,c,d,e){var f=null;switch(c){case m.D:f=window.gbar.up.gpd(b,d,!0);break;case m.S:f=window.gbar.up.gcc(e)}return null==f?0:parseInt(f,10)};a.k.ia=function(b,c,d){return c==m.D?null!=window.gbar.up.gpd(b,d,!0):!1};a.k.V=function(b,c,d,e,f,h,k,l){var g={};g[a.k.w.R]=b;g[a.k.w.wa]=c;g[a.k.w.ta]=d;g[a.k.w.Aa]=e;g[a.k.w.va]=f;g[a.k.w.xa]=1;k&&(g[a.k.w.C]=k);l&&(g[a.k.w.za]=l);if(h)g[a.k.w.ya]=h;else return google.ml(Error(\"knu\"),!1,{cause:\"Token is not found\"}),null;return g};a.k.W=function(b,c,d){if(b){var e=c?a.k.Ba:a.k.Da;c&&d&&(e+=\"?authuser=\"+d);a.o.Ea(b,a.k.Ca+e)}};a.k.Ga=function(b,c,d,e,f,h,k){b=a.k.V(c,b,a.k.T.X,a.k.U.X,d,f,null,e);a.k.W(b,h,k)};a.k.Fa=function(b,c,d,e,f,h,k){b=a.k.V(c,b,a.k.T.Ha,a.k.U.O,d,f,e,null);a.k.W(b,h,k)};a.k.la=function(b,c,d,e,f,h,k,l,g,n){switch(c){case m.S:window.gbar.up.dpc(e,f);break;case m.D:window.gbar.up.spd(b,d,1,!0);break;case m.F:g=g||!1,l=l||\"\",h=h||0,k=k||a.k.A.H,n=n||0,a.k.Ga(e,h,k,f,l,g,n)}};a.k.ja=function(b,c,d,e,f){return c==m.D?0",
+               "(function(){var sourceWebappPromoID=144002;var sourceWebappGroupID=5;var payloadType=5;var cookieMaxAgeSec=2592000;var dismissalType=5;var impressionCap=25;var gaiaXsrfToken='';var zwbkXsrfToken='';var kansasDismissalEnabled=false;var sessionIndex=0;var invisible=false;window.gbar&&gbar.up&&gbar.up.r&&gbar.up.r(payloadType,function(show){if (show){google.promos.toast.init(sourceWebappPromoID,sourceWebappGroupID,payloadType,dismissalType,cookieMaxAgeSec,impressionCap,sessionIndex,gaiaXsrfToken,zwbkXsrfToken,invisible,'0612');}\n});})();",
+               "(function(){var a,b=\"1\";if(document&&document.getElementById)if(\"undefined\"!=typeof XMLHttpRequest)b=\"2\";else if(\"undefined\"!=typeof ActiveXObject){var c,d,e=[\"MSXML2.XMLHTTP.6.0\",\"MSXML2.XMLHTTP.3.0\",\"MSXML2.XMLHTTP\",\"Microsoft.XMLHTTP\"];for(c=0;d=e[c++];)try{new ActiveXObject(d),b=\"2\"}catch(f){}}a=b;if(\"2\"==a&&-1==location.search.indexOf(\"&gbv=2\")){var g=google.gbvu,h=document.getElementById(\"gbv\");h&&(h.value=a);g&&window.setTimeout(function(){location.href=g},0)};})();",
+               "(function(){var e={ACCEPT:\"a\",LIMITED_ACCEPT:\"l\",CANCEL:\"c\",DISMISS:\"d\",CLICK:\"h\",IMPRESSION:\"i\",NO_THANKS:\"n\",X_BUTTON:\"x\",MGMHP_ACCEPT:\"ma\",MGMHP_CANCEL:\"mc\",MGMHP_IMPRESSION:\"mi\",MGMHPPD_ACCEPT:\"pa\",MGMHPPD_CANCEL:\"pc\",MGMHPPD_IMPRESSION:\"pi\",MGMHPPD_NO_THANKS:\"pn\",MGMHPPD_NO_BUTTON:\"px\",MGMHPPD_DISMISS:\"pd\",PUSHDOWN_ACCEPT:\"gpa\",PUSHDOWN_IMPRESSION:\"gpi\",PUSHDOWN_NO_THANKS:\"gpn\",PUSHDOWN_X_BUTTON:\"gpx\",PUSHDOWN_DISMISS:\"gpd\"};var f,g,h=0,k;google.promos=google.promos||{};google.promos.link=google.promos.link||{};google.promos.link.getExtraLogData_=function(b){var a=document.getElementById(k);if(a){var c=g+\"_upccb\",d=parseInt(window.gbar.up.gpd(a,c)||0,10);d++;h++;window.gbar.up.spd(a,c,d);a=[[\"upcc\",h].join(\"=\"),[\"upccb\",d].join(\"=\")];b&&a.push(b);return a.join(\"&\")}return\"\"};google.promos.link.cl=function(b){try{window.gbar.up.sl(g,f,e.CLICK,google.promos.link.getExtraLogData_(b),1)}catch(a){google.ml(a,!1,{cause:f+\"_CL\"})}};function l(){var b=[\"gpd\",\"spd\",\"sl\"];if(!window.gbar||!window.gbar.up)return!1;for(var a=0,c;c=b[a];a++)if(!(c in window.gbar.up))return!1;return!0}google.promos.link.init=function(b,a,c){try{if(l()){g=b;f=a;k=c;var d=document.getElementById(k);d&&(d.style.display=\"\",window.gbar.up.sl(g,f,e.IMPRESSION))}else google.ml(Error(\"apa\"),!1,{cause:a+\"_INIT\"})}catch(m){google.ml(m,!1,{cause:f+\"_INIT\"})}};})();",
+               "(function(){var sourceWebappPromoID=5078490;var payloadType=3;window.gbar&&gbar.up&&gbar.up.r&&gbar.up.r(payloadType,function(show){if (show){google.promos.link.init(sourceWebappPromoID,payloadType,'hpplink');}\n});})();",
+               "(function(){function c(b){window.setTimeout(function(){var a=document.createElement(\"script\");a.src=b;document.getElementById(\"xjsd\").appendChild(a)},0)}google.dljp=function(b,a){google.xjsu=b;c(a)};google.dlj=c;})();(function(){window.google.xjsrm=[];})();if(google.y)google.y.first=[];if(!google.xjs){window._=window._||{};window._._DumpException=function(e){throw e};if(google.timers&&google.timers.load.t){google.timers.load.t.xjsls=new Date().getTime();}google.dljp('/xjs/_/js/k\\x3dxjs.hp.en_US.unbmcAvTW8Q.O/m\\x3dsb_he,pcc/rt\\x3dj/d\\x3d1/t\\x3dzcms/rs\\x3dACT90oGqGJlmeXG1slkxQVd88Qgp67RQow','/xjs/_/js/k\\x3dxjs.hp.en_US.unbmcAvTW8Q.O/m\\x3dsb_he,pcc/rt\\x3dj/d\\x3d1/t\\x3dzcms/rs\\x3dACT90oGqGJlmeXG1slkxQVd88Qgp67RQow');google.xjs=1;}google.pmc={\"sb_he\":{\"agen\":true,\"cgen\":true,\"client\":\"heirloom-hp\",\"dh\":true,\"ds\":\"\",\"eqch\":true,\"exp\":\"msedr\",\"fl\":true,\"host\":\"google.com\",\"jam\":0,\"jsonp\":true,\"msgs\":{\"cibl\":\"Clear Search\",\"dym\":\"Did you mean:\",\"lcky\":\"I\\u0026#39;m Feeling Lucky\",\"lml\":\"Learn more\",\"oskt\":\"Input tools\",\"psrc\":\"This search was removed from your \\u003Ca href=\\\"/history\\\"\\u003EWeb History\\u003C/a\\u003E\",\"psrl\":\"Remove\",\"sbit\":\"Search by image\",\"srch\":\"Google Search\"},\"ovr\":{},\"pq\":\"\",\"qcpw\":false,\"refoq\":true,\"scd\":10,\"sce\":5,\"stok\":\"OvydH_UkTjSKkhiP2_HYNzFZrqc\"},\"pcc\":{}};google.y.first.push(function(){if(google.med){google.med('init');google.initHistory();google.med('history');}});if(google.j&&google.j.en&&google.j.xi){window.setTimeout(google.j.xi,0);}\n"
+            ],
+            "type" : [ "text/javascript", "text/javascript", "text/javascript" ]
+         }
+      },
+      {
+         "id" : "2202",
+         "label" : ":title",
+         "labels" : [ "title" ],
+         "properties" : {
+            "contents" : [ "Google" ]
+         }
+      },
+      {
+         "id" : "2203",
+         "label" : ":textarea",
+         "labels" : [ "textarea" ],
+         "properties" : {
+            "contents" : [ "',c[e],\"" ],
+            "name" : [ "',e,'" ]
+         }
+      },
+      {
+         "id" : "2204",
+         "label" : ":head",
+         "labels" : [ "head" ],
+         "properties" : {
+            "contents" : [ "null" ]
+         }
+      },
+      {
+         "id" : "2205",
+         "label" : ":html",
+         "labels" : [ "html" ],
+         "properties" : {
+            "contents" : [ "null" ],
+            "itemscope" : [ "null" ],
+            "itemtype" : [ "http://schema.org/WebPage" ],
+            "lang" : [ "en" ]
+         }
+      },
+      {
+         "id" : "2206",
+         "label" : ":h2",
+         "labels" : [ "h2" ],
+         "properties" : {
+            "class" : [ "gbxx" ],
+            "contents" : [ "Account Options" ]
+         }
+      },
+      {
+         "id" : "2207",
          "label" : ":a",
          "labels" : [ "a" ],
          "properties" : {
@@ -64,6 +570,7 @@
                "Install Google Chrome",
                "Advanced search",
                "Language tools",
+               "'Tis the season for giving and good cheer",
                "Advertising&nbsp;Programs",
                "Business Solutions",
                "+Google",
@@ -100,6 +607,7 @@
                "/chrome/index.html?hl=en&amp;brand=CHNG&amp;utm_source=en-hpp&amp;utm_medium=hpp&amp;utm_campaign=en",
                "/advanced_search?hl=en&amp;authuser=0",
                "/language_tools?hl=en&amp;authuser=0",
+               "https://happyholidays.withgoogle.com/?utm_source=Google&amp;utm_medium=googlehppdesktop&amp;utm_campaign=googlehppdesktop",
                "/intl/en/ads/",
                "/services/",
                "https://plus.google.com/116899029375914044550",
@@ -155,7 +663,8 @@
                "gbar.logger.il(1,{t:66});",
                "gbar.logger.il(9,{l:'i'})",
                "gbar.tg(event,this)",
-               "google.promos&&google.promos.toast&& google.promos.toast.cl()"
+               "google.promos&&google.promos.toast&& google.promos.toast.cl()",
+               "google.promos&&google.promos.link&& google.promos.link.cl()"
             ],
             "rel" : [ "publisher" ],
             "target" : [ "_top" ],
@@ -163,7 +672,519 @@
          }
       },
       {
-         "id" : "3034",
+         "id" : "2208",
+         "label" : ":img",
+         "labels" : [ "img" ],
+         "properties" : {
+            "alt" : [ "Google" ],
+            "contents" : [ " ", "null", "null" ],
+            "height" : [ "95", "30px" ],
+            "id" : [ "hplogo" ],
+            "onload" : [ "window.lol&&lol()" ],
+            "src" : [
+               "/images/icons/product/chrome-48.png",
+               "/images/srpr/logo9w.png",
+               "/images/hpp/GiftBox30x30.png"
+            ],
+            "style" : [
+               "padding:28px 0 14px",
+               "margin-right:5px;border:none;vertical-align:middle"
+            ],
+            "width" : [ "269", "30px" ]
+         }
+      },
+      {
+         "id" : "2209",
+         "label" : ":center",
+         "labels" : [ "center" ],
+         "properties" : {
+            "contents" : [ "null" ]
+         }
+      },
+      {
+         "id" : "2210",
+         "label" : ":td",
+         "labels" : [ "td" ],
+         "properties" : {
+            "align" : [ "center", "left" ],
+            "class" : [ "padi", "pads", "padt", "fl sblc" ],
+            "colspan" : [ "2" ],
+            "contents" : [
+               " ",
+               " ",
+               "A faster way to browse the web",
+               " ",
+               "&nbsp;",
+               "null",
+               "null"
+            ],
+            "nowrap" : [ "null", "null" ],
+            "rowspan" : [ "2" ],
+            "width" : [ "25%", "25%" ]
+         }
+      },
+      {
+         "id" : "2211",
+         "label" : ":form",
+         "labels" : [ "form" ],
+         "properties" : {
+            "action" : [ "',d,'", "/search" ],
+            "contents" : [
+               "'];for(var e in c)c.hasOwnProperty(e)&&d.push('",
+               "'];for(var e in c)c.hasOwnProperty(e)&&d.push('\");d.push(\"",
+               "null"
+            ],
+            "method" : [ "POST" ],
+            "name" : [ "f" ]
+         }
+      },
+      {
+         "id" : "2212",
+         "label" : ":URL",
+         "labels" : [ "URL" ],
+         "properties" : {
+            "url" : "http://www.google.com/intl/en/policies/terms/"
+         }
+      },
+      {
+         "id" : "2213",
+         "label" : ":option",
+         "labels" : [ "option" ],
+         "properties" : {
+            "contents" : [
+               "Afrikaans\n",
+               "Bahasa Indonesia\n",
+               "Bahasa Melayu\n",
+               "Català\n",
+               "Čeština\n",
+               "Dansk\n",
+               "Deutsch\n",
+               "Eesti\n",
+               "English\n",
+               "English (United Kingdom)\n",
+               "Español\n",
+               "Español (Latinoamérica)\n",
+               "Euskara\n",
+               "Filipino\n",
+               "Français\n",
+               "Français (Canada)\n",
+               "Galego\n",
+               "Hrvatski\n",
+               "Isizulu\n",
+               "Íslenska\n",
+               "Italiano\n",
+               "Kiswahili\n",
+               "Latviešu\n",
+               "Lietuvių\n",
+               "Magyar\n",
+               "Nederlands\n",
+               "Norsk\n",
+               "Polski\n",
+               "Português (Brasil)\n",
+               "Português (Portugal)\n",
+               "Română\n",
+               "Slovenčina\n",
+               "Slovenščina\n",
+               "Suomi\n",
+               "Svenska\n",
+               "Tiếng Việt\n",
+               "Türkçe\n",
+               "Ελληνικά\n",
+               "Български\n",
+               "Русский\n",
+               "Српски\n",
+               "Українська\n",
+               "‫עברית‬\n",
+               "‫اردو‬\n",
+               "‫العربية‬\n",
+               "‫فارسی‬\n",
+               "አማርኛ\n",
+               "मराठी\n",
+               "हिन्दी\n",
+               "বাংলা\n",
+               "ગુજરાતી\n",
+               "தமிழ்\n",
+               "తెలుగు\n",
+               "ಕನ್ನಡ\n",
+               "മലയാളം\n",
+               "ไทย\n",
+               "한국어\n",
+               "中文 (香港)\n",
+               "中文（简体中文）\n",
+               "中文（繁體中文）\n",
+               "日本語"
+            ],
+            "selected" : [ "null" ],
+            "value" : [
+               "/intl/af/policies/terms/",
+               "/intl/id/policies/terms/",
+               "/intl/ms/policies/terms/",
+               "/intl/ca/policies/terms/",
+               "/intl/cs/policies/terms/",
+               "/intl/da/policies/terms/",
+               "/intl/de/policies/terms/",
+               "/intl/et/policies/terms/",
+               "/intl/en/policies/terms/",
+               "/intl/en-GB/policies/terms/",
+               "/intl/es/policies/terms/",
+               "/intl/es-419/policies/terms/",
+               "/intl/eu/policies/terms/",
+               "/intl/fil/policies/terms/",
+               "/intl/fr/policies/terms/",
+               "/intl/fr-CA/policies/terms/",
+               "/intl/gl/policies/terms/",
+               "/intl/hr/policies/terms/",
+               "/intl/zu/policies/terms/",
+               "/intl/is/policies/terms/",
+               "/intl/it/policies/terms/",
+               "/intl/sw/policies/terms/",
+               "/intl/lv/policies/terms/",
+               "/intl/lt/policies/terms/",
+               "/intl/hu/policies/terms/",
+               "/intl/nl/policies/terms/",
+               "/intl/no/policies/terms/",
+               "/intl/pl/policies/terms/",
+               "/intl/pt-BR/policies/terms/",
+               "/intl/pt-PT/policies/terms/",
+               "/intl/ro/policies/terms/",
+               "/intl/sk/policies/terms/",
+               "/intl/sl/policies/terms/",
+               "/intl/fi/policies/terms/",
+               "/intl/sv/policies/terms/",
+               "/intl/vi/policies/terms/",
+               "/intl/tr/policies/terms/",
+               "/intl/el/policies/terms/",
+               "/intl/bg/policies/terms/",
+               "/intl/ru/policies/terms/",
+               "/intl/sr/policies/terms/",
+               "/intl/uk/policies/terms/",
+               "/intl/iw/policies/terms/",
+               "/intl/ur/policies/terms/",
+               "/intl/ar/policies/terms/",
+               "/intl/fa/policies/terms/",
+               "/intl/am/policies/terms/",
+               "/intl/mr/policies/terms/",
+               "/intl/hi/policies/terms/",
+               "/intl/bn/policies/terms/",
+               "/intl/gu/policies/terms/",
+               "/intl/ta/policies/terms/",
+               "/intl/te/policies/terms/",
+               "/intl/kn/policies/terms/",
+               "/intl/ml/policies/terms/",
+               "/intl/th/policies/terms/",
+               "/intl/ko/policies/terms/",
+               "/intl/zh-HK/policies/terms/",
+               "/intl/zh-CN/policies/terms/",
+               "/intl/zh-TW/policies/terms/",
+               "/intl/ja/policies/terms/"
+            ]
+         }
+      },
+      {
+         "id" : "2214",
+         "label" : ":h3",
+         "labels" : [ "h3" ],
+         "properties" : {
+            "contents" : [ "Google Safety Center", "Our legal policies", "More information" ]
+         }
+      },
+      {
+         "id" : "2215",
+         "label" : ":p",
+         "labels" : [ "p" ],
+         "properties" : {
+            "contents" : [
+               "Last modified: April 14, 2014 (",
+               "Last modified: April 14, 2014 ()\n",
+               "Thanks for using our products and services (“Services”). The Services are provided by Google Inc. (“Google”), located at 1600 Amphitheatre Parkway, Mountain View, CA 94043, United States.\n",
+               "By using our Services, you are agreeing to these terms. Please read them carefully.\n",
+               "Our Services are very diverse, so sometimes additional terms or product requirements (including age requirements) may apply. Additional terms will be available with the relevant Services, and those additional terms become part of your agreement with us if you use those Services.\n",
+               "You must follow any policies made available to you within the Services.\n",
+               "Don’t misuse our Services. For example, don’t interfere with our Services or try to access them using a method other than the interface and the instructions that we provide. You may use our Services only as permitted by law, including applicable export and re-export control laws and regulations. We may suspend or stop providing our Services to you if you do not comply with our terms or policies or if we are investigating suspected misconduct.\n",
+               "Using our Services does not give you ownership of any intellectual property rights in our Services or the content you access. You may not use content from our Services unless you obtain permission from its owner or are otherwise permitted by law. These terms do not grant you the right to use any branding or logos used in our Services. Don’t remove, obscure, or alter any legal notices displayed in or along with our Services.\n",
+               "Our Services display some content that is not Google’s. This content is the sole responsibility of the entity that makes it available. We may review content to determine whether it is illegal or violates our policies, and we may remove or refuse to display content that we reasonably believe violates our policies or the law. But that does not necessarily mean that we review content, so please don’t assume that we do.\n",
+               "In connection with your use of the Services, we may send you service announcements, administrative messages, and other information. You may opt out of some of those communications.\n",
+               "Some of our Services are available on mobile devices. Do not use such Services in a way that distracts you and prevents you from obeying traffic or safety laws.\n",
+               "You may need a Google Account in order to use some of our Services. You may create your own Google Account, or your Google Account may be assigned to you by an administrator, such as your employer or educational institution. If you are using a Google Account assigned to you by an administrator, different or additional terms may apply and your administrator may be able to access or disable your account.\n",
+               "To protect your Google Account, keep your password confidential. You are responsible for the activity that happens on or through your Google Account. Try not to reuse your Google Account password on third-party applications. If you learn of any unauthorized use of your password or Google Account, ",
+               "To protect your Google Account, keep your password confidential. You are responsible for the activity that happens on or through your Google Account. Try not to reuse your Google Account password on third-party applications. If you learn of any unauthorized use of your password or Google Account, .\n",
+               "Google’s ",
+               "Google’s explain how we treat your personal data and protect your privacy when you use our Services. By using our Services, you agree that Google can use such data in accordance with our privacy policies.\n",
+               "We respond to notices of alleged copyright infringement and terminate accounts of repeat infringers according to the process set out in the U.S. Digital Millennium Copyright Act.\n",
+               "We provide information to help copyright holders manage their intellectual property online. If you think somebody is violating your copyrights and want to notify us, you can find information about submitting notices and Google’s policy about responding to notices ",
+               "We provide information to help copyright holders manage their intellectual property online. If you think somebody is violating your copyrights and want to notify us, you can find information about submitting notices and Google’s policy about responding to notices .\n",
+               "Some of our Services allow you to upload, submit, store, send or receive content. You retain ownership of any intellectual property rights that you hold in that content. In short, what belongs to you stays yours.\n",
+               "When you upload, submit, store, send or receive content to or through our Services, you give Google (and those we work with) a worldwide license to use, host, store, reproduce, modify, create derivative works (such as those resulting from translations, adaptations or other changes we make so that your content works better with our Services), communicate, publish, publicly perform, publicly display and distribute such content. The rights you grant in this license are for the limited purpose of operating, promoting, and improving our Services, and to develop new ones. This license continues even if you stop using our Services (for example, for a business listing you have added to Google Maps). Some Services may offer you ways to access and remove content that has been provided to that Service. Also, in some of our Services, there are terms or settings that narrow the scope of our use of the content submitted in those Services. Make sure you have the necessary rights to grant us this license for any content that you submit to our Services.\n",
+               "Our automated systems analyze your content (including emails) to provide you personally relevant product features, such as customized search results, tailored advertising, and spam and malware detection. This analysis occurs as the content is sent, received, and when it is stored.\n",
+               "If you have a Google Account, we may display your Profile name, Profile photo, and actions you take on Google or on third-party applications connected to your Google Account (such as +1’s, reviews you write and comments you post) in our Services, including displaying in ads and other commercial contexts. We will respect the choices you make to limit sharing or visibility settings in your Google Account. For example, you can choose your settings so your name and photo do not appear in an ad.\n",
+               "You can find more information about how Google uses and stores content in the privacy policy or additional terms for particular Services. If you submit feedback or suggestions about our Services, we may use your feedback or suggestions without obligation to you.\n",
+               "When a Service requires or includes downloadable software, this software may update automatically on your device once a new version or feature is available. Some Services may let you adjust your automatic update settings.\n",
+               "Google gives you a personal, worldwide, royalty-free, non-assignable and non-exclusive license to use the software provided to you by Google as part of the Services. This license is for the sole purpose of enabling you to use and enjoy the benefit of the Services as provided by Google, in the manner permitted by these terms. You may not copy, modify, distribute, sell, or lease any part of our Services or included software, nor may you reverse engineer or attempt to extract the source code of that software, unless laws prohibit those restrictions or you have our written permission.\n",
+               "Open source software is important to us. Some software used in our Services may be offered under an open source license that we will make available to you. There may be provisions in the open source license that expressly override some of these terms.\n",
+               "We are constantly changing and improving our Services. We may add or remove functionalities or features, and we may suspend or stop a Service altogether.\n",
+               "You can stop using our Services at any time, although we’ll be sorry to see you go. Google may also stop providing Services to you, or add or create new limits to our Services at any time.\n",
+               "We believe that you own your data and preserving your access to such data is important. If we discontinue a Service, where reasonably possible, we will give you reasonable advance notice and a chance to get information out of that Service.\n",
+               "We provide our Services using a commercially reasonable level of skill and care and we hope that you will enjoy using them. But there are certain things that we don’t promise about our Services.\n",
+               "OTHER THAN AS EXPRESSLY SET OUT IN THESE TERMS OR ADDITIONAL TERMS, NEITHER GOOGLE NOR ITS SUPPLIERS OR DISTRIBUTORS MAKE ANY SPECIFIC PROMISES ABOUT THE SERVICES. FOR EXAMPLE, WE DON’T MAKE ANY COMMITMENTS ABOUT THE CONTENT WITHIN THE SERVICES, THE SPECIFIC FUNCTIONS OF THE SERVICES, OR THEIR RELIABILITY, AVAILABILITY, OR ABILITY TO MEET YOUR NEEDS. WE PROVIDE THE SERVICES “AS IS”.\n",
+               "SOME JURISDICTIONS PROVIDE FOR CERTAIN WARRANTIES, LIKE THE IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. TO THE EXTENT PERMITTED BY LAW, WE EXCLUDE ALL WARRANTIES.\n",
+               "WHEN PERMITTED BY LAW, GOOGLE, AND GOOGLE’S SUPPLIERS AND DISTRIBUTORS, WILL NOT BE RESPONSIBLE FOR LOST PROFITS, REVENUES, OR DATA, FINANCIAL LOSSES OR INDIRECT, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES.\n",
+               "TO THE EXTENT PERMITTED BY LAW, THE TOTAL LIABILITY OF GOOGLE, AND ITS SUPPLIERS AND DISTRIBUTORS, FOR ANY CLAIMS UNDER THESE TERMS, INCLUDING FOR ANY IMPLIED WARRANTIES, IS LIMITED TO THE AMOUNT YOU PAID US TO USE THE SERVICES (OR, IF WE CHOOSE, TO SUPPLYING YOU THE SERVICES AGAIN).\n",
+               "IN ALL CASES, GOOGLE, AND ITS SUPPLIERS AND DISTRIBUTORS, WILL NOT BE LIABLE FOR ANY LOSS OR DAMAGE THAT IS NOT REASONABLY FORESEEABLE.\n",
+               "If you are using our Services on behalf of a business, that business accepts these terms. It will hold harmless and indemnify Google and its affiliates, officers, agents, and employees from any claim, suit or action arising from or related to the use of the Services or violation of these terms, including any liability or expense arising from claims, losses, damages, suits, judgments, litigation costs and attorneys’ fees.\n",
+               "We may modify these terms or any additional terms that apply to a Service to, for example, reflect changes to the law or changes to our Services. You should look at the terms regularly. We’ll post notice of modifications to these terms on this page. We’ll post notice of modified additional terms in the applicable Service. Changes will not apply retroactively and will become effective no sooner than fourteen days after they are posted. However, changes addressing new functions for a Service or changes made for legal reasons will be effective immediately. If you do not agree to the modified terms for a Service, you should discontinue your use of that Service.\n",
+               "If there is a conflict between these terms and the additional terms, the additional terms will control for that conflict.\n",
+               "These terms control the relationship between Google and you. They do not create any third party beneficiary rights.\n",
+               "If you do not comply with these terms, and we don’t take action right away, this doesn’t mean that we are giving up any rights that we may have (such as taking action in the future).\n",
+               "If it turns out that a particular term is not enforceable, this will not affect any other terms.\n",
+               "The laws of California, U.S.A., excluding California’s conflict of laws rules, will apply to any disputes arising out of or relating to these terms or the Services. All claims arising out of or relating to these terms or the Services will be litigated exclusively in the federal or state courts of Santa Clara County, California, USA, and you and Google consent to personal jurisdiction in those courts.\n",
+               "For information about how to contact Google, please visit our ",
+               "For information about how to contact Google, please visit our .",
+               "Keeping the web safe for everyone is a shared responsibility. "
+            ]
+         }
+      },
+      {
+         "id" : "2216",
+         "label" : ":li",
+         "labels" : [ "li" ],
+         "properties" : {
+            "class" : [ "active" ],
+            "contents" : [
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "Terms of Service\n",
+               "null",
+               "\n",
+               "null",
+               "Terms of Service\n",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null"
+            ],
+            "data-g-label" : [
+               "Overview",
+               "Privacy Policy",
+               "Terms of Service",
+               "Privacy in our technology",
+               "FAQ"
+            ]
+         }
+      },
+      {
+         "id" : "2217",
+         "label" : ":ul",
+         "labels" : [ "ul" ],
+         "properties" : {
+            "contents" : [ "\n", "\n", "\n", "\n", "\n", "\n" ]
+         }
+      },
+      {
+         "id" : "2218",
+         "label" : ":link",
+         "labels" : [ "link" ],
+         "properties" : {
+            "contents" : [ "\n", "\n" ],
+            "href" : [
+               "//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en",
+               "/policies/css/default.css"
+            ],
+            "rel" : [ "stylesheet", "stylesheet" ]
+         }
+      },
+      {
+         "id" : "2219",
+         "label" : ":label",
+         "labels" : [ "label" ],
+         "properties" : {
+            "contents" : [ "null" ]
+         }
+      },
+      {
+         "id" : "2220",
+         "label" : ":html",
+         "labels" : [ "html" ],
+         "properties" : {
+            "class" : [ "google" ],
+            "contents" : [ "\n\n" ],
+            "lang" : [ "en" ]
+         }
+      },
+      {
+         "id" : "2221",
+         "label" : ":select",
+         "labels" : [ "select" ],
+         "properties" : {
+            "contents" : [ "\n" ],
+            "onchange" : [
+               "var href=this[this.selectedIndex].value;if(href!=''){window.location.href=href};"
+            ]
+         }
+      },
+      {
+         "id" : "2222",
+         "label" : ":script",
+         "labels" : [ "script" ],
+         "properties" : {
+            "contents" : [
+               "\n(function(H){H.className=H.className.replace(/\\bgoogle\\b/,'google-js')})(document.documentElement)\n",
+               "\n",
+               "\nnew gweb.analytics.AutoTrack({profile:\"UA-28138501-1\"});\n",
+               "\n"
+            ],
+            "src" : [ "//www.google.com/js/google.js", "//www.google.com/js/maia.js" ]
+         }
+      },
+      {
+         "id" : "2223",
+         "label" : ":h2",
+         "labels" : [ "h2" ],
+         "properties" : {
+            "contents" : [
+               "null",
+               "Welcome to Google!",
+               "Using our Services",
+               "Your Google Account",
+               "Privacy and Copyright Protection",
+               "Your Content in our Services",
+               "About Software in our Services",
+               "Modifying and Terminating our Services",
+               "Our Warranties and Disclaimers",
+               "Liability for our Services",
+               "Business uses of our Services",
+               "About these Terms"
+            ],
+            "id" : [
+               "toc-services",
+               "toc-account",
+               "toc-protection",
+               "toc-content",
+               "toc-software",
+               "toc-modification",
+               "toc-warranties-disclaimers",
+               "toc-liability",
+               "toc-business-uses",
+               "toc-about"
+            ]
+         }
+      },
+      {
+         "id" : "2224",
+         "label" : ":meta",
+         "labels" : [ "meta" ],
+         "properties" : {
+            "charset" : [ "utf-8" ],
+            "content" : [ "initial-scale=1, minimum-scale=1, width=device-width" ],
+            "contents" : [ "\n", "\n" ],
+            "name" : [ "viewport" ]
+         }
+      },
+      {
+         "id" : "2225",
+         "label" : ":title",
+         "labels" : [ "title" ],
+         "properties" : {
+            "contents" : [ "Google Terms of Service – Privacy &amp; Terms – Google" ]
+         }
+      },
+      {
+         "id" : "2226",
+         "label" : ":span",
+         "labels" : [ "span" ],
+         "properties" : {
+            "contents" : [ "Change language:" ]
+         }
+      },
+      {
+         "id" : "2227",
+         "label" : ":div",
+         "labels" : [ "div" ],
+         "properties" : {
+            "class" : [
+               "maia-header",
+               "maia-aux",
+               "maia-nav",
+               "maia-aux",
+               "maia-nav",
+               "maia-article",
+               "maia-teleport",
+               "maia-footer",
+               "maia-aux",
+               "policy-footer-sitemap",
+               "maia-cols",
+               "maia-col-3",
+               "maia-col-3",
+               "maia-col-6",
+               "maia-aux",
+               "maia-locales"
+            ],
+            "contents" : [
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "null",
+               "null",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "null"
+            ],
+            "id" : [
+               "maia-header",
+               "maia-nav-x",
+               "maia-main",
+               "maia-nav-y",
+               "content",
+               "maia-signature",
+               "maia-footer",
+               "maia-footer-local",
+               "maia-footer-global"
+            ],
+            "role" : [ "banner", "navigation", "main", "navigation", "article" ]
+         }
+      },
+      {
+         "id" : "2228",
+         "label" : ":h1",
+         "labels" : [ "h1" ],
+         "properties" : {
+            "contents" : [ "null", "Google Terms of Service" ]
+         }
+      },
+      {
+         "id" : "2229",
+         "label" : ":img",
+         "labels" : [ "img" ],
+         "properties" : {
+            "alt" : [ "Google" ],
+            "contents" : [ "null" ],
+            "src" : [ "//www.google.com/images/logos/google_logo_41.png" ]
+         }
+      },
+      {
+         "id" : "2230",
          "label" : ":a",
          "labels" : [ "a" ],
          "properties" : {
@@ -231,7 +1252,936 @@
          }
       },
       {
-         "id" : "3055",
+         "id" : "2231",
+         "label" : ":URL",
+         "labels" : [ "URL" ],
+         "properties" : {
+            "url" : "http://www.google.com/intl/en/policies/privacy/"
+         }
+      },
+      {
+         "id" : "2232",
+         "label" : ":option",
+         "labels" : [ "option" ],
+         "properties" : {
+            "contents" : [
+               "Afrikaans\n",
+               "Bahasa Indonesia\n",
+               "Bahasa Melayu\n",
+               "Català\n",
+               "Čeština\n",
+               "Dansk\n",
+               "Deutsch\n",
+               "Eesti\n",
+               "English\n",
+               "English (United Kingdom)\n",
+               "Español\n",
+               "Español (Latinoamérica)\n",
+               "Euskara\n",
+               "Filipino\n",
+               "Français\n",
+               "Français (Canada)\n",
+               "Galego\n",
+               "Hrvatski\n",
+               "Isizulu\n",
+               "Íslenska\n",
+               "Italiano\n",
+               "Kiswahili\n",
+               "Latviešu\n",
+               "Lietuvių\n",
+               "Magyar\n",
+               "Nederlands\n",
+               "Norsk\n",
+               "Polski\n",
+               "Português (Brasil)\n",
+               "Português (Portugal)\n",
+               "Română\n",
+               "Slovenčina\n",
+               "Slovenščina\n",
+               "Suomi\n",
+               "Svenska\n",
+               "Tiếng Việt\n",
+               "Türkçe\n",
+               "Ελληνικά\n",
+               "Български\n",
+               "Русский\n",
+               "Српски\n",
+               "Українська\n",
+               "‫עברית‬\n",
+               "‫اردو‬\n",
+               "‫العربية‬\n",
+               "‫فارسی‬\n",
+               "አማርኛ\n",
+               "मराठी\n",
+               "हिन्दी\n",
+               "বাংলা\n",
+               "ગુજરાતી\n",
+               "தமிழ்\n",
+               "తెలుగు\n",
+               "ಕನ್ನಡ\n",
+               "മലയാളം\n",
+               "ไทย\n",
+               "한국어\n",
+               "中文 (香港)\n",
+               "中文（简体中文）\n",
+               "中文（繁體中文）\n",
+               "日本語"
+            ],
+            "selected" : [ "null" ],
+            "value" : [
+               "/intl/af/policies/privacy/",
+               "/intl/id/policies/privacy/",
+               "/intl/ms/policies/privacy/",
+               "/intl/ca/policies/privacy/",
+               "/intl/cs/policies/privacy/",
+               "/intl/da/policies/privacy/",
+               "/intl/de/policies/privacy/",
+               "/intl/et/policies/privacy/",
+               "/intl/en/policies/privacy/",
+               "/intl/en-GB/policies/privacy/",
+               "/intl/es/policies/privacy/",
+               "/intl/es-419/policies/privacy/",
+               "/intl/eu/policies/privacy/",
+               "/intl/fil/policies/privacy/",
+               "/intl/fr/policies/privacy/",
+               "/intl/fr-CA/policies/privacy/",
+               "/intl/gl/policies/privacy/",
+               "/intl/hr/policies/privacy/",
+               "/intl/zu/policies/privacy/",
+               "/intl/is/policies/privacy/",
+               "/intl/it/policies/privacy/",
+               "/intl/sw/policies/privacy/",
+               "/intl/lv/policies/privacy/",
+               "/intl/lt/policies/privacy/",
+               "/intl/hu/policies/privacy/",
+               "/intl/nl/policies/privacy/",
+               "/intl/no/policies/privacy/",
+               "/intl/pl/policies/privacy/",
+               "/intl/pt-BR/policies/privacy/",
+               "/intl/pt-PT/policies/privacy/",
+               "/intl/ro/policies/privacy/",
+               "/intl/sk/policies/privacy/",
+               "/intl/sl/policies/privacy/",
+               "/intl/fi/policies/privacy/",
+               "/intl/sv/policies/privacy/",
+               "/intl/vi/policies/privacy/",
+               "/intl/tr/policies/privacy/",
+               "/intl/el/policies/privacy/",
+               "/intl/bg/policies/privacy/",
+               "/intl/ru/policies/privacy/",
+               "/intl/sr/policies/privacy/",
+               "/intl/uk/policies/privacy/",
+               "/intl/iw/policies/privacy/",
+               "/intl/ur/policies/privacy/",
+               "/intl/ar/policies/privacy/",
+               "/intl/fa/policies/privacy/",
+               "/intl/am/policies/privacy/",
+               "/intl/mr/policies/privacy/",
+               "/intl/hi/policies/privacy/",
+               "/intl/bn/policies/privacy/",
+               "/intl/gu/policies/privacy/",
+               "/intl/ta/policies/privacy/",
+               "/intl/te/policies/privacy/",
+               "/intl/kn/policies/privacy/",
+               "/intl/ml/policies/privacy/",
+               "/intl/th/policies/privacy/",
+               "/intl/ko/policies/privacy/",
+               "/intl/zh-HK/policies/privacy/",
+               "/intl/zh-CN/policies/privacy/",
+               "/intl/zh-TW/policies/privacy/",
+               "/intl/ja/policies/privacy/"
+            ]
+         }
+      },
+      {
+         "id" : "2233",
+         "label" : ":h4",
+         "labels" : [ "h4" ],
+         "properties" : {
+            "class" : [
+               "example",
+               "example",
+               "example",
+               "example",
+               "example",
+               "example",
+               "example",
+               "example",
+               "example",
+               "example",
+               "example",
+               "example",
+               "example",
+               "example",
+               "example",
+               "example",
+               "example",
+               "example",
+               "example",
+               "example",
+               "example",
+               "example",
+               "example",
+               "example",
+               "example"
+            ],
+            "contents" : [
+               "Example",
+               "Example",
+               "Example",
+               "Example",
+               "Example",
+               "Example",
+               "Example",
+               "Example",
+               "Example",
+               "Example",
+               "Example",
+               "Example",
+               "Example",
+               "Example",
+               "Example",
+               "Example",
+               "Example",
+               "Example",
+               "Example",
+               "Example",
+               "Example",
+               "Example",
+               "Example",
+               "Example",
+               "Example"
+            ]
+         }
+      },
+      {
+         "id" : "2234",
+         "label" : ":p",
+         "labels" : [ "p" ],
+         "properties" : {
+            "contents" : [
+               "Last modified: March 31, 2014 (",
+               "Last modified: March 31, 2014 ()",
+               "null",
+               "There are many different ways you can use our services – to search for and share information, to communicate with other people or to create new content. When you share information with us, for example by creating a ",
+               "There are many different ways you can use our services – to search for and share information, to communicate with other people or to create new content. When you share information with us, for example by creating a , we can make those services even better – to show you ",
+               "There are many different ways you can use our services – to search for and share information, to communicate with other people or to create new content. When you share information with us, for example by creating a , we can make those services even better – to show you and ads, to help you ",
+               "There are many different ways you can use our services – to search for and share information, to communicate with other people or to create new content. When you share information with us, for example by creating a , we can make those services even better – to show you and ads, to help you or to make ",
+               "There are many different ways you can use our services – to search for and share information, to communicate with other people or to create new content. When you share information with us, for example by creating a , we can make those services even better – to show you and ads, to help you or to make . As you use our services, we want you to be clear how we’re using information and the ways in which you can protect your privacy.\n",
+               "Our Privacy Policy explains:\n",
+               "We’ve tried to keep it as simple as possible, but if you’re not familiar with terms like cookies, IP addresses, pixel tags and browsers, then read about these ",
+               "We’ve tried to keep it as simple as possible, but if you’re not familiar with terms like cookies, IP addresses, pixel tags and browsers, then read about these first. Your privacy matters to Google so whether you are new to Google or a long-time user, please do take the time to get to know our practices – and if you have any questions ",
+               "We’ve tried to keep it as simple as possible, but if you’re not familiar with terms like cookies, IP addresses, pixel tags and browsers, then read about these first. Your privacy matters to Google so whether you are new to Google or a long-time user, please do take the time to get to know our practices – and if you have any questions .\n",
+               "We collect information to provide better services to all of our users – from figuring out basic stuff like which language you speak, to more complex things like which ",
+               "We collect information to provide better services to all of our users – from figuring out basic stuff like which language you speak, to more complex things like which or ",
+               "We collect information to provide better services to all of our users – from figuring out basic stuff like which language you speak, to more complex things like which or .\n",
+               "We collect information in two ways:\n",
+               "null",
+               "For example, many of our services require you to sign up for a Google Account. When you do, we’ll ask for ",
+               "For example, many of our services require you to sign up for a Google Account. When you do, we’ll ask for , like your name, email address, telephone number or ",
+               "For example, many of our services require you to sign up for a Google Account. When you do, we’ll ask for , like your name, email address, telephone number or . If you want to take full advantage of the sharing features we offer, we might also ask you to create a publicly visible ",
+               "For example, many of our services require you to sign up for a Google Account. When you do, we’ll ask for , like your name, email address, telephone number or . If you want to take full advantage of the sharing features we offer, we might also ask you to create a publicly visible , which may include your name and photo.\n",
+               "null",
+               "We may ",
+               "We may about the services that you use and how you use them, like when you visit a website that uses our advertising services or you ",
+               "We may about the services that you use and how you use them, like when you visit a website that uses our advertising services or you and content. This information includes:\n",
+               "null",
+               "We may collect ",
+               "We may collect (such as your hardware model, operating system version, ",
+               "We may collect (such as your hardware model, operating system version, , and mobile network information including phone number). Google may associate your ",
+               "We may collect (such as your hardware model, operating system version, , and mobile network information including phone number). Google may associate your or ",
+               "We may collect (such as your hardware model, operating system version, , and mobile network information including phone number). Google may associate your or with your Google Account.\n",
+               "null",
+               "When you use our services or view content provided by Google, we may automatically collect and store certain information in ",
+               "When you use our services or view content provided by Google, we may automatically collect and store certain information in . This may include:\n",
+               "null",
+               "When you use a location-enabled Google service, we ",
+               "When you use a location-enabled Google service, we , like GPS signals sent by a mobile device. We may also use various technologies to determine location, such as sensor data from your device that may, for example, provide information on nearby Wi-Fi access points and cell towers.\n",
+               "null",
+               "Certain services include a unique application number. This number and information about your installation (for example, the operating system type and application version number) may be sent to Google when you install or uninstall that service or when that service periodically contacts our servers, such as for automatic updates.\n",
+               "null",
+               "We may collect and store information (including personal information) locally on your device using mechanisms such as ",
+               "We may collect and store information (including personal information) locally on your device using mechanisms such as (including HTML&nbsp;5) and ",
+               "We may collect and store information (including personal information) locally on your device using mechanisms such as (including HTML&nbsp;5) and .\n",
+               "null",
+               "We and our partners use various technologies to collect and store information when you visit a Google service, and this may include sending one or more ",
+               "We and our partners use various technologies to collect and store information when you visit a Google service, and this may include sending one or more or ",
+               "We and our partners use various technologies to collect and store information when you visit a Google service, and this may include sending one or more or to your device. We also use cookies and anonymous identifiers when you interact with services we offer to our partners, such as ",
+               "We and our partners use various technologies to collect and store information when you visit a Google service, and this may include sending one or more or to your device. We also use cookies and anonymous identifiers when you interact with services we offer to our partners, such as or Google features that may appear on other sites.",
+               "We use the information we collect from all of our services to provide, maintain, protect and improve them, to ",
+               "We use the information we collect from all of our services to provide, maintain, protect and improve them, to , and to ",
+               "We use the information we collect from all of our services to provide, maintain, protect and improve them, to , and to . We also use this information to offer you tailored content – like giving you more relevant search results and ads.\n",
+               "We may use the name you provide for your Google Profile across all of the services we offer that require a Google Account. In addition, we may replace past names associated with your Google Account so that you are represented consistently across all our services. If other users already have your email, or other information that identifies you, we may show them your publicly visible Google Profile information, such as your name and photo.\n",
+               "When you contact Google, we may keep a record of your communication to help solve any issues you might be facing. We may use your email address to inform you about our services, such as letting you know about upcoming changes or improvements.\n",
+               "We use information collected from cookies and other technologies, like ",
+               "We use information collected from cookies and other technologies, like , to ",
+               "We use information collected from cookies and other technologies, like , to and the overall quality of our services. For example, by saving your language preferences, we’ll be able to have our services appear in the language you prefer. When showing you tailored ads, we will not associate a cookie or anonymous identifier with ",
+               "We use information collected from cookies and other technologies, like , to and the overall quality of our services. For example, by saving your language preferences, we’ll be able to have our services appear in the language you prefer. When showing you tailored ads, we will not associate a cookie or anonymous identifier with , such as those based on race, religion, sexual orientation or health.\n",
+               "We may ",
+               "We may – for example ",
+               "We may – for example . We will not combine DoubleClick cookie information with personally identifiable information unless we have your opt-in consent.\n",
+               "We will ask for your consent before using information for a purpose other than those that are set out in this Privacy Policy.\n",
+               "Google processes personal information on our servers in many countries around the world. We may process your personal information on a server located outside the country where you live.\n",
+               "People have different privacy concerns. Our goal is to be clear about what information we collect, so that you can make meaningful choices about how it is used. For example, you can:\n",
+               "You may also set your browser to block all cookies, including cookies associated with our services, or to indicate when a cookie is being set by us. However, it’s important to remember that many of our services ",
+               "You may also set your browser to block all cookies, including cookies associated with our services, or to indicate when a cookie is being set by us. However, it’s important to remember that many of our services if your cookies are disabled. For example, we may not remember your language preferences.\n",
+               "Many of our services let you share information with others. Remember that when you share information publicly, it may be indexable by search engines, including Google. Our services provide you with different options on ",
+               "Many of our services let you share information with others. Remember that when you share information publicly, it may be indexable by search engines, including Google. Our services provide you with different options on and ",
+               "Many of our services let you share information with others. Remember that when you share information publicly, it may be indexable by search engines, including Google. Our services provide you with different options on and .\n",
+               "Whenever you use our services, we aim to provide you with ",
+               "Whenever you use our services, we aim to provide you with . If that information is wrong, we strive to give you ways to update it quickly or to delete it – unless we have to keep that information for legitimate business or legal purposes. When updating your personal information, we may ask you to verify your identity before we can act on your request.\n",
+               "We may reject requests that are unreasonably repetitive, require disproportionate technical effort (for example, developing a new system or fundamentally changing an existing practice), risk the privacy of others, or would be extremely impractical (for instance, requests concerning information residing on backup systems).\n",
+               "Where we can provide information access and correction, we will do so for free, except where it would require a disproportionate effort. We aim to maintain our services in a manner that protects information from accidental or malicious destruction. Because of this, after you delete information from our services, we may not immediately delete residual copies from our active servers and may not remove information from our backup systems.\n",
+               "We do not share personal information with companies, organizations and individuals outside of Google unless one of the following circumstances applies:\n",
+               "null",
+               "We will share personal information with companies, organizations or individuals outside of Google when we have your consent to do so. We require opt-in consent for the sharing of any ",
+               "We will share personal information with companies, organizations or individuals outside of Google when we have your consent to do so. We require opt-in consent for the sharing of any .\n",
+               "null",
+               "If your Google Account is managed for you by a ",
+               "If your Google Account is managed for you by a (for example, for Google Apps users) then your domain administrator and resellers who provide user support to your organization will have access to your Google Account information (including your email and other data). Your domain administrator may be able to:\n",
+               "Please refer to your domain administrator’s privacy policy for more information.\n",
+               "null",
+               "We provide personal information to our ",
+               "We provide personal information to our or other trusted businesses or persons to process it for us, based on our instructions and in compliance with our Privacy Policy and any other appropriate confidentiality and security measures.\n",
+               "null",
+               "We will share personal information with companies, organizations or individuals outside of Google if we have a good-faith belief that access, use, preservation or disclosure of the information is reasonably necessary to:\n",
+               "null",
+               ", ",
+               ", publicly and with our partners – like publishers, advertisers or connected sites. For example, we may share information publicly ",
+               ", publicly and with our partners – like publishers, advertisers or connected sites. For example, we may share information publicly about the general use of our services.\n",
+               "If Google is involved in a merger, acquisition or asset sale, we will continue to ensure the confidentiality of any personal information and give affected users notice before personal information is transferred or becomes subject to a different privacy policy.\n",
+               "We work hard to protect Google and our users from unauthorized access to or unauthorized alteration, disclosure or destruction of information we hold. In particular:\n",
+               "Our Privacy Policy applies to all of the services offered by Google Inc. and its affiliates, including services offered on other sites (such as our advertising services), but excludes services that have separate privacy policies that do not incorporate this Privacy Policy.\n",
+               "Our Privacy Policy does not apply to services offered by other companies or individuals, including products or sites that may be displayed to you in search results, sites that may include Google services, or other sites linked from our services. Our Privacy Policy does not cover the information practices of other companies and organizations who advertise our services, and who may use cookies, pixel tags and other technologies to serve and offer relevant ads.\n",
+               "We regularly review our compliance with our Privacy Policy. We also adhere to several ",
+               "We regularly review our compliance with our Privacy Policy. We also adhere to several . When we receive formal written complaints, we will contact the person who made the complaint to follow up. We work with the appropriate regulatory authorities, including local data protection authorities, to resolve any complaints regarding the transfer of personal data that we cannot resolve with our users directly.\n",
+               "Our Privacy Policy may change from time to time. We will not reduce your rights under this Privacy Policy without your explicit consent. We will post any privacy policy changes on this page and, if the changes are significant, we will provide a more prominent notice (including, for certain services, email notification of privacy policy changes). We will also keep prior versions of this Privacy Policy in an archive for your review.\n",
+               "The following notices explain specific privacy practices with respect to certain Google products and services that you may use:\n",
+               "Further useful privacy and security related materials can be found through Google’s ",
+               "Further useful privacy and security related materials can be found through Google’s , including:\n",
+               "For example, we can make search more relevant and interesting for you by including photos, posts, and more from you and your friends.\n",
+               "null",
+               "For example, you can delete your ",
+               "For example, you can delete your , ",
+               "For example, you can delete your , , ",
+               "For example, you can delete your , , , ",
+               "For example, you can delete your , , , , ",
+               "For example, you can delete your , , , , or ",
+               "For example, you can delete your , , , , or .",
+               "You can see some of these at ",
+               "You can see some of these at and ",
+               "You can see some of these at and .",
+               "Keeping the web safe for everyone is a shared responsibility. "
+            ]
+         }
+      },
+      {
+         "id" : "2235",
+         "label" : ":h3",
+         "labels" : [ "h3" ],
+         "properties" : {
+            "class" : [
+               "toc-heading",
+               "toc-heading",
+               "toc-heading",
+               "toc-heading",
+               "toc-heading",
+               "toc-heading",
+               "toc-heading",
+               "toc-heading",
+               "toc-heading",
+               "toc-heading",
+               "toc-heading",
+               "toc-heading"
+            ],
+            "contents" : [
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "Google Safety Center",
+               "Our legal policies",
+               "More information"
+            ]
+         }
+      },
+      {
+         "id" : "2236",
+         "label" : ":li",
+         "labels" : [ "li" ],
+         "properties" : {
+            "class" : [ "active" ],
+            "contents" : [
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "Privacy Policy\n",
+               "null",
+               "null",
+               "null",
+               "null",
+               "What information we collect and why we collect it.\n",
+               "How we use that information.\n",
+               "The choices we offer, including how to access and update information.",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "details of how you used our service, such as your search queries.\n",
+               "telephony log information like your phone number, calling-party number, forwarding numbers, time and date of calls, duration of calls, SMS routing information and types of calls.\n",
+               "null",
+               ".\n",
+               "device event information such as crashes, system activity, hardware settings, browser type, browser language, the date and time of your request and referral URL.\n",
+               "cookies that may uniquely identify your browser or your Google Account.",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "null",
+               "certain types of information tied to your Google Account by using Google Dashboard.\n",
+               "null",
+               "your preferences about the ads shown to you on Google and across the web, such as which categories might interest you, using Ads Settings. You can also opt out of certain Google advertising services here.\n",
+               "null",
+               "to see and adjust how your Google Profile appears to particular individuals.\n",
+               "null",
+               "who you share information with.\n",
+               "null",
+               "out of many of our services.",
+               "\n",
+               "\n",
+               "view statistics regarding your account, like statistics regarding applications you install.\n",
+               "change your account password.\n",
+               "suspend or terminate your account access.\n",
+               "access or retain information stored as part of your account.\n",
+               "receive your account information in order to satisfy applicable law, regulation, ",
+               "receive your account information in order to satisfy applicable law, regulation, .\n",
+               "restrict your ability to delete or edit information or privacy settings.",
+               "\n",
+               "\n",
+               "meet any applicable law, regulation, legal process or enforceable governmental request.\n",
+               "enforce applicable Terms of Service, including investigation of potential violations.\n",
+               "detect, prevent, or otherwise address fraud, security or technical issues.\n",
+               "protect against harm to the rights, property or safety of Google, our users or the public as required or permitted by law.",
+               "We encrypt many of our services ",
+               "We encrypt many of our services .\n",
+               "We offer you ",
+               "We offer you when you access your Google Account, and a ",
+               "We offer you when you access your Google Account, and a in Google Chrome.\n",
+               "We review our information collection, storage and processing practices, including physical security measures, to guard against unauthorized access to systems.\n",
+               "We restrict access to personal information to Google employees, contractors and agents who need to know that information in order to process it for us, and who are subject to strict contractual confidentiality obligations and may be disciplined or terminated if they fail to meet these obligations.",
+               "null",
+               "null",
+               "null",
+               "null",
+               "Information about our ",
+               "Information about our , which includes, among other things, more information on\n",
+               "null",
+               ".\n",
+               "technologies we use for ",
+               "technologies we use for .\n",
+               "how we ",
+               "how we .",
+               "A ",
+               "A that explains what data is shared with Google when you visit websites that use our advertising, analytics and social products.\n",
+               "Google’s ",
+               "Google’s , which provides information on how to stay safe and secure online.",
+               "\n",
+               "Privacy Policy\n",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null",
+               "null"
+            ],
+            "data-g-label" : [
+               "Overview",
+               "Privacy Policy",
+               "Terms of Service",
+               "Privacy in our technology",
+               "FAQ"
+            ]
+         }
+      },
+      {
+         "id" : "2237",
+         "label" : ":strong",
+         "labels" : [ "strong" ],
+         "properties" : {
+            "contents" : [
+               "Information you give us.",
+               "Information we get from your use of our services.",
+               "null",
+               "Log information",
+               "Location information",
+               "Unique application numbers",
+               "Local storage",
+               "Cookies and anonymous identifiers",
+               "With your consent",
+               "With domain administrators",
+               "For external processing",
+               "For legal reasons"
+            ]
+         }
+      },
+      {
+         "id" : "2238",
+         "label" : ":ul",
+         "labels" : [ "ul" ],
+         "properties" : {
+            "contents" : [
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n"
+            ]
+         }
+      },
+      {
+         "id" : "2239",
+         "label" : ":link",
+         "labels" : [ "link" ],
+         "properties" : {
+            "contents" : [ "\n", "\n" ],
+            "href" : [
+               "//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en",
+               "/policies/css/default.css"
+            ],
+            "rel" : [ "stylesheet", "stylesheet" ]
+         }
+      },
+      {
+         "id" : "2240",
+         "label" : ":label",
+         "labels" : [ "label" ],
+         "properties" : {
+            "contents" : [ "null" ]
+         }
+      },
+      {
+         "id" : "2241",
+         "label" : ":html",
+         "labels" : [ "html" ],
+         "properties" : {
+            "class" : [ "google" ],
+            "contents" : [ "\n\n" ],
+            "lang" : [ "en" ]
+         }
+      },
+      {
+         "id" : "2242",
+         "label" : ":select",
+         "labels" : [ "select" ],
+         "properties" : {
+            "contents" : [ "\n" ],
+            "onchange" : [
+               "var href=this[this.selectedIndex].value;if(href!=''){window.location.href=href};"
+            ]
+         }
+      },
+      {
+         "id" : "2243",
+         "label" : ":script",
+         "labels" : [ "script" ],
+         "properties" : {
+            "contents" : [
+               "\n(function(H){H.className=H.className.replace(/\\bgoogle\\b/,'google-js')})(document.documentElement)\n",
+               "\n",
+               "\nnew gweb.analytics.AutoTrack({profile:\"UA-28138501-1\"});\n",
+               "\n",
+               "\n"
+            ],
+            "src" : [
+               "//www.google.com/js/google.js",
+               "/policies/js/policies.min.js",
+               "//www.google.com/js/maia.js"
+            ]
+         }
+      },
+      {
+         "id" : "2244",
+         "label" : ":h2",
+         "labels" : [ "h2" ],
+         "properties" : {
+            "class" : [
+               "example-title",
+               "example-title",
+               "example-title",
+               "example-title",
+               "example-title",
+               "example-title",
+               "example-title",
+               "example-title",
+               "example-title",
+               "example-title",
+               "example-title",
+               "example-title",
+               "example-title",
+               "example-title",
+               "example-title",
+               "example-title",
+               "example-title",
+               "example-title",
+               "example-title",
+               "example-title",
+               "example-title",
+               "example-title",
+               "example-title",
+               "example-title",
+               "example-title"
+            ],
+            "contents" : [
+               "null",
+               "Information we collect",
+               "How we use information we collect",
+               "Transparency and choice",
+               "Information you share",
+               "Accessing and updating your personal information",
+               "Information we share",
+               "Information security",
+               "When this Privacy Policy applies",
+               "Compliance and cooperation with regulatory authorities",
+               "Changes",
+               "Specific product practices",
+               "Other useful privacy and security related materials",
+               "\"access to your personal information\"",
+               "\"ads you’ll find most useful\"",
+               "\"advertising services\"",
+               "\"collect information\"",
+               "\"combine personal information from one service with information, including personal information, from other Google services\"",
+               "\"connect with people\"",
+               "\"credit card\"",
+               "\"develop new ones\"",
+               "\"device identifiers\"",
+               "\"device-specific information\"",
+               "\"improve your user experience\"",
+               "\"legal process or enforceable governmental request\"",
+               "\"may collect and process information about your actual location\"",
+               "\"may not function properly\"",
+               "\"phone number\"",
+               "\"protect Google and our users\"",
+               "\"sharing\"",
+               "\"sharing with others quicker and easier\"",
+               "\"the people who matter most to you online\"",
+               "\"to make it easier to share things with people you know\"",
+               "\"view and interact with our ads\"",
+               "\"We may share aggregated, non-personally identifiable information publicly\"",
+               "\"more relevant search results\"",
+               "\"removing your content\"",
+               "\"to show trends\""
+            ],
+            "id" : [
+               "infocollect",
+               "infouse",
+               "infochoices",
+               "infosharing",
+               "access",
+               "nosharing",
+               "infosecurity",
+               "application",
+               "enforcement",
+               "policychanges",
+               "products",
+               "related"
+            ]
+         }
+      },
+      {
+         "id" : "2245",
+         "label" : ":meta",
+         "labels" : [ "meta" ],
+         "properties" : {
+            "charset" : [ "utf-8" ],
+            "content" : [ "initial-scale=1, minimum-scale=1, width=device-width" ],
+            "contents" : [ "\n", "\n" ],
+            "name" : [ "viewport" ]
+         }
+      },
+      {
+         "id" : "2246",
+         "label" : ":title",
+         "labels" : [ "title" ],
+         "properties" : {
+            "contents" : [ "Privacy Policy – Privacy &amp; Terms – Google" ]
+         }
+      },
+      {
+         "id" : "2247",
+         "label" : ":span",
+         "labels" : [ "span" ],
+         "properties" : {
+            "contents" : [ "Change language:" ]
+         }
+      },
+      {
+         "id" : "2248",
+         "label" : ":div",
+         "labels" : [ "div" ],
+         "properties" : {
+            "class" : [
+               "maia-header",
+               "maia-aux",
+               "maia-nav",
+               "maia-aux",
+               "maia-nav",
+               "maia-article",
+               "maia-teleport",
+               "maia-cols toc",
+               "maia-col-5",
+               "maia-col-5",
+               "intro",
+               "switch-on",
+               "switch-off",
+               "footnotes",
+               "hidden example-summary",
+               "learnmore",
+               "hidden example-summary",
+               "learnmore",
+               "hidden example-summary",
+               "learnmore",
+               "hidden example-summary",
+               "learnmore",
+               "hidden example-summary",
+               "learnmore",
+               "hidden example-summary",
+               "learnmore",
+               "hidden example-summary",
+               "learnmore",
+               "hidden example-summary",
+               "learnmore",
+               "hidden example-summary",
+               "learnmore",
+               "hidden example-summary",
+               "learnmore",
+               "hidden example-summary",
+               "learnmore",
+               "hidden example-summary",
+               "learnmore",
+               "hidden example-summary",
+               "learnmore",
+               "hidden example-summary",
+               "learnmore",
+               "hidden example-summary",
+               "learnmore",
+               "hidden example-summary",
+               "learnmore",
+               "hidden example-summary",
+               "learnmore",
+               "hidden example-summary",
+               "learnmore",
+               "hidden example-summary",
+               "learnmore",
+               "hidden example-summary",
+               "learnmore",
+               "hidden example-summary",
+               "learnmore",
+               "hidden example-summary",
+               "learnmore",
+               "hidden example-summary",
+               "hidden example-summary",
+               "hidden example-summary",
+               "maia-footer",
+               "maia-aux",
+               "policy-footer-sitemap",
+               "maia-cols",
+               "maia-col-3",
+               "maia-col-3",
+               "maia-col-6",
+               "maia-aux",
+               "maia-locales"
+            ],
+            "contents" : [
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "null",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "Hide examples",
+               "Show examples",
+               "Hide examples",
+               "null",
+               "\n",
+               "\nFor example, with Google Dashboard you can quickly and easily see some of the data associated with your Google Account.\n",
+               "null",
+               "\n",
+               "\nFor example, if you frequently visit websites and blogs about gardening, you may see ads related to gardening as you browse the web.\n",
+               "null",
+               "\n",
+               "\nFor example, if you frequently visit websites and blogs about gardening that show our ads, you may start to see ads related to this interest as you browse the web.\n",
+               "null",
+               "\n",
+               "\nThis includes information like your usage data and preferences, Gmail messages, G+ profile, photos, videos, browsing history, map searches, docs, or other Google-hosted content.\n",
+               "null",
+               "\n",
+               "\nFor example, when you’re signed in to your Google Account and search on Google, you can see search results from the public web, along with pages, photos, and Google+ posts from your friends and people who know you or follow you on Google+ may see your posts and profile in their results.\n",
+               "null",
+               "\n",
+               "\nFor example, you could get suggestions of people you might know or want to connect with on Google+, based on the connections you have with people on other Google products, like Gmail and people who have a connection with you may see your profile as a suggestion.\n",
+               "null",
+               "\n",
+               "\nWhilst we currently don’t ask for a credit card during sign up, verifying your age through a small credit card transaction is one way to confirm that you meet our age requirements in case your account was disabled after you have entered a birthday indicating you are not old enough to have a Google Account.\n",
+               "null",
+               "\n",
+               "\nFor example, Google’s spell checking software was developed by analyzing previous searches where users had corrected their own spelling.\n",
+               "null",
+               "\n",
+               "\nDevice identifiers let Google know which unique device you are using to access our services, which can be used to customise our service to your device or analyse any device issues related to our services.\n",
+               "null",
+               "\n",
+               "\nFor example, when you visit Google Play from your desktop, Google can use this information to help you decide on which devices you'd like your purchases to be available for use.\n",
+               "null",
+               "\n",
+               "\nFor example, cookies allow us to analyse how users interact with our services.\n",
+               "null",
+               "\n",
+               "\nLike other technology and communications companies, Google regularly receives requests from governments and courts around the world to hand over user data.\n",
+               "null",
+               "\n",
+               "\nFor example, Google Maps can center the maps view on your current location.\n",
+               "null",
+               "\n",
+               "\nFor example, we use a cookie called ‘lbcs’ which makes it possible for you to open many Google Docs in one browser.\n",
+               "null",
+               "\n",
+               "\nFor example, if you add a phone number as a recovery option, if you forget your password Google can send you a text message with a code to enable you to reset it.\n",
+               "null",
+               "\n",
+               "\nFor example, if you're concerned about unauthorized access to your email, \"Last account activity\" in Gmail shows you information about recent activity in your email, such as the IP addresses that accessed your mail, the associated location, as well as the time and date.\n",
+               "null",
+               "\n",
+               "\nFor example, with Google+, you have many different sharing options.\n",
+               "null",
+               "\n",
+               "\nFor example, if someone is already a contact, Google will autocomplete their name if you want to add them to a message in Gmail.\n",
+               "null",
+               "\n",
+               "\nFor example, when you type an address in the To, Cc, or Bcc field of a message you're composing, Gmail will suggest addresses from your Contacts list.\n",
+               "null",
+               "\n",
+               "\nFor example, if you have communicated with someone via Gmail and want to add them to a Google Doc or an event in Google Calendar, Google makes it easy to do so by autocompleting their email address when you start to type in their name.\n",
+               "null",
+               "\n",
+               "\nFor example, we regularly report to advertisers on whether we served their ad to a page and whether that ad was likely to be seen by users (as opposed to, for example, being on part of the page to which users did not scroll).\n",
+               "null",
+               "\n",
+               "\nWhen lots of people start searching for something, it can provide very useful information about particular trends at that time.\n",
+               "null",
+               "\n",
+               "\n",
+               "\n",
+               "null",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "\n",
+               "null"
+            ],
+            "id" : [
+               "maia-header",
+               "maia-nav-x",
+               "maia-main",
+               "maia-nav-y",
+               "content",
+               "highlights-switch",
+               "switch-off",
+               "switch-on",
+               "summary-access-to-your-personal-information",
+               "summary-ads-youll-find-most-useful",
+               "summary-advertising-services",
+               "summary-collect-information",
+               "summary-combine-personal-information",
+               "summary-connect-with-people",
+               "summary-credit-card",
+               "summary-develop-new-ones",
+               "summary-device-identifiers",
+               "summary-device-specific-information",
+               "summary-improve-your-user-experience",
+               "summary-legal-process",
+               "summary-may-collect-and-process-information",
+               "summary-may-not-function-properly",
+               "summary-phone-number",
+               "summary-protect-google-and-our-users",
+               "summary-sharing",
+               "summary-sharing-with-others",
+               "summary-the-people-who-matter-most",
+               "summary-to-make-it-easier-to-share",
+               "summary-view-and-interact-with-our-ads",
+               "summary-we-may-share-aggregated",
+               "summary-more-relevant-search-results",
+               "summary-removing-your-content",
+               "summary-to-show-trends",
+               "maia-signature",
+               "maia-footer",
+               "maia-footer-local",
+               "maia-footer-global"
+            ],
+            "role" : [ "banner", "navigation", "main", "navigation", "article" ]
+         }
+      },
+      {
+         "id" : "2249",
+         "label" : ":h1",
+         "labels" : [ "h1" ],
+         "properties" : {
+            "contents" : [ "null", "Privacy Policy" ]
+         }
+      },
+      {
+         "id" : "2250",
+         "label" : ":img",
+         "labels" : [ "img" ],
+         "properties" : {
+            "alt" : [ "Google" ],
+            "contents" : [ "null" ],
+            "src" : [ "//www.google.com/images/logos/google_logo_41.png" ]
+         }
+      },
+      {
+         "id" : "2251",
          "label" : ":a",
          "labels" : [ "a" ],
          "properties" : {

@@ -1,8 +1,10 @@
 <?php
-header("Cache-Control: no-cache, must-revalidate");
+header('Cache-Control: no-cache, no-store, must-revalidate'); // HTTP 1.1.
+header('Pragma: no-cache'); // HTTP 1.0.
+header('Expires: 0'); // Proxies.
 //header("Content-type: text/plain");
 
-	$INSTANCE = 1;
+	$INSTANCE = date('Y-m-d-H-i-s');
 	$OPT=0;
 	//$stdout = fopen('php://stdout', 'w');
 	if(!empty($_POST['crawl_url'][0]))
@@ -11,14 +13,15 @@ header("Cache-Control: no-cache, must-revalidate");
 		$crawl_url = $_POST['crawl_url'][0];
 		$crawl_depth = $_POST['crawl_url'][1];
 		$cmd = "./crawl $crawl_url $crawl_depth > out".$INSTANCE.".txt 2>&1 &";
-		exec($cmd);
+		exec("rm out_graph*.json; $cmd");
 	}
 	else if(!empty($_POST['query']))
 	{
 		$OPT = 2;
-		$query = $_POST['query'];
-		$cmd = "./crawl -q \"$query\" \"graph\" > out".$INSTANCE.".txt 2>&1 &";
-		exec($cmd);
+		$query = $_POST['query'][0];
+		$query_format = $_POST['query'][1];
+		$cmd = "./crawl -q \"$query\" \"$query_format\" > out".$INSTANCE.".txt 2>&1 &";
+		exec("rm out_graph*.json; $cmd");
 	}
 	else if(!empty($_POST['s_values']))
 	{
@@ -27,7 +30,7 @@ header("Cache-Control: no-cache, must-revalidate");
 		$IDLABELPROPERTIES = $_POST['s_values'][1];
 		$PROPERTY = $_POST['s_values'][2];
 		$VALUE = $_POST['s_values'][3];
-		$cmd = "./crawl -pq $EDGENODE $IDLABELPROPERTIES '$PROPERTY' '$VALUE' > out".$INSTANCE.".txt 2>&1 &";
+		$cmd = "rm out_graph*.json; ./crawl -pq $EDGENODE $IDLABELPROPERTIES '$PROPERTY' '$VALUE' > out".$INSTANCE.".txt 2>&1 &";
 		exec($cmd);
 	}
 ?>
@@ -54,19 +57,23 @@ header("Cache-Control: no-cache, must-revalidate");
 <table width="300px" id="side_panel">
 	<tr>
 		<td width="100%">
-			<div id="raw_queries" style="padding: 2px; box-shadow: 0px 10px 5px #888888;">
+			<div id="raw_queries" style="padding: 2px; box-shadow: 0px 2px 5px #888888;">
 				<form name="crawl_form" method="post" action="webcrawler.php">
 					<input size="17" type="text" value="" name="crawl_url[]"/>
 					<input size="4" type="text" value="" name="crawl_url[]"/>
 					<input size="10" type="Submit" value="crawl" name="crawl_submit"/>
 				</form>
 				<form name="query_form" method="post" action="webcrawler.php">
-					<input size="20" type="text" value="" name="query"/>
-					<input size="10" type="Submit" value="run query" name="query_submit"/>
+					<input size="15" type="text" value="" name="query[]"/>
+					<select name="query[]">
+						<option value="row">row</option>
+						<option value="graph">graph</option>
+					</select>
+					<input size="9" type="Submit" value="run query" name="query_submit"/>
 				</form>
 			</div>
 			<br>
-			<div id="pieced_search" style="padding: 2px;box-shadow: 0px 10px 5px #888888;">
+			<div id="pieced_search" style="padding: 2px;box-shadow: 0px 2px 5px #888888;">
 				<form name="s_values" method="post" action="webcrawler.php">
 					<select name="s_values[]">
 						<option value="nodes">nodes</option>
@@ -89,25 +96,44 @@ header("Cache-Control: no-cache, must-revalidate");
 				</form>
 			</div>
 			<br>
-			<div id="content" style="padding: 2px;border: 1px solid white; background-color: #ffffff; width: 300px; overflow: scroll; box-shadow: 0px 10px 5px #888888;">
-				<?php 
-					include_once('console.php'); 
-				?>
+			<div style="padding: 2px;border: 1px solid white; width: 300px;box-shadow: 0px 2px 5px #888888;">
+				<p style="padding:1px;">
+					<?php echo "[$OPT] $cmd"; ?>
+				</p>
+				<div id="content" style="padding: 2px;border: 1px solid white; background-color: #ffffff; overflow: scroll;">
+					<?php 
+						echo "[]";
+						include_once('console.php'); 
+					?>
+				</div>
 			</div>
-			
 
 		</td>	
 	</tr>
 	<tr>
 		<td>
  			<button onclick="loadGraph()">REFRESH GRAPH</button> 
-			<div id="g_info" style="padding: 2px;border: 1px solid white; background-color: #ffffff; width: 300px; height: 100px; overflow: scroll; box-shadow: 0px 10px 5px #888888;"">
-
-			</div>
 		</td>
 	</tr>
 </table>
 <div id="container" style="box-shadow: 0px 10px 5px #888888;"></div>
+<div id="right_panel" style="padding: 2px; position: absolute; left: 1042px; top: 8px;box-shadow: 0px 2px 5px #888888;">
+	Selection Information
+	<table width="300px">
+		<tr>
+			<div id="g_info" style="border: 1px solid white; background-color: #ffffff; width: 300px; height: 70px; overflow: scroll;">
+
+			</div>
+		</tr>
+		<br>
+		<button id="g_detail_graph" style="border: 1px solid white; max-width: 100px;">GRAPH</button><button id="g_detail_row" style="border: 1px solid white;max-width: 100px;">ROW</button>
+		<tr>
+			<div id="g_detail" style="border: 1px solid white; background-color: #ffffff; width: 300px; height: 500px; overflow: scroll;">
+
+			</div>
+		</tr>
+	</table>
+</div>
 </body>
 <script src="jquery-2.1.1.min.js"></script>
 <script src="sigma.min.js"></script>
@@ -123,8 +149,8 @@ header("Cache-Control: no-cache, must-revalidate");
 	{
 		$('#container').empty();
 		sigma.parsers.json(
-			'out_graph.json', 
-			{
+			'out_graph.json', 	// must adjust permissions on this file,
+			{			// or it will not load
 				container: 'container',
 				settings: 
 				{
@@ -167,8 +193,7 @@ header("Cache-Control: no-cache, must-revalidate");
 	var graph_height = graph_canvas.offsetHeight;	// get actual height using .offsetHeight
 							// .height is undefined
 	var contentDiv = document.getElementById('content');
-	contentDiv.style.height = graph_height - 335;
-	//contentDiv.scrollTop = contentDiv.scrollHeight;
+	contentDiv.style.height = graph_height - 280;
 
 	
 	/*
@@ -180,30 +205,71 @@ header("Cache-Control: no-cache, must-revalidate");
 	$('#content').mouseover(function () 
 	{
 		hover_over = true;
-		$('#content').css("border", "1px solid green");
+		$('#content').css("border", "1px dashed green");
 	});
 	$('#content').mouseout(function () 
 	{
 		hover_over = false;
 		$('#content').css("border", "1px solid white");
 	});
-	setInterval(refreshConsole, 50);
+	
+	var g_detail_mode = "graph";
+	var hover_over_g_detail = false;
+	$('#g_detail').mouseover(function () 
+	{
+		hover_over_g_detail = true;
+		$('#g_detail').css("border", "1px dashed black");
+	});
+	$('#g_detail').mouseout(function () 
+	{
+		hover_over_g_detail = false;
+		$('#g_detail').css("border", "1px solid white");
+	});
+
+	$('#g_detail_graph').click(function () 
+	{
+		g_detail_mode = "graph";
+		$('#g_detail_graph').css("border", "1px solid green");
+		$('#g_detail_row').css("border", "1px solid white");
+	});
+	$('#g_detail_row').click(function () 
+	{
+		g_detail_mode = "row";
+		$('#g_detail_graph').css("border", "1px solid white");
+		$('#g_detail_row').css("border", "1px solid red");
+	});
+
+	setInterval(refreshInfo, 50);
+	function refreshInfo ()
+	{
+		if(!hover_over){refreshConsole();}
+		if(!hover_over_g_detail){refreshGraphInfo();}
+	}
 	function refreshConsole ()
 	{
-		if(!hover_over)
-		{
-			$('#content').load('console.php');
-			//setTimeout("", 200);
-			var objDiv = document.getElementById("content");
-			objDiv.scrollTop = objDiv.scrollHeight;
-		}
-		else
-		{
-
-		}
-		//document.write(hover_over);
+		$('#content').load('console.php');
+		var objDiv = document.getElementById("content");
+		objDiv.scrollTop = objDiv.scrollHeight;
 	}
-	//document.write(hover_over);
+
+
+	function refreshGraphInfo ()
+	{
+		if(g_detail_mode == "graph")
+		{
+			$('#g_detail').load('out_graph.php');
+			$('#g_detail').css("border", "1px solid green");
+		}
+		else if (g_detail_mode == "row")
+		{
+			$('#g_detail').load('out_row.php');
+			$('#g_detail').css("border", "1px solid red");
+		}
+		var objDiv = document.getElementById("g_detail");
+		objDiv.scrollTop = objDiv.scrollHeight;
+	}
+	
+	// http://stackoverflow.com/questions/16991341/js-json-parse-file-path
 	
 </script>
 </html>
