@@ -147,6 +147,7 @@ header('Expires: 0'); // Proxies.
 		This section is for drawing the graph. It uses the Sigma.js 
 		library.
 	*/
+	var sigma_instance;
   	function loadGraph () 
 	{
 		//http://stackoverflow.com/questions/22543083/remove-all-the-instance-from-sigma-js
@@ -170,9 +171,11 @@ header('Expires: 0'); // Proxies.
 			},
 			function(s)
 			{
+				sigma_instance = s;
 				var i,
 				nodes = s.graph.nodes(),
 				len = nodes.length;
+				var force_on = true;
 
 				for (i = 0; i < len; i++)
 				{
@@ -189,6 +192,19 @@ header('Expires: 0'); // Proxies.
 					$('#g_info').html(
 						"id: " + e.data.node.id + "<br>" +
 						"labels:" + e.data.node.label);
+				});
+
+				s.bind('clickStage', function(e) {
+					if (force_on)
+					{
+						force_on = false;
+						s.stopForceAtlas2();
+					}
+					else
+					{
+						force_on = true;
+						s.startForceAtlas2();
+					}
 				});
 			}
 		);
@@ -211,6 +227,11 @@ header('Expires: 0'); // Proxies.
 		as it is updated. However, we must make sure that it does
 		not move when we are moused over.
 	*/
+	/*
+	$('#container').mouseover(function()
+	{
+		sigma_instance.stopForceAtlas2();
+	});*/
 	var hover_over = false;
 	$('#content').mouseover(function () 
 	{

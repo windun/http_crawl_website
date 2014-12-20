@@ -1,12 +1,11 @@
-HTTP/1.1 301 Moved Permanently
-Location: http://www.google.com/
-Content-Type: text/html; charset=UTF-8
-Date: Fri, 19 Dec 2014 23:18:32 GMT
-Expires: Sun, 18 Jan 2015 23:18:32 GMT
-Cache-Control: public, max-age=2592000
-Server: gws
-Content-Length: 219
-X-XSS-Protection: 1; mode=block
+HTTP/1.1 200 OK
+Cache-Control: public, no-cache="Set-Cookie", max-age=22
+Content-Type: text/html; charset=utf-8
+Expires: Sat, 20 Dec 2014 00:14:00 GMT
+Last-Modified: Sat, 20 Dec 2014 00:13:00 GMT
+Vary: *
 X-Frame-Options: SAMEORIGIN
-Alternate-Protocol: 80:quic,p=0.02
+Set-Cookie: prov=966bc24d-2a2e-4e7f-8941-1210581a834e; domain=.stackoverflow.com; expires=Fri, 01-Jan-2055 00:00:00 GMT; path=/; HttpOnly
+Date: Sat, 20 Dec 2014 00:13:37 GMT
+Content-Length: 237523
 
