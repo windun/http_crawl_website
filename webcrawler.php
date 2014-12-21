@@ -3,7 +3,8 @@ header('Cache-Control: no-cache, no-store, must-revalidate'); // HTTP 1.1.
 header('Pragma: no-cache'); // HTTP 1.0.
 header('Expires: 0'); // Proxies.
 //header("Content-type: text/plain");
-
+	$BACK_COLOR = '#e9e9e9';
+	$CONSOLE_BACK_COLOR = '#ffffff';
 	$INSTANCE = date('Y-m-d-H-i-s');
 	$OPT=0;
 	//$stdout = fopen('php://stdout', 'w');
@@ -53,7 +54,7 @@ header('Expires: 0'); // Proxies.
 	}
 </style>	
 </head>
-<body style="background-color: #e9e9e9">
+<body style="background-color: <?php echo $BACK_COLOR;?>">
 <table width="300px" id="side_panel">
 	<tr>
 		<div id="instance_value"><?php echo $INSTANCE; ?></div>
@@ -102,7 +103,7 @@ header('Expires: 0'); // Proxies.
 				<p style="padding:1px;">
 					<?php echo "[$OPT] $cmd"; ?>
 				</p>
-				<div id="content" style="padding: 2px;border: 1px solid white; background-color: #ffffff; overflow: scroll;">
+				<div id="content" style="padding: 2px;border: 1px solid white; background-color: <?php echo $CONSOLE_BACK_COLOR;?>; overflow: scroll;">
 					<?php 
 						echo "[]";
 						include_once('console.php'); 
@@ -118,23 +119,27 @@ header('Expires: 0'); // Proxies.
 		</td>
 	</tr>
 </table>
-<div id="container" style="box-shadow: 0px 10px 5px #888888;"></div>
+<div id="container" style="z-index: 1; box-shadow: 0px 2px 5px #888888;;"></div>
 <div id="right_panel" style="padding: 2px; position: absolute; left: 1042px; top: 8px;box-shadow: 0px 2px 5px #888888;">
 	Selection Information
 	<table width="300px">
 		<tr>
-			<div id="g_info" style="border: 1px solid white; background-color: #ffffff; width: 300px; height: 70px; overflow: scroll;">
+			<div id="g_info" style="border: 1px solid white; background-color: <?php echo $CONSOLE_BACK_COLOR;?>; width: 300px; height: 70px; overflow: scroll;">
 
 			</div>
 		</tr>
 		<br>
 		<button id="g_detail_graph" style="border: 1px solid white; max-width: 100px;">GRAPH</button><button id="g_detail_row" style="border: 1px solid white;max-width: 100px;">ROW</button>
 		<tr>
-			<div id="g_detail" style="border: 1px solid white; background-color: #ffffff; width: 300px; height: 500px; overflow: scroll;">
+			<div id="g_detail" style="border: 1px solid white; background-color: <?php echo $CONSOLE_BACK_COLOR;?>; width: 300px; overflow: scroll;">
 
 			</div>
 		</tr>
 	</table>
+</div>
+<div id="select_options"  style="z-index: 2; padding: 2px; box-shadow: 0px 2px 5px #888888; position:absolute; background-color: <?php echo $BACK_COLOR;?>">
+	<div id="select_options_id"></div>
+	<button id="opt1">opt1</button>
 </div>
 </body>
 <script src="jquery-2.1.1.min.js"></script>
@@ -147,6 +152,8 @@ header('Expires: 0'); // Proxies.
 		This section is for drawing the graph. It uses the Sigma.js 
 		library.
 	*/
+	$('#select_options').hide();
+
 	var sigma_instance;
   	function loadGraph () 
 	{
@@ -188,13 +195,28 @@ header('Expires: 0'); // Proxies.
 				s.refresh();
 				s.startForceAtlas2();
 
+
 				s.bind('clickNode', function(e) {
-					$('#g_info').html(
+					
+					$('#select_options_id').html(
 						"id: " + e.data.node.id + "<br>" +
 						"labels:" + e.data.node.label);
+					var graphHeight = $('#container').width();
+					var graphWidth = $('#container').height();
+					var x_offset = 50;
+					var y_offset = 0;
+					var x = (graphWidth * 0.5) + parseInt(e.data.captor.x) + $('#container').offset().left + x_offset;
+					var y = (graphHeight * 0.5) + parseInt(e.data.captor.y) + y_offset;
+
+					$('#select_options').css('left', x);
+					$('#select_options').css('top', y);
+					$('#select_options').show("fast");
+
+					
 				});
 
 				s.bind('clickStage', function(e) {
+					$('#select_options').hide();
 					if (force_on)
 					{
 						force_on = false;
@@ -206,10 +228,23 @@ header('Expires: 0'); // Proxies.
 						s.startForceAtlas2();
 					}
 				});
+
+				/*
+				var dom = document.querySelector('#container canvas:last-child');
+				dom.addEventListener('click', function(e)
+				{
+					var x = sigma.utils.getX(e);// + $(this).left();
+					var y = sigma.utils.getY(e);// + $(this).top();
+					$('#select_options').css('left', x);
+					$('#select_options').css('top', y);
+					$('#select_options').show("slow");
+					$('#content').text(x);
+				}, false);*/
 			}
 		);
 	}
 	loadGraph();
+
 
 	/*
 		Set the size of the console. It doesn't like to behave
@@ -220,21 +255,14 @@ header('Expires: 0'); // Proxies.
 							// .height is undefined
 	var contentDiv = document.getElementById('content');
 	contentDiv.style.height = graph_height - 280;
+	var infoDiv = document.getElementById('g_detail');
+	infoDiv.style.height = graph_height - 150;
+	
 
 	
-	/*
-		Auto scrolling - This will make sure the console moves
-		as it is updated. However, we must make sure that it does
-		not move when we are moused over.
-	*/
-	/*
-	$('#container').mouseover(function()
-	{
-		sigma_instance.stopForceAtlas2();
-	});*/
-	var hover_over = false;
-	$('#content').mouseover(function () 
-	{
+	var hover_over = false;		
+	$('#content').mouseover(function () 				// for pausing log output 
+	{	
 		hover_over = true;
 		$('#content').css("border", "1px dashed green");
 	});
@@ -257,14 +285,14 @@ header('Expires: 0'); // Proxies.
 		$('#g_detail').css("border", "1px solid white");
 	});
 
-	$('#g_detail_graph').click(function () 
+	$('#g_detail_graph').click(function () 				// show graph info details
 	{
 		g_detail_mode = "graph";
 		refreshGraphInfo();
 		$('#g_detail_graph').css("border", "1px solid green");
 		$('#g_detail_row').css("border", "1px solid white");
 	});
-	$('#g_detail_row').click(function () 
+	$('#g_detail_row').click(function () 				// show row info details
 	{
 		g_detail_mode = "row";
 		refreshGraphInfo();
@@ -298,8 +326,6 @@ header('Expires: 0'); // Proxies.
 			$('#g_detail').load('out_row.php');
 			$('#g_detail').css("border", "1px solid red");
 		}
-		//var objDiv = document.getElementById("g_detail");
-		//objDiv.scrollTop = objDiv.scrollHeight;
 	}
 	
 	// http://stackoverflow.com/questions/16991341/js-json-parse-file-path
