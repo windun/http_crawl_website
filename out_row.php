@@ -1,6 +1,6 @@
 <?php
-$INSTANCE = 1;
-$cmd = "cat out_row.json";
+$INSTANCE = $_POST['INSTANCE'];
+$cmd = "cat out_row".$INSTANCE.".json";
 
 $descriptorspec = array(
    0 => array("pipe", "r"),   // stdin is a pipe that the child will read from

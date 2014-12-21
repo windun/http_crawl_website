@@ -14,15 +14,34 @@ header('Expires: 0'); // Proxies.
 		$crawl_url = $_POST['crawl_url'][0];
 		$crawl_depth = $_POST['crawl_url'][1];
 		$cmd = "./crawl $crawl_url $crawl_depth > out".$INSTANCE.".txt 2>&1 &";
-		exec("rm out*.txt out_graph.json; $cmd");
+		exec("rm out*.txt out_graph*.json; $cmd");
 	}
 	else if(!empty($_POST['query']))
 	{
 		$OPT = 2;
 		$query = $_POST['query'][0];
 		$query_format = $_POST['query'][1];
-		$cmd = "./crawl -q \"$query\" \"$query_format\" > out".$INSTANCE.".txt 2>&1 &";
-		exec("rm out*.txt out_graph.json; $cmd");
+		if($query_format == "row") 
+		{
+			$query_format_flag = "-r";
+			$query_outfile = "out_row".$INSTANCE.".json";
+			exec("rm out_row*.json;");
+		}
+		else if ($query_format == "graph")
+		{
+			$query_format_flag = "-g";
+			$query_outfile = "out_graph".$INSTANCE.".json";
+			exec("rm out_graph*.json;");
+		}
+		else if ($query_format == "row/graph")
+		{
+			$query_format_flag = "-rg";
+			$query_outfile = "out_row".$INSTANCE.".json out_graph".$INSTANCE.".json";
+			exec("rm out_graph*.json out_row*.json;");
+		}
+		
+		$cmd = "./crawl -q \"$query\" \"$query_format\" $query_format_flag $query_outfile > out".$INSTANCE.".txt 2>&1 &";
+		exec("rm out*.txt; $cmd");
 	}
 	else if(!empty($_POST['s_values']))
 	{
@@ -31,7 +50,7 @@ header('Expires: 0'); // Proxies.
 		$IDLABELPROPERTIES = $_POST['s_values'][1];
 		$PROPERTY = $_POST['s_values'][2];
 		$VALUE = $_POST['s_values'][3];
-		$cmd = "rm out*.txt out_graph.json; ./crawl -pq $EDGENODE $IDLABELPROPERTIES '$PROPERTY' '$VALUE' > out".$INSTANCE.".txt 2>&1 &";
+		$cmd = "rm out*.txt out_graph*.json; ./crawl -pq $EDGENODE $IDLABELPROPERTIES '$PROPERTY' '$VALUE' > out".$INSTANCE.".txt 2>&1 &";
 		exec($cmd);
 	}
 ?>
@@ -62,17 +81,18 @@ header('Expires: 0'); // Proxies.
 		<td width="100%">
 			<div id="raw_queries" style="padding: 2px; box-shadow: 0px 2px 5px #888888;">
 				<form name="crawl_form" method="post" action="webcrawler.php">
-					<input size="17" type="text" value="" name="crawl_url[]"/>
+					<input size="20" type="text" value="" name="crawl_url[]"/>
 					<input size="4" type="text" value="" name="crawl_url[]"/>
 					<input size="10" type="Submit" value="crawl" name="crawl_submit"/>
 				</form>
 				<form name="query_form" method="post" action="webcrawler.php">
-					<input size="15" type="text" value="" name="query[]"/>
+					<input size="33" type="text" value="" name="query[]"/>
 					<select name="query[]">
+						<option value="row/graph">row/graph</option>
 						<option value="row">row</option>
 						<option value="graph">graph</option>
 					</select>
-					<input size="9" type="Submit" value="run query" name="query_submit"/>
+					<input size="6" type="Submit" value="run query" name="query_submit"/>
 				</form>
 			</div>
 			<br>
@@ -141,6 +161,10 @@ header('Expires: 0'); // Proxies.
 	<div id="select_options_id"></div>
 	<button id="opt1">opt1</button>
 </div>
+<div id="debug_popup"  style="z-index: 3; padding: 2px; box-shadow: 0px 2px 5px #888888; position:absolute; background-color: <?php echo $BACK_COLOR;?>">
+	<div id="debug_popup_content"></div>
+	<button id="debug_popup_close" onclick="HideMsg()">close</button>
+</div>
 </body>
 <script src="jquery-2.1.1.min.js"></script>
 <script src="sigma.min.js"></script>
@@ -153,8 +177,23 @@ header('Expires: 0'); // Proxies.
 		library.
 	*/
 	$('#select_options').hide();
-
+	$('#debug_popup').hide();
 	var sigma_instance;
+
+	function ShowMsg (message)
+	{
+		var height = $(window).height();
+		var width = $(window).width();
+		$('#debug_popup').css('left', width / 2);
+		$('#debug_popup').css('top', height / 2);
+		$('#debug_popup_content').text(message);
+		$('#debug_popup').show("fast");
+	}
+	function HideMsg (message)
+	{
+		$('#debug_popup').hide();
+	}
+
   	function loadGraph () 
 	{
 		//http://stackoverflow.com/questions/22543083/remove-all-the-instance-from-sigma-js
@@ -164,10 +203,13 @@ header('Expires: 0'); // Proxies.
 		var c = document.createElement('div');
 		c.setAttribute('id', 'container');
 		p.appendChild(c);
+		var instance_value = $('#instance_value').text();
+		var graph_file = "out_graph" + instance_value + ".json";
+		//ShowMsg(graph_file);
 
 		//$('#container').empty();
 		sigma.parsers.json(
-			'out_graph.json', 	// must adjust permissions on this file,
+			graph_file, 	// must adjust permissions on this file,
 			{			// or it will not load
 				container: 'container',
 				settings: 
@@ -228,18 +270,6 @@ header('Expires: 0'); // Proxies.
 						s.startForceAtlas2();
 					}
 				});
-
-				/*
-				var dom = document.querySelector('#container canvas:last-child');
-				dom.addEventListener('click', function(e)
-				{
-					var x = sigma.utils.getX(e);// + $(this).left();
-					var y = sigma.utils.getY(e);// + $(this).top();
-					$('#select_options').css('left', x);
-					$('#select_options').css('top', y);
-					$('#select_options').show("slow");
-					$('#content').text(x);
-				}, false);*/
 			}
 		);
 	}
@@ -258,7 +288,6 @@ header('Expires: 0'); // Proxies.
 	var infoDiv = document.getElementById('g_detail');
 	infoDiv.style.height = graph_height - 150;
 	
-
 	
 	var hover_over = false;		
 	$('#content').mouseover(function () 				// for pausing log output 
@@ -300,6 +329,8 @@ header('Expires: 0'); // Proxies.
 		$('#g_detail_row').css("border", "1px solid red");
 	});
 
+
+
 	setInterval(refreshInfo, 100);
 	function refreshInfo ()
 	{
@@ -318,12 +349,14 @@ header('Expires: 0'); // Proxies.
 	{
 		if(g_detail_mode == "graph")
 		{
-			$('#g_detail').load('out_graph.php?');
+			var instance_value = $('#instance_value').text();
+			$('#g_detail').load('out_graph.php?', {INSTANCE:instance_value});
 			$('#g_detail').css("border", "1px solid green");
 		}
 		else if (g_detail_mode == "row")
 		{
-			$('#g_detail').load('out_row.php');
+			var instance_value = $('#instance_value').text();
+			$('#g_detail').load('out_row.php', {INSTANCE:instance_value});
 			$('#g_detail').css("border", "1px solid red");
 		}
 	}

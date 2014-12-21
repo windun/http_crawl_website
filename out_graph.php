@@ -1,7 +1,6 @@
 <?php
 $INSTANCE = $_POST['INSTANCE'];
-
-$cmd = "cat out_graph.json";
+$cmd = "cat out_graph".$INSTANCE.".json";
 
 $descriptorspec = array(
    0 => array("pipe", "r"),   // stdin is a pipe that the child will read from
