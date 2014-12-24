@@ -1,11 +1,12 @@
 <?php
+session_start();
 header('Cache-Control: no-cache, no-store, must-revalidate'); // HTTP 1.1.
 header('Pragma: no-cache'); // HTTP 1.0.
 header('Expires: 0'); // Proxies.
 //header("Content-type: text/plain");
 	$BACK_COLOR = '#e9e9e9';
 	$CONSOLE_BACK_COLOR = '#ffffff';
-	$INSTANCE = date('Y-m-d-H-i-s');
+	$_SESSION['file_id'] = date('Y-m-d-H-i-s').'rain';
 	$OPT=0;
 	//$stdout = fopen('php://stdout', 'w');
 	if(!empty($_POST['crawl_url'][0]))
@@ -13,7 +14,7 @@ header('Expires: 0'); // Proxies.
 		$OPT = 1;
 		$crawl_url = $_POST['crawl_url'][0];
 		$crawl_depth = $_POST['crawl_url'][1];
-		$cmd = "./crawl $crawl_url $crawl_depth > out".$INSTANCE.".txt 2>&1 &";
+		$cmd = "./crawl $crawl_url $crawl_depth > out".$_SESSION['file_id'].".txt 2>&1 &";
 		exec("rm out*.txt out_graph*.json; $cmd");
 	}
 	else if(!empty($_POST['query']))
@@ -24,23 +25,23 @@ header('Expires: 0'); // Proxies.
 		if($query_format == "row") 
 		{
 			$query_format_flag = "-r";
-			$query_outfile = "out_row".$INSTANCE.".json";
+			$query_outfile = "out_row".$_SESSION['file_id'].".json";
 			exec("rm out_row*.json;");
 		}
 		else if ($query_format == "graph")
 		{
 			$query_format_flag = "-g";
-			$query_outfile = "out_graph".$INSTANCE.".json";
+			$query_outfile = "out_graph".$_SESSION['file_id'].".json";
 			exec("rm out_graph*.json;");
 		}
 		else if ($query_format == "row/graph")
 		{
 			$query_format_flag = "-rg";
-			$query_outfile = "out_row".$INSTANCE.".json out_graph".$INSTANCE.".json";
+			$query_outfile = "out_row".$_SESSION['file_id'].".json out_graph".$_SESSION['file_id'].".json";
 			exec("rm out_graph*.json out_row*.json;");
 		}
 		
-		$cmd = "./crawl -q \"$query\" \"$query_format\" $query_format_flag $query_outfile > out".$INSTANCE.".txt 2>&1 &";
+		$cmd = "./crawl -q \"$query\" \"$query_format\" $query_format_flag $query_outfile > out".$_SESSION['file_id'].".txt 2>&1 &";
 		exec("rm out*.txt; $cmd");
 	}
 	else if(!empty($_POST['s_values']))
@@ -50,7 +51,27 @@ header('Expires: 0'); // Proxies.
 		$IDLABELPROPERTIES = $_POST['s_values'][1];
 		$PROPERTY = $_POST['s_values'][2];
 		$VALUE = $_POST['s_values'][3];
-		$cmd = "rm out*.txt out_graph*.json; ./crawl -pq $EDGENODE $IDLABELPROPERTIES '$PROPERTY' '$VALUE' > out".$INSTANCE.".txt 2>&1 &";
+		$query_format = $_POST['s_values'][4];
+		if($query_format == "row") 
+		{
+			$query_format_flag = "-r";
+			$query_outfile = "out_row".$_SESSION['file_id'].".json";
+			exec("rm out_row*.json;");
+		}
+		else if ($query_format == "graph")
+		{
+			$query_format_flag = "-g";
+			$query_outfile = "out_graph".$_SESSION['file_id'].".json";
+			exec("rm out_graph*.json;");
+		}
+		else if ($query_format == "row/graph")
+		{
+			$query_format_flag = "-rg";
+			$query_outfile = "out_row".$_SESSION['file_id'].".json out_graph".$_SESSION['file_id'].".json";
+			exec("rm out_graph*.json out_row*.json;");
+		}
+
+		$cmd = "rm out*.txt out_graph*.json; ./crawl -pq $EDGENODE $IDLABELPROPERTIES '$PROPERTY' '$VALUE' $query_format_flag $query_outfile > out".$_SESSION['file_id'].".txt 2>&1 &";
 		exec($cmd);
 	}
 ?>
@@ -76,8 +97,7 @@ header('Expires: 0'); // Proxies.
 <body style="background-color: <?php echo $BACK_COLOR;?>">
 <table width="300px" id="side_panel">
 	<tr>
-		<div id="instance_value"><?php echo $INSTANCE; ?></div>
-		<div id="instance_value_recv"></div>
+		<div id="session_value"><?php echo $_SESSION['file_id']; ?></div>
 		<td width="100%">
 			<div id="raw_queries" style="padding: 2px; box-shadow: 0px 2px 5px #888888;">
 				<form name="crawl_form" method="post" action="webcrawler.php">
@@ -115,6 +135,11 @@ header('Expires: 0'); // Proxies.
 					<input size="10" type="text" value="" name="s_values[]"/>
 					<input size="10" type="text" value="" name="s_values[]"/>
 					<br>
+					<select name="s_values[]">
+						<option value="row/graph">row/graph</option>
+						<option value="row">row</option>
+						<option value="graph">graph</option>
+					</select>
 					<input size="10" type="Submit" value="run query" name="s_values_submit"/>
 				</form>
 			</div>
@@ -123,11 +148,12 @@ header('Expires: 0'); // Proxies.
 				<p style="padding:1px;">
 					<?php echo "[$OPT] $cmd"; ?>
 				</p>
-				<div id="content" style="padding: 2px;border: 1px solid white; background-color: <?php echo $CONSOLE_BACK_COLOR;?>; overflow: scroll;">
-					<?php 
+				<div id="content" style="padding: 2px;border: 1px solid white; background-color: <?php echo $CONSOLE_BACK_COLOR;?>; overflow: scroll; white-space: pre-line">
+					
+					<!--<?php 
 						echo "[]";
 						include_once('console.php'); 
-					?>
+					?>-->
 				</div>
 			</div>
 
@@ -139,7 +165,7 @@ header('Expires: 0'); // Proxies.
 		</td>
 	</tr>
 </table>
-<div id="container" style="z-index: 1; box-shadow: 0px 2px 5px #888888;;"></div>
+<div id="container" style="z-index: 1; box-shadow: 0px 2px 5px #888888;"></div>
 <div id="right_panel" style="padding: 2px; position: absolute; left: 1042px; top: 8px;box-shadow: 0px 2px 5px #888888;">
 	Selection Information
 	<table width="300px">
@@ -149,17 +175,23 @@ header('Expires: 0'); // Proxies.
 			</div>
 		</tr>
 		<br>
-		<button id="g_detail_graph" style="border: 1px solid white; max-width: 100px;">GRAPH</button><button id="g_detail_row" style="border: 1px solid white;max-width: 100px;">ROW</button>
+		<button id="g_detail_graph" style="border: 1px solid white; max-width: 100px;" onclick="refreshDetailGraph ()">
+			GRAPH
+		</button>
+		<button id="g_detail_row" style="border: 1px solid white;max-width: 100px;" onclick="refreshDetailRow ()">
+			ROW
+		</button>
 		<tr>
-			<div id="g_detail" style="border: 1px solid white; background-color: <?php echo $CONSOLE_BACK_COLOR;?>; width: 300px; overflow: scroll;">
+			<div id="g_detail" style="border: 1px solid white; background-color: <?php echo $CONSOLE_BACK_COLOR;?>; width: 300px; overflow: scroll; white-space: pre-line;">
 
 			</div>
 		</tr>
 	</table>
 </div>
-<div id="select_options"  style="z-index: 2; padding: 2px; box-shadow: 0px 2px 5px #888888; position:absolute; background-color: <?php echo $BACK_COLOR;?>">
+<div id="select_options" class="ui-widget-content" style="z-index: 2; padding: 2px; box-shadow: 0px 2px 5px #888888; position:absolute; background-color: <?php echo $BACK_COLOR;?>">
 	<div id="select_options_id"></div>
-	<button id="opt1">opt1</button>
+	<input size="15" id="select_search"></input>
+	<div id="select_content"></div>
 </div>
 <div id="debug_popup"  style="z-index: 3; padding: 2px; box-shadow: 0px 2px 5px #888888; position:absolute; background-color: <?php echo $BACK_COLOR;?>">
 	<div id="debug_popup_content"></div>
@@ -167,6 +199,7 @@ header('Expires: 0'); // Proxies.
 </div>
 </body>
 <script src="jquery-2.1.1.min.js"></script>
+<script src="jquery-ui.js"></script>
 <script src="sigma.min.js"></script>
 <script src="sigma.parsers.json.min.js"></script>
 <script src="sigma.layout.forceAtlas2.min.js"></script>
@@ -179,6 +212,7 @@ header('Expires: 0'); // Proxies.
 	$('#select_options').hide();
 	$('#debug_popup').hide();
 	var sigma_instance;
+	var force_on = true;
 
 	function ShowMsg (message)
 	{
@@ -203,9 +237,9 @@ header('Expires: 0'); // Proxies.
 		var c = document.createElement('div');
 		c.setAttribute('id', 'container');
 		p.appendChild(c);
-		var instance_value = $('#instance_value').text();
-		var graph_file = "out_graph" + instance_value + ".json";
-		//ShowMsg(graph_file);
+		var session_value = $('#session_value').text();
+		var graph_file = "out_graph" + session_value + ".json";
+	
 
 		//$('#container').empty();
 		sigma.parsers.json(
@@ -224,7 +258,6 @@ header('Expires: 0'); // Proxies.
 				var i,
 				nodes = s.graph.nodes(),
 				len = nodes.length;
-				var force_on = true;
 
 				for (i = 0; i < len; i++)
 				{
@@ -238,8 +271,8 @@ header('Expires: 0'); // Proxies.
 				s.startForceAtlas2();
 
 
-				s.bind('clickNode', function(e) {
-					
+				s.bind('clickNode', function(e) 
+				{					
 					$('#select_options_id').html(
 						"id: " + e.data.node.id + "<br>" +
 						"labels:" + e.data.node.label);
@@ -252,13 +285,19 @@ header('Expires: 0'); // Proxies.
 
 					$('#select_options').css('left', x);
 					$('#select_options').css('top', y);
+					$('#select_content').load('popup.php', {ID:e.data.node.id});
 					$('#select_options').show("fast");
-
-					
+				
 				});
 
-				s.bind('clickStage', function(e) {
+				s.bind('clickStage', function(e) 
+				{
+					$('#select_content').text("");
 					$('#select_options').hide();
+				});
+
+				s.bind('rightClickStage', function(e) 
+				{
 					if (force_on)
 					{
 						force_on = false;
@@ -270,12 +309,15 @@ header('Expires: 0'); // Proxies.
 						s.startForceAtlas2();
 					}
 				});
+
+				
 			}
 		);
 	}
 	loadGraph();
-
-
+	$(function() {
+		$('#select_options').draggable();
+	});
 	/*
 		Set the size of the console. It doesn't like to behave
 		so we have to set it this way.
@@ -330,38 +372,72 @@ header('Expires: 0'); // Proxies.
 	});
 
 
+	var console_lines = 0;
+	var console_lines_prev = 0;
 
 	setInterval(refreshInfo, 100);
 	function refreshInfo ()
 	{
-		if(!hover_over){refreshConsole();}
-		//if(!hover_over_g_detail){refreshGraphInfo();}
+		//if (console_lines != console_lines_prev)
+		//{
+			if(!hover_over){refreshConsole();}
+			//if(!hover_over_g_detail){refreshGraphInfo();}
+		//}
 	}
 	function refreshConsole ()
 	{
-		var instance_value = $('#instance_value').text();
-		$('#content').load('console.php', {INSTANCE:instance_value});
+		//$('#content').load('console.php');
+		var session_value = $('#session_value').text();
+		var console_file = "out" + session_value + ".txt";
+		$.ajax({
+			url : console_file,
+			dataType : "text",
+			success : function (data)
+			{
+				
+				console_lines_prev = console_lines;
+				console_lines = data.length;
+				if (console_lines != console_lines_prev)
+				{
+					data = data + "[" + console_lines + "/" + console_lines_prev + "]";
+					$('#content').html(data);
+				}
+			}
+		});
 		var objDiv = document.getElementById("content");
 		objDiv.scrollTop = objDiv.scrollHeight;
 	}
+	refreshConsole();
 
-	function refreshGraphInfo ()
+	function refreshDetailGraph ()
 	{
-		if(g_detail_mode == "graph")
-		{
-			var instance_value = $('#instance_value').text();
-			$('#g_detail').load('out_graph.php?', {INSTANCE:instance_value});
-			$('#g_detail').css("border", "1px solid green");
-		}
-		else if (g_detail_mode == "row")
-		{
-			var instance_value = $('#instance_value').text();
-			$('#g_detail').load('out_row.php', {INSTANCE:instance_value});
-			$('#g_detail').css("border", "1px solid red");
-		}
+		var session_value = $('#session_value').text();
+		var detail_file = "out_graph" + session_value + ".json";
+		$('#g_detail').css("border", "1px solid green");
+		$.ajax({
+			url : detail_file,
+			dataType : "text",
+			success : function (data)
+			{
+				$('#g_detail').html(data);
+			}
+		});
 	}
-	
-	// http://stackoverflow.com/questions/16991341/js-json-parse-file-path
+
+	function refreshDetailRow ()
+	{
+		var session_value = $('#session_value').text();
+		var detail_file = "out_row" + session_value + ".json";
+		$('#g_detail').css("border", "1px solid red");
+		$.ajax({
+			url : detail_file,
+			dataType : "text",
+			success : function (data)
+			{
+				$('#g_detail').html(data);
+			}
+		});
+	}
 	
 </script>
 </html>
