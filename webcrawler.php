@@ -106,7 +106,8 @@ header('Expires: 0'); // Proxies.
 					<input size="10" type="Submit" value="crawl" name="crawl_submit"/>
 				</form>
 				<form name="query_form" method="post" action="webcrawler.php">
-					<input size="33" type="text" value="" name="query[]"/>
+					<!--<input size="33" type="text" value="" name="query[]"/>-->
+					<textarea name="query[]" cols="40"><?php echo $query; ?></textarea>
 					<select name="query[]">
 						<option value="row/graph">row/graph</option>
 						<option value="row">row</option>
@@ -200,10 +201,11 @@ header('Expires: 0'); // Proxies.
 </body>
 <script src="jquery-2.1.1.min.js"></script>
 <script src="jquery-ui.js"></script>
-<script src="sigma.min.js"></script>
-<script src="sigma.parsers.json.min.js"></script>
-<script src="sigma.layout.forceAtlas2.min.js"></script>
-<script>
+<script src="sigma.require.js"></script>
+<script src="plugins/sigma.parsers.json.min.js"></script>
+<script src="plugins/sigma.layout.forceAtlas2.min.js"></script>
+<script src="plugins/sigma.renderers.edgeLabels.min.js"></script>
+<script type="text/javascript">
 
   	/*
 		This section is for drawing the graph. It uses the Sigma.js 
@@ -213,7 +215,6 @@ header('Expires: 0'); // Proxies.
 	$('#debug_popup').hide();
 	var sigma_instance;
 	var force_on = true;
-
 	function ShowMsg (message)
 	{
 		var height = $(window).height();
@@ -245,9 +246,13 @@ header('Expires: 0'); // Proxies.
 		sigma.parsers.json(
 			graph_file, 	// must adjust permissions on this file,
 			{			// or it will not load
-				container: 'container',
+				renderer: {
+					container: document.getElementById('container'),
+					type: 'canvas'
+				},
 				settings: 
 				{
+					edgeLabelSize: 'proportional',
 					defaultNodeColor: '#3febeb',
 					defaultLabelColor: '#333333'
 				}
@@ -326,7 +331,7 @@ header('Expires: 0'); // Proxies.
 	var graph_height = graph_canvas.offsetHeight;	// get actual height using .offsetHeight
 							// .height is undefined
 	var contentDiv = document.getElementById('content');
-	contentDiv.style.height = graph_height - 280;
+	contentDiv.style.height = graph_height - 350;
 	var infoDiv = document.getElementById('g_detail');
 	infoDiv.style.height = graph_height - 150;
 	
